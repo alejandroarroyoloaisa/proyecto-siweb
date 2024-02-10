@@ -2,6 +2,7 @@
 
 
 **Alumno:** Alejandro Arroyo Loaisa [ *aal00052* ]
+
 **Asignaturas**:
 - Sistemas de Información basados en Web
 - Sistemas de Información para el Negocio Electrónico
@@ -23,7 +24,7 @@ Se va a realizar un proyecto de prácticas en conjunto para las asignaturas menc
 
 El alumno encargado de este GitHub ha decidido realizar su proyecto atendiendo el siguiente tema:
 
-<center> Clínica Veterinaria La Florida  </center>
+### Clínica Veterinaria La Florida
 
 Es una Clínica Veterinaria que atiende a Perros, Gatos y Animales Exóticos. Los servicios que ofrecen son: *Ecografía y ecocardiografía, Hospital, Cirugía, Radiología digital, Laboratorio y Consulta veterinaria*. Cuentan con un Servicio 24h para emergencias. Además, la empresa cuenta con un servicio de peluquería canina, en el que lavan, cortan el pelo, cepillan y peinan a los perros, entre otros cuidados estéticos. También venden algunos productos de alimentación para mascotas y medicamentos para estas.
 
@@ -58,4 +59,6 @@ Con la creación del sitio web, la Clínica Veterinaria "La Florida" busca atrae
 
 - Cualquier usuario que quiera comprar productos para su mascota que estén disponibles en la página web.
 
-Entre otros.
+Entre otros. La finalidad es crear un sitio web que de servicio adicional al cliente y sea distintivo respecto de otras Clínicas Veterinarias.
+
+
