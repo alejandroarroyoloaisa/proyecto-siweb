@@ -63,38 +63,38 @@ Entre otros. La finalidad es crear un sitio web que de servicio adicional al cli
 
 Después de recabar toda esta información a través de su página web y mediante entrevista telefónica con el veterinario, el alumno se ha desplazado hasta el negocio para entrevistar a varios de los clientes mientras esperan a ser atendidos. Las preguntas han sido las siguientes:
 
-- ¿Es usted cliente de la Clínica Veterinaria “La Florida”?
-- ¿Cuántas mascotas tiene? ¿Le resulta complicado recordar los tratamientos que reciben o deben recibir las mascotas que tiene?
-- ¿Encontraría útil una página web de la Clínica Veterinaria “La Florida”, con información de los servicios que ofrece, entre otros?
-- Como cliente, ¿qué le gustaría encontrar en dicha página web?
-- ¿Considera que espera mucho tiempo para ser atendido?
-- ¿Usaría un servicio en línea de este negocio para registrar sus mascotas, tener a su disposición su historial veterinario y pedir cita en línea?
-- ¿Compra productos en la Clínica Veterinaria “La Florida”? ¿Encontraría cómodo la compra en línea de estos y posterior envío hasta la puerta de su casa?
+- **¿Es usted cliente de la Clínica Veterinaria “La Florida”?**
+- **¿Cuántas mascotas tiene? ¿Le resulta complicado recordar los tratamientos que reciben o deben recibir las mascotas que tiene?**
+- **¿Encontraría útil una página web de la Clínica Veterinaria “La Florida”, con información de los servicios que ofrece, entre otros?**
+- **Como cliente, ¿qué le gustaría encontrar en dicha página web?**
+- **¿Considera que espera mucho tiempo para ser atendido?**
+- **¿Usaría un servicio en línea de este negocio para registrar sus mascotas, tener a su disposición su historial veterinario y pedir cita en línea?**
+- **¿Compra productos en la Clínica Veterinaria “La Florida”? ¿Encontraría cómodo la compra en línea de estos y posterior envío hasta la puerta de su casa?**
 
 Estas han sido las respuestas del **Entrevistado nº1**:
 
 | PREGUNTA | RESPUESTA |
 |----------|----------|
-| ¿Es usted cliente de la Clínica Veterinaria “La Florida”?    | Cell 2   |
-| ¿Cuántas mascotas tiene? ¿Le resulta complicado recordar los tratamientos que reciben o deben recibir las mascotas que tiene?    | Cell 5   |
-| ¿Encontraría útil una página web de la Clínica Veterinaria “La Florida”, con información de los servicios que ofrece, entre otros?    | Cell 8   |
-| Como cliente, ¿qué le gustaría encontrar en dicha página web?    | Cell 2   |
-| ¿Considera que espera mucho tiempo para ser atendido?    | Cell 2   |
-| ¿Usaría un servicio en línea de este negocio para registrar sus mascotas, tener a su disposición su historial veterinario y pedir cita en línea?    | Cell 2   |
-| ¿Compra productos en la Clínica Veterinaria “La Florida”? ¿Encontraría cómodo la compra en línea de estos y posterior envío hasta la puerta de su casa?    | Cell 2   |
+| **¿Es usted cliente de la Clínica Veterinaria “La Florida”?**   | "Sí."   |
+| **¿Cuántas mascotas tiene? ¿Le resulta complicado recordar los tratamientos que reciben o deben recibir las mascotas que tiene?**    | "Tengo tres mascotas, dos perros y un gato. La verdad que es un poco tedioso saber qué le toca a cada una, pero por suerte tenemos las cartillas de los animales para recordarlo. Aún así, no son muy cómodas y luego una se olvida. Ya me ha pasado que he llegado un par de semanas tarde a una vacunación porque olvido la existencia de las cartillas."   |
+| **¿Encontraría útil una página web de la Clínica Veterinaria “La Florida”, con información de los servicios que ofrece, entre otros?**    | "Por supuesto, no veo por qué no. Incluso me vendría bien para recomendarla a mis amigas, porque conozco a Alfonso desde hace años que les traigo mis mascotas y siempre les hablo muy bien de él, pero no suelo tener qué enseñarles."   |
+| **Como cliente, ¿qué le gustaría encontrar en dicha página web?**    | "Pues la verdad, me gustaría deshacerme ya de las cartillas y tal, que me avisasen por ahí de manera digital de lo que debo hacer con mis mascotas sería muy útil."   |
+| **¿Considera que espera mucho tiempo para ser atendido?**    | "Llevo años viniendo, y hay un poco de todo. A veces vienes y está todo el mundo aquí, que pensó como tú, y hala todos esperando. Es una lata porque puedes echar toda la mañana, pero bueno, no es culpa de don Alfonso si todos hemos querido venir a la vez. Aún así luego hay otras veces que recién llego entro directa."   |
+| **¿Usaría un servicio en línea de este negocio para registrar sus mascotas, tener a su disposición su historial veterinario y pedir cita en línea?**    | "Ay me encantaría, es lo que te decía antes de la cartilla. Prefiero llevarlo todo en el móvil, se me hace más asequible que cargar con los cuadernillos de cada mascota. Y lo de las citas suena perfecto para ahorrarnos tiempo, porque luego si sé que tengo que traer a mis mascotas, sé que tengo que pedir la mañana o la tarde libre en el trabajo porque se van a juntar muchas personas y es una pena. Así podemos venir cuando nos toque y ya."   |
+| **¿Compra productos en la Clínica Veterinaria “La Florida”? ¿Encontraría cómodo la compra en línea de estos y posterior envío hasta la puerta de su casa?**    | "Sí, compro pienso y algunos medicamentos de las mascotas. Sinceramente, lo único que me gustaría que me trajeran a mi casa sería el pienso porque ya sabes lo que pesa eso. Sí lo vería buena idea."  |
 
 
 Estas han sido las respuestas del **Entrevistado nº2**:
 
 | PREGUNTA | RESPUESTA |
 |----------|----------|
-| ¿Es usted cliente de la Clínica Veterinaria “La Florida”?    | Cell 2   |
-| ¿Cuántas mascotas tiene? ¿Le resulta complicado recordar los tratamientos que reciben o deben recibir las mascotas que tiene?    | Cell 5   |
-| ¿Encontraría útil una página web de la Clínica Veterinaria “La Florida”, con información de los servicios que ofrece, entre otros?    | Cell 8   |
-| Como cliente, ¿qué le gustaría encontrar en dicha página web?    | Cell 2   |
-| ¿Considera que espera mucho tiempo para ser atendido?    | Cell 2   |
-| ¿Usaría un servicio en línea de este negocio para registrar sus mascotas, tener a su disposición su historial veterinario y pedir cita en línea?    | Cell 2   |
-| ¿Compra productos en la Clínica Veterinaria “La Florida”? ¿Encontraría cómodo la compra en línea de estos y posterior envío hasta la puerta de su casa?    | Cell 2   |
+| **¿Es usted cliente de la Clínica Veterinaria “La Florida”?**   | "No. He venido solo un par de veces, cuando no pudo recibirme mi veterinario habitual. Vengo por recomendación."   |
+| **¿Cuántas mascotas tiene? ¿Le resulta complicado recordar los tratamientos que reciben o deben recibir las mascotas que tiene?**    | "Tengo uno, un perro. Y no, no me cuesta recordarlo porque ya está mayorcete y pues no tiene tantos tratamientos. Aunque sí es verdad que fue un lío al principio cuando lo adoptamos de pequeño, recordar todas esas cosas o siquiera encontrar dónde habíamos puesto la cartilla."  |
+| **¿Encontraría útil una página web de la Clínica Veterinaria “La Florida”, con información de los servicios que ofrece, entre otros?**    | "Sí. Porque no soy cliente y vengo por recomendación, así antes de venir puedo mirar todo lo que ofrecen y ver si de verdad darían un buen servicio. Para estar seguro, vamos."   |
+| **Como cliente, ¿qué le gustaría encontrar en dicha página web?**    | "Justo lo que te acabo de decir, un poco de todo lo que ofrecen. También imágenes para ver las instalaciones, quizás incluso precios, para no llevarme sorpresas. Todo eso."   |
+| **¿Considera que espera mucho tiempo para ser atendido?**    | "Qué va. Bueno, yo es que solo he venido dos veces y las dos fueron super rápido."   |
+| **¿Usaría un servicio en línea de este negocio para registrar sus mascotas, tener a su disposición su historial veterinario y pedir cita en línea?**    | "Me encantaría. Eso no lo he visto nunca y no lo tiene mi clínica, la verdad se me hace super novedoso y me encantaría poder gestionar la información y servicios de mis mascotas desde el teléfono en cualquier momento, incluso lo de pedir cita me parece una idea increible."   |
+| **¿Compra productos en la Clínica Veterinaria “La Florida”? ¿Encontraría cómodo la compra en línea de estos y posterior envío hasta la puerta de su casa?**    | "No, nunca he comprado nada aquí. Pero me podría empezar a plantear comprar alguna que otra cosa que necesito con frecuencia para mi perro si ellos tienen ese sistema."   |
 
 Se ha enseñado estas dos entrevistas al veterinario, **don Alfonso**, y este ha sacado las siguientes conclusiones:
 
