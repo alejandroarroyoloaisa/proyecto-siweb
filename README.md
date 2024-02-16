@@ -106,3 +106,79 @@ También, **doña Pilar**, la auxiliar veterinaria y peluquera canina, comenta l
 “*Para la peluquería de la clínica siempre he tenido una agenda que me he hartado de llenar todos los años, y a veces ha sido un lío gestionarme las horas en las que tenía que atender a las mascotas de los clientes. Es la única parte del negocio que sí requiere de cita previa, y se solicita por teléfono. Otras veces, incluso, llamaban para pedir cita en un horario en el que yo no estaba en la Clínica Veterinaria, y no podía dársela porque no tenía la agenda a mano, la cual se encontraba en el negocio. Así que con un sistema de citas en línea, me quitaría de todos estos problemas, y los clientes podrían ver qué días hay huecos y a qué horas les viene mejor, sin tener que levantar el teléfono.*”
 
 
+## **ANTEPROYECTO**
+
+
+### Título
+Clínica Veterinaria La Florida
+
+### Breve descripción del proyecto
+Se va a realizar un sitio web (cliente, servidor y base de datos) para las asignaturas SIWEB, SINE y BBDDD de la carrera Ingeniería Informática de la Universidad de Jaén.
+
+- **Sistemas de la información basados en Web:**
+Se diseñará un sistema hipermedia para un sitio web, que incluya una estructura de información acerca de todo lo relacionado con la Clínica Veterinaria, y que incluya todo lo aprendido en la asignatura.
+- **Sistemas de la información para el negocio electrónico:**
+A este sitio web, se le añadirá una parte de negocio electrónico. Consistirá en un sistema de compra en línea de productos de la Clínica Veterinaria (desde piensos hasta medicamentos). 
+- **Bases de datos distribuidas:**
+Adicionalmente, se agregará una base de datos para que los clientes se registren y registren a sus mascotas. Además, esta base de datos almacenará los productos que se venden.
+
+La creación de esta página web va orientada a atender las necesidades de información de clientes y no clientes acerca de la Clínica Veterinaria, como la diferenciación respecto de otros negocios agregando un sistema de clientes y compra en línea. El sitio web contará con todo tipo de imágenes y vídeos tomados *in situ* en el lugar, contando con la autorización escrita de los dueños del negocio. La información contenida será o habrá sido debidamente contrastada y aprobada por el propio veterinario, para que sea veraz y realmente útil para el usuario objetivo.
+
+### Breve descripción de la organización o institución
+Se trata de un Centro Veterinario que proporciona atención a Caninos, Felinos y Especies Exóticas. Los servicios que brindan incluyen: *Ultrasonido y ecocardiograma, Hospitalización, Cirugía, Radiografía digital, Laboratorio y Consultorio veterinario*. Disponen de un Servicio de Emergencias las 24 horas. Adicionalmente, la organización ofrece un servicio de estética canina, donde realizan baños, cortes de pelo, cepillado y peinado de perros, entre otros tratamientos de belleza. Asimismo, comercializan ciertos productos alimenticios para mascotas y medicamentos para las mismas.
+
+### Tipo de proyecto
+Es un proyecto de desarrollo software.
+
+### Propósito del Proyecto
+
+El propósito de este proyecto es desarrollar un sitio web integral para la Clínica Veterinaria La Florida que sirva como una plataforma informativa y de comercio electrónico. Este sitio web proporcionará información detallada sobre los servicios veterinarios ofrecidos por la clínica, permitirá a los clientes registrarse y registrar a sus mascotas, y ofrecerá una tienda en línea para la compra de productos para mascotas.
+
+### Objetivos del Proyecto
+
+1. **Diseñar un sistema hipermedia para el sitio web:** El objetivo es crear una estructura de información completa que incluya detalles sobre todos los aspectos de la Clínica Veterinaria La Florida. Esto incluirá información sobre los servicios ofrecidos, el personal, las instalaciones, y más.
+
+2. **Implementar un sistema de comercio electrónico:** Se añadirá una funcionalidad de comercio electrónico al sitio web que permitirá a los clientes comprar productos de la clínica en línea. Esto incluirá una variedad de productos, desde alimentos para mascotas hasta medicamentos.
+
+3. **Desarrollar una base de datos distribuida:** Se creará una base de datos que permitirá a los clientes registrarse y registrar a sus mascotas. Esta base de datos también almacenará información sobre los productos que se venden en la tienda en línea.
+
+4. **Proporcionar información veraz y útil:** Toda la información contenida en el sitio web será contrastada y aprobada por el veterinario de la clínica para asegurar su veracidad y utilidad para los usuarios.
+
+5. **Diferenciarse de otros negocios similares:** A través de la implementación de un sistema de clientes y una tienda en línea, el sitio web buscará diferenciarse de otros negocios similares.
+
+6. **Cumplir con los requisitos de las asignaturas SIWEB, SINE y BBDDD de la carrera Ingeniería Informática de la Universidad de Jaén.**
+
+### Palabras clave
+A continuación se incluye un listado de palabras clave relacionadas con la página web que se está diseñando y desarrollando:
+
+
+| Clínica Veterinaria | Servicios Veterinarios | Atención de Emergencia | Cirugía Veterinaria | Vacunación de Mascotas |
+| --- | --- | --- | --- | --- |
+
+| Desparasitación | Microchip para Mascotas | Nutrición Animal | Medicina Preventiva | Diagnóstico por Imagen |
+| --- | --- | --- | --- | --- |
+
+| Radiografía para Mascotas | Ecografía Veterinaria | Cardiología Veterinaria | Dermatología Veterinaria | Oftalmología Veterinaria |
+| --- | --- | --- | --- | --- |
+
+| Odontología Veterinaria | Ortopedia Veterinaria | Endocrinología Veterinaria | Oncología Veterinaria | Neurología Veterinaria |
+| --- | --- | --- | --- | --- |
+
+| Medicina Felina | Medicina Canina | Medicina de Exóticos | Cuidado de Aves | Cuidado de Reptiles |
+| --- | --- | --- | --- | --- |
+
+| Cuidado de Roedores | Cuidado de Conejos | Cuidado de Hurones | Cuidado de Equinos | Cuidado de Animales de Granja |
+| --- | --- | --- | --- | --- |
+
+| Adopción de Mascotas | Consejos de Cuidado de Mascotas | Tienda de Productos para Mascotas | Alimentación para Mascotas | Accesorios para Mascotas |
+| --- | --- | --- | --- | --- |
+
+| Juguetes para Mascotas | Seguro para Mascotas | Cursos de Formación | Blog Veterinario | Contacto y Ubicación |
+| --- | --- | --- | --- | --- |
+
+
+    
+### Metodología
+### Resultados esperados
+### Requisitos de hardware y software
+### Bibliografía y documentación
