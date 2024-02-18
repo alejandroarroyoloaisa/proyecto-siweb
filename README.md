@@ -179,6 +179,89 @@ A continuación se incluye un listado de palabras clave relacionadas con la pág
 
     
 ### Metodología
+
+<img src="https://www.progressalean.com/wp-content/uploads/2020/05/agile1.png" alt="JuveR" width="300px">
+El proyecto durará cuatro meses: Febrero, Marzo, Abril y Mayo, de 2024. Se utilizará una Metodología Ágil SCRUM:
+
+1. **Definición del Producto Backlog**: En esta etapa, identificamos todas las funcionalidades y requisitos del nuevo sitio web de la Clínica Veterinaria La Florida. Estos podrían incluir:
+    - Creación de un sistema de registro de usuarios.
+    - Implementación de un sistema de citas en línea.
+    - Creación de una tienda en línea para productos de mascotas.
+    - Implementación de un sistema para consultar el historial clínico de las mascotas.
+    - Entre otros.
+Es en la etapa en la que se encuentra el proyecto, a día de escritura de este Anteproyecto.
+
+2. **Planificación del Sprint**: Seleccionamos las historias de usuario del Producto Backlog que se trabajarán en el próximo Sprint. Por ejemplo, podríamos comenzar con la creación del sistema de registro de usuarios y la implementación del sistema de citas en línea.
+
+3. **Sprint**: Durante el Sprint, el alumno trabajará en las tareas seleccionadas. Cada día, el alumno reflexionará sobre su progreso y cualquier obstáculo que pueda haber surgido.
+
+4. **Revisión del Sprint**: Al final del Sprint, el alumno presentará el trabajo completado a don Alfonso y doña Pilar. Se recopila feedback y se hacen ajustes según sea necesario.
+
+5. **Retrospectiva del Sprint**: El alumno reflexionará sobre el Sprint pasado y buscará formas de mejorar. Por ejemplo, si hubo problemas con la comunicación o la gestión del tiempo, se reflexionan en esta etapa y se buscan soluciones para el próximo Sprint.
+
+6. **Inicio del próximo Sprint**: El proceso se repite con la planificación del próximo Sprint. Basándonos en el feedback y los aprendizajes del Sprint anterior, seleccionamos nuevas historias de usuario para trabajar.
+
+Este ciclo continúa hasta que se haya completado todo el trabajo en el Producto Backlog. Una de las claves de la metodología ágil es la adaptabilidad, por lo que el Producto Backlog puede cambiar y evolucionar a medida que se recibe más feedback y se comprenden mejor las necesidades del proyecto.
+
+Las historias de usuario son una técnica utilizada en el desarrollo ágil para capturar una descripción de una funcionalidad del software desde la perspectiva del usuario final. Una historia de usuario se formula generalmente de la siguiente manera: “*Como [rol de usuario], quiero [objetivo] para que [beneficio]*”. Por ejemplo, en el caso de este proyecto, una historia de usuario podría ser: “*Como dueño de una mascota, quiero poder reservar citas en línea para que pueda programar visitas al veterinario de manera más conveniente*”.
+
+Las historias de usuario ayudan a entender mejor las necesidades y expectativas de nuestro usuario final, y proporcionan un marco claro para diseñar y desarrollar nuevas funcionalidades. Además, permiten priorizar las tareas basándose en las necesidades reales de los usuarios.
+</img>
+
 ### Resultados esperados
+Se espera satisfacer los requisitos mínimos contemplados por las asignaturas para las que se realiza el proyecto, con el fin de adquirir los conocimientos, pero además del sitio web se espera:
+
+1. **Sitio web funcional y fácil de usar**: El sitio web debe ser intuitivo y fácil de navegar para los usuarios. 
+
+2. **Sistema de registro de usuarios**: Los usuarios deben poder crear una cuenta, iniciar sesión y gestionar su perfil.
+
+3. **Sistema de citas en línea**: Los usuarios deben poder reservar citas con el veterinario a través del sitio web.
+
+4. **Tienda en línea**: Los usuarios deben poder comprar productos para mascotas y medicamentos a través del sitio web.
+
+5. **Sistema de consulta de historial clínico**: Los usuarios deben poder consultar el historial clínico de sus mascotas.
+
+6. **Integración con la base de datos existente**: El sitio web debe estar integrado con la base de datos existente de la clínica para mantener un registro coherente y actualizado.
+
+7. **Alta satisfacción del cliente**: Los usuarios deben encontrar útil el sitio web y estar satisfechos con su experiencia de usuario.
+
+8. **Aumento del tráfico web y de las reservas/citas**: Con la implementación del nuevo sitio web, se espera un aumento en el número de visitantes al sitio web y en las reservas de citas.
+
+9. **Formación y soporte**: Don Alfonso y doña Pilar deben estar formados para gestionar el nuevo sistema y debe haber soporte disponible para resolver cualquier problema que pueda surgir.
+
 ### Requisitos de hardware y software
+
+Los requisitos del proyecto serán los mínimos necesarios para que se pueda llevar a cabo el desarrollo del mínimo, estos serán las especificaciones del ordenador donde se realiza, y los programas que se pretende utilizar.
+
+Los requisitos de **HARDWARE** para la realización de este proyecto serán:
+
+|  |  |
+|----------|----------|
+| **Sistema Operativo**  |   Windows 10  |
+| **Procesador**  | Interl(R) Core(TM) i5-8300H CPU @ 2.30GHz 2.30GHz |
+| **Memoria RAM** | 8GB, 7.81 usable |
+| **Espacio Libre en Disco**  | El necesario para albergar todos los programas utilizados en el desarrollo del proyecto, y los datos que compongan el sitio web. |
+| **Tarjeta gráfica**  | NVIDIA GeFore GTX 1050 |
+
+Los requisitos **SOFTWARE** para la realización de este proyecto serán:
+
+|  |  |
+|----------|----------|
+| **Lenguaje de Programación** | HTML, CSS, Javascript, SQL |
+| **Entorno de Programación**  |   Visual Studio Code, NetBeans  |
+| **Navegador**  | Mozilla Firefox |
+| **Base de Datos** | MySQL |
+| **Simular distribución de base de datos**  | Docker |
+| **Diseño de Gráficos** | Adobe Photoshop, Paint |
+
+Los requisitos han sido planteados en la fase de PLANIFICACIÓN del proyecto. Pueden ser alterados en cualquier etapa del proyecto, a conveniencia de este. Si esto ocurre, quedará indicado.
+
 ### Bibliografía y documentación
+
+1. Dueñas Calderón, E. (2022). [Desarrollo e implementación de un sitio web para la gestión de la agenda e interacción con los clientes de clínicas veterinarias. Trabajo Fin de Grado, Escuela Técnica Superior de Ingeniería de Telecomunicación de la Universitat Politècnica de València.](https://riunet.upv.es/bitstream/handle/10251/181901/Duenas%20-%20Desarrollo%20e%20implementacion%20de%20un%20sitio%20web%20para%20la%20gestion%20de%20la%20agenda%20e%20interaccion%20c....pdf?sequence=1)
+2. Gómez Martínez, P. I. (2019). [Diseño y desarrollo de un sistema de gestión para clínicas veterinarias. Memoria para optar al título de Ingeniero Civil en Computación, Universidad de Chile.](https://repositorio.uchile.cl/handle/2250/171069)
+3. Rubio Velasco, D. (n.d.). [VeterSegovia. Aplicación web para la gestión de clínicas veterinarias. Universidad de Valladolid.](https://uvadoc.uva.es/bitstream/handle/10324/23979/TFG.B.972.pdf?sequence=1)
+4. Mozilla. (s.f.). [MDN Web Docs.](https://developer.mozilla.org)
+6. Refsnes Data. (s.f.). [W3Schools Online Web Tutorials.](https://www.w3schools.com)
+7. Mozilla. (s.f.). [Learn web development. MDN Web Docs.](https://developer.mozilla.org/en-US/docs/Learn)
+
