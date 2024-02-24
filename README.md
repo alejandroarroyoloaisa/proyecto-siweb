@@ -265,3 +265,35 @@ Los requisitos han sido planteados en la fase de PLANIFICACIÓN del proyecto. Pu
 6. Refsnes Data. (s.f.). [W3Schools Online Web Tutorials.](https://www.w3schools.com)
 7. Mozilla. (s.f.). [Learn web development. MDN Web Docs.](https://developer.mozilla.org/en-US/docs/Learn)
 
+
+## **ESTUDIO DE USABILIDAD**
+
+Se va a realizar un estudio de usabilidad. Un estudio de usabilidad de una página web es un análisis que se realiza para evaluar la eficacia, eficiencia y satisfacción con la que los usuarios pueden alcanzar sus objetivos en un sitio web. Se centra en entender cómo los usuarios interactúan con la web, identificando posibles problemas y áreas de mejora para optimizar la experiencia del usuario. En este caso: 
+
+1. Se **reunirán cuatro páginas web** de Clínicas Veterinarias, es decir, relacionadas con el proyecto que se está llevando a cabo. Entre ellas, por supuesto, estará la de la organización para la que estamos trabajando. Las páginas sobre las que se trabajará son:
+
+| Organización | Enlace al sitio web |
+|----------|----------|
+| **Clínica Veterinaria La Florida** | [https://www.clinicaveterinarialaflorida.es/](https://www.clinicaveterinarialaflorida.es/) |
+| **Hospital Veterinario Albacora**  | [https://www.clinicaveterinariaalbacora.com/](https://www.clinicaveterinariaalbacora.com/) |
+| **Clínica Veterinaria Mamíferos**  | [https://clinicaveterinariamamiferos.com/](https://clinicaveterinariamamiferos.com/) |
+| **Clínica Veterinaria AniCura** | [https://www.anicura.es/clinicas/jaen-norte-clinica-veterinaria](https://www.anicura.es/clinicas/jaen-norte-clinica-veterinaria) |
+
+2. Se contestarán unas **preguntas básicas de navegación** para cada sitio web. Estas son las siguientes:
+
+
+    - ¿De qué va el sitio web? 
+    - ¿En qué página estoy?  
+    - ¿Cuáles son las principales secciones del sitio?  
+    - ¿Qué opciones tengo en este nivel (navegación)? 
+    - ¿Dónde estoy en el esquema del sitio? 
+    - ¿Cómo busco algo? 
+
+3. Una vez terminado este estudio previo, se realizará para cada sitio web un pequeño **análisis atendiendo a los principios de usabilidad**.
+4. Al final se elaborará una **tabla resumen** con puntos fuertes, puntos débiles y formas de solucionarlo de los sitios analizados. La tabla seguirá el esquema:
+
+| Puntos fuertes | Puntos débiles | Soluciones |
+|--|--|--|
+|-----|-----|-----|
+
+
