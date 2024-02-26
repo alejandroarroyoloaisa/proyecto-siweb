@@ -296,4 +296,31 @@ Se va a realizar un estudio de usabilidad. Un estudio de usabilidad de una pági
 |--|--|--|
 |-----|-----|-----|
 
+### Clínica Veterinaria La Florida
+
+- **¿De qué va el sitio?**
+
+Es un sitio web sobre una Clínica Veterinaria. Concretamente, la de la empresa con la que queremos llevar a cabo este proyecto.
+- **¿En qué página estoy?**
+
+Se parte de la página “*Inicio*”. Es la página principal del sitio web, a la que probablemente accedamos al entrar en su URL desde el navegador tras la búsqueda de una clínica veterinaria.
+- **¿Cuáles son las principales secciones del sitio?**
+
+Las principales secciones del sitio web son: *Inicio, Perros, Gatos, Animales Exóticos, Servicios y Peluquería.*
+- **¿Qué opciones tengo en este nivel (navegación)?**
+
+Desde la página de “*Inicio*” se abren dos rutas de navegación:
+    - Utilizar el Menú superior para entrar en cualquiera de las secciones principales del sitio web, listadas anteriormente.
+    - Desplazar verticalmente la página principal, donde se presentan otras subsecciones con información interesante acerca de los servicios que se ofrecen, a parte de mostrar imágenes sobre el negocio y la información de contacto. 
+
+- **¿Dónde estoy en el esquema del sitio?**
+
+El sitio web te ayuda a ubicarte en todo momento de varias maneras simultáneas:
+    - **Resaltando la opción del menú superior** en la que te encuentras.
+    - Indicando con un **título** la sección en la que estás.
+    - Indicando la **sucesión de páginas web** que hay que seguir para llegar a la que te encuentras. Ejemplo: “*Inicio > Servicios Veterinarios > Cirugía*”
+
+- **¿Cómo busco algo?**
+
+Dentro del sitio web no se dispone de buscador. Desde cualquier navegador web, pueden buscarse las secciones de la página y acceder a ellas desde allí. Pero si dentro de la página queremos buscar algo, no queda más remedio que navegar por ella accediendo a las secciones por intuición y asociación con los conceptos que vayamos buscando. Por lo general, una navegación habitual será un desplazamiento vertical por la página principal (que ya nos ofrece bastantes opciones, algo más concretas que las secciones del menú superior, que pueden coincidir con lo que estamos interesados) y un posterior clic en los menús de arriba.
 
