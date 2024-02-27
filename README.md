@@ -179,6 +179,7 @@ A continuación se incluye un listado de palabras clave relacionadas con la pág
 
     
 ### Metodología
+[!NOTE] Puedes usar una medología ágil, nosotros aplicaremos más o menos "Metodología centrada en el usuario". Incorpora las distintas fases/tareas/métodos de forma breve. Puedes hacerlo a lo largo del cuatrimestre, cuando hagas uso en las distintas tareas relacionadas con el proyecto.
 
 <img src="https://www.progressalean.com/wp-content/uploads/2020/05/agile1.png" alt="JuveR" width="300px">
 El proyecto durará cuatro meses: Febrero, Marzo, Abril y Mayo, de 2024. Se utilizará una Metodología Ágil SCRUM:
@@ -229,6 +230,7 @@ Se espera satisfacer los requisitos mínimos contemplados por las asignaturas pa
 
 9. **Formación y soporte**: Don Alfonso y doña Pilar deben estar formados para gestionar el nuevo sistema y debe haber soporte disponible para resolver cualquier problema que pueda surgir.
 
+[!NOTE] Si luego usas algo más ya sea hard o soft o puedes especificar más, lo puedes hacer a lo largo del cuatrimestre.
 ### Requisitos de hardware y software
 
 Los requisitos del proyecto serán los mínimos necesarios para que se pueda llevar a cabo el desarrollo del mínimo, estos serán las especificaciones del ordenador donde se realiza, y los programas que se pretende utilizar.
