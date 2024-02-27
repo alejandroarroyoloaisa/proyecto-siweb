@@ -135,7 +135,7 @@ Es un proyecto de desarrollo software.
 El propósito de este proyecto es desarrollar un sitio web integral para la Clínica Veterinaria La Florida que sirva como una plataforma informativa y de comercio electrónico. Este sitio web proporcionará información detallada sobre los servicios veterinarios ofrecidos por la clínica, permitirá a los clientes registrarse y registrar a sus mascotas, y ofrecerá una tienda en línea para la compra de productos para mascotas.
 
 ### Objetivos del Proyecto
-
+[!NOTE] En la descripción e investigación anterior ya has fijado algunos tipos de contenidos y servicios que debe incluir tu sitio web. En los objetivos, debes incluir esa información, detalla más los objetivos.
 1. **Diseñar un sistema hipermedia para el sitio web:** El objetivo es crear una estructura de información completa que incluya detalles sobre todos los aspectos de la Clínica Veterinaria La Florida. Esto incluirá información sobre los servicios ofrecidos, el personal, las instalaciones, y más.
 
 2. **Implementar un sistema de comercio electrónico:** Se añadirá una funcionalidad de comercio electrónico al sitio web que permitirá a los clientes comprar productos de la clínica en línea. Esto incluirá una variedad de productos, desde alimentos para mascotas hasta medicamentos.
