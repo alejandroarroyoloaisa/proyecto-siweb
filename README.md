@@ -181,7 +181,8 @@ A continuación se incluye un listado de palabras clave relacionadas con la pág
 ### Metodología
 [!NOTE] Puedes usar una medología ágil, nosotros aplicaremos más o menos "Metodología centrada en el usuario". Incorpora las distintas fases/tareas/métodos de forma breve. Puedes hacerlo a lo largo del cuatrimestre, cuando hagas uso en las distintas tareas relacionadas con el proyecto.
 
-<img src="https://www.progressalean.com/wp-content/uploads/2020/05/agile1.png" alt="JuveR" width="300px">
+![](./images/metodologia.png)
+
 El proyecto durará cuatro meses: Febrero, Marzo, Abril y Mayo, de 2024. Se utilizará una Metodología Ágil SCRUM:
 
 1. **Definición del Producto Backlog**: En esta etapa, identificamos todas las funcionalidades y requisitos del nuevo sitio web de la Clínica Veterinaria La Florida. Estos podrían incluir:
@@ -207,7 +208,7 @@ Este ciclo continúa hasta que se haya completado todo el trabajo en el Producto
 Las historias de usuario son una técnica utilizada en el desarrollo ágil para capturar una descripción de una funcionalidad del software desde la perspectiva del usuario final. Una historia de usuario se formula generalmente de la siguiente manera: “*Como [rol de usuario], quiero [objetivo] para que [beneficio]*”. Por ejemplo, en el caso de este proyecto, una historia de usuario podría ser: “*Como dueño de una mascota, quiero poder reservar citas en línea para que pueda programar visitas al veterinario de manera más conveniente*”.
 
 Las historias de usuario ayudan a entender mejor las necesidades y expectativas de nuestro usuario final, y proporcionan un marco claro para diseñar y desarrollar nuevas funcionalidades. Además, permiten priorizar las tareas basándose en las necesidades reales de los usuarios.
-</img>
+
 
 ### Resultados esperados
 Se espera satisfacer los requisitos mínimos contemplados por las asignaturas para las que se realiza el proyecto, con el fin de adquirir los conocimientos, pero además del sitio web se espera:
@@ -230,7 +231,7 @@ Se espera satisfacer los requisitos mínimos contemplados por las asignaturas pa
 
 9. **Formación y soporte**: Don Alfonso y doña Pilar deben estar formados para gestionar el nuevo sistema y debe haber soporte disponible para resolver cualquier problema que pueda surgir.
 
-[!NOTE] Si luego usas algo más ya sea hard o soft o puedes especificar más, lo puedes hacer a lo largo del cuatrimestre.
+
 ### Requisitos de hardware y software
 
 Los requisitos del proyecto serán los mínimos necesarios para que se pueda llevar a cabo el desarrollo del mínimo, estos serán las especificaciones del ordenador donde se realiza, y los programas que se pretende utilizar.
@@ -267,7 +268,7 @@ Los requisitos han sido planteados en la fase de PLANIFICACIÓN del proyecto. Pu
 6. Refsnes Data. (s.f.). [W3Schools Online Web Tutorials.](https://www.w3schools.com)
 7. Mozilla. (s.f.). [Learn web development. MDN Web Docs.](https://developer.mozilla.org/en-US/docs/Learn)
 
-[!NOTE] Incluye capturas de las páginas web analizadas. Te falta hacer el método de inspección, pruebas de usabilidad heurísticas, son las que más información aportan. No olvides, añadir al final un resumen con los aspectos o puntos fuertes, los débiles, cómo solucionarlo o ideas potenciales que te han surgido.
+
 
 ## **ESTUDIO DE USABILIDAD**
 
@@ -301,6 +302,8 @@ Se va a realizar un estudio de usabilidad. Un estudio de usabilidad de una pági
 
 ### Clínica Veterinaria La Florida
 
+![](./images/clinicas/laflorida_home.png)
+
 - **¿De qué va el sitio?**
 
 Es un sitio web sobre una Clínica Veterinaria. Concretamente, la de la empresa con la que queremos llevar a cabo este proyecto.
@@ -313,6 +316,7 @@ Las principales secciones del sitio web son: *Inicio, Perros, Gatos, Animales Ex
 - **¿Qué opciones tengo en este nivel (navegación)?**
 
 Desde la página de “*Inicio*” se abren dos rutas de navegación:
+
     - Utilizar el Menú superior para entrar en cualquiera de las secciones principales del sitio web, listadas anteriormente.
     - Desplazar verticalmente la página principal, donde se presentan otras subsecciones con información interesante acerca de los servicios que se ofrecen, a parte de mostrar imágenes sobre el negocio y la información de contacto. 
 
