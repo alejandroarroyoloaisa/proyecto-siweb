@@ -267,6 +267,7 @@ Los requisitos han sido planteados en la fase de PLANIFICACIÓN del proyecto. Pu
 6. Refsnes Data. (s.f.). [W3Schools Online Web Tutorials.](https://www.w3schools.com)
 7. Mozilla. (s.f.). [Learn web development. MDN Web Docs.](https://developer.mozilla.org/en-US/docs/Learn)
 
+[!NOTE] Incluye capturas de las páginas web analizadas. Te falta hacer el método de inspección, pruebas de usabilidad heurísticas, son las que más información aportan. No olvides, añadir al final un resumen con los aspectos o puntos fuertes, los débiles, cómo solucionarlo o ideas potenciales que te han surgido.
 
 ## **ESTUDIO DE USABILIDAD**
 
