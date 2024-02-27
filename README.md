@@ -26,7 +26,7 @@ El alumno encargado de este GitHub ha decidido realizar su proyecto atendiendo e
 
 ### Clínica Veterinaria La Florida
 
-Es una Clínica Veterinaria que atiende a Perros, Gatos y Animales Exóticos. Los servicios que ofrecen son: *Ecografía y ecocardiografía, Hospital, Cirugía, Radiología digital, Laboratorio y Consulta veterinaria*. Cuentan con un Servicio 24h para emergencias. Además, la empresa cuenta con un servicio de peluquería canina, en el que lavan, cortan el pelo, cepillan y peinan a los perros, entre otros cuidados estéticos. También venden algunos productos de alimentación para mascotas y medicamentos para estas.
+Es una **Clínica Veterinaria** que atiende a **Perros, Gatos y Animales Exóticos**. Los servicios que ofrecen son: *Ecografía y ecocardiografía, Hospital, Cirugía, Radiología digital, Laboratorio y Consulta veterinaria*. Cuentan con un **Servicio 24h para emergencias**. Además, la empresa cuenta con un servicio de **peluquería canina**, en el que lavan, cortan el pelo, cepillan y peinan a los perros, entre otros cuidados estéticos. También **venden algunos productos de alimentación para mascotas y medicamentos** para estas.
 
 A cargo de la Clínica Veterinaria se encuentran **don Alfonso**, el veterinario, y **doña Pilar**, la auxiliar de veterinaria y peluquera canina. Ambos tienen 31 años de experiencia, ya que el negocio lleva abierto desde 1993. Además cuentan con amplia formación en cada uno de sus ámbitos.
 
