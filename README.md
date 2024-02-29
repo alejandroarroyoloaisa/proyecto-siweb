@@ -316,18 +316,53 @@ Las principales secciones del sitio web son: *Inicio, Perros, Gatos, Animales Ex
 - **¿Qué opciones tengo en este nivel (navegación)?**
 
 Desde la página de “*Inicio*” se abren dos rutas de navegación:
-
-    - Utilizar el Menú superior para entrar en cualquiera de las secciones principales del sitio web, listadas anteriormente.
-    - Desplazar verticalmente la página principal, donde se presentan otras subsecciones con información interesante acerca de los servicios que se ofrecen, a parte de mostrar imágenes sobre el negocio y la información de contacto. 
+1. Utilizar el Menú superior para entrar en cualquiera de las secciones principales del sitio web, listadas anteriormente.
+2. Desplazar verticalmente la página principal, donde se presentan otras subsecciones con información interesante acerca de los servicios que se ofrecen, a parte de mostrar imágenes sobre el negocio y la información de contacto. 
 
 - **¿Dónde estoy en el esquema del sitio?**
 
 El sitio web te ayuda a ubicarte en todo momento de varias maneras simultáneas:
-    - **Resaltando la opción del menú superior** en la que te encuentras.
-    - Indicando con un **título** la sección en la que estás.
-    - Indicando la **sucesión de páginas web** que hay que seguir para llegar a la que te encuentras. Ejemplo: “*Inicio > Servicios Veterinarios > Cirugía*”
+ 1. **Resaltando la opción del menú superior** en la que te encuentras.
+ 2.  Indicando con un **título** la sección en la que estás.
+ 3.  Indicando la **sucesión de páginas web** que hay que seguir para llegar a la que te encuentras. Ejemplo: “*Inicio > Servicios Veterinarios > Cirugía*”
 
 - **¿Cómo busco algo?**
 
 Dentro del sitio web no se dispone de buscador. Desde cualquier navegador web, pueden buscarse las secciones de la página y acceder a ellas desde allí. Pero si dentro de la página queremos buscar algo, no queda más remedio que navegar por ella accediendo a las secciones por intuición y asociación con los conceptos que vayamos buscando. Por lo general, una navegación habitual será un desplazamiento vertical por la página principal (que ya nos ofrece bastantes opciones, algo más concretas que las secciones del menú superior, que pueden coincidir con lo que estamos interesados) y un posterior clic en los menús de arriba.
 
+#### Análisis de usabilidad 
+
+BORRAR ESTAS PREGUNTAS AL TERMINAR. SON LAS QUE SE TRATARÁN DE RESPONDER PARA EL ANÁLISIS
+    ¿Cuáles son los objetivos del sitio web? ¿Son concretos y bien deﬁnidos?
+    ¿Los contenidos y servicios que ofrece se corresponden con esos objetivos?
+    ¿Tiene una URL correcta, clara y fácil de recordar? ¿Y las URL de sus páginas internas? ¿Son claras y permanentes?
+    ¿Muestra de forma precisa y completa qué contenidos o servicios ofrece realmente el sitio web?
+    ¿La estructura general del sitio web está orientada al usuario?
+    ¿El look & feel general se corresponde con los objetivos, características, contenidos y servicios del sitio web?
+    ¿Es coherente el diseño general del sitio web?
+    ¿Es reconocible el diseño general del sitio web?
+    ¿El sitio web se actualiza periódicamente? ¿Indica cuándo se actualiza?
+    El logotipo, ¿es signiﬁcativo, identiﬁcable y suﬁcientemente visible?
+    ¿Se proporciona mecanismos para ponerse en contacto con la empresa?
+    ¿Emplea un lenguaje claro y conciso?
+    ¿Es amigable, familiar y cercano?
+    El título de las páginas, ¿es correcto? ¿ha sido planiﬁcado?
+    ¿Se ha evitado la sobrecarga informativa?
+    ¿Es una interfaz limpia, sin ruido visual?
+    ¿Existen zonas en "blanco" entre los objetos informativos de la página para poder descansar la vista?
+    ¿Las fotografías están bien recortadas? ¿son comprensibles? ¿se ha cuidado su resolución?
+    ¿El tamaño de fuente se ha deﬁnido de forma relativa, o por lo menos, la fuente es lo suﬁcientemente grande como para no diﬁcultar la legibilidad del texto?
+    ¿El tipo de fuente, efectos tipográﬁcos, ancho de línea y alineación empleados facilitan la lectura?
+    ¿Existe un alto contraste entre el color de fuente y el fondo?
+
+El sitio web de la clínica veterinaria tiene como objetivo principal proporcionar información sobre los servicios que ofrece, tales como consultas, vacunaciones, cirugías y otros tratamientos para animales. Los objetivos son claros y bien definidos, y los contenidos y servicios que ofrece el sitio web se corresponden con estos objetivos. La URL del sitio web es clara y fácil de recordar, puesto que es el mismo nombre de la clínica. Las URL de las páginas internas también son claras y permanentes, siguiendo una estructura lógica basada en los servicios que ofrece la clínica. Aunque hay algunas páginas de la misma que se salen un poco de la estructura seguida por la mayoría, sin razón aparente.
+
+Además, muestra de forma precisa y completa los servicios que ofrece, con páginas dedicadas a cada tipo de servicio, así como información sobre las instalaciones de la clínica. La estructura del sitio web está claramente orientada al usuario, con un menú de navegación intuitivo y amigable. A diferencia de muchas páginas web de veterinaria, el diseño del sitio web es profesional y atractivo, con un esquema de colores suaves y característicos, y fotografías de alta calidad de las instalaciones y la maquinaria de la clínica. El diseño es coherente en todas las páginas, lo que facilita la navegación y proporciona una experiencia de usuario uniforme. El sitio web no se actualiza regularmente, no incluye noticias y ni artículos sobre cuidado de animales y salud veterinaria. Solo incluye información relativa a los servicios veterinarios que ofrece. De hecho, los dueños de la organización dicen que están contactando actualmente con el diseñador de la página para actualizar los contenidos y añadir más información. Proporciona una única forma de contacto, el número de teléfono. También hay información sobre la ubicación de la clínica, pero no de su horario de apertura.
+
+El lenguaje utilizado en el sitio web es claro y conciso, con términos médicos explicados de manera sencilla para que los dueños de las mascotas puedan entenderlos. El tono es amigable y cercano, reflejando el enfoque de la clínica hacia el cuidado personalizado de cada animal. El título de cada página refleja con precisión su contenido, y la información se presenta de manera clara y organizada, evitando la sobrecarga informativa. La interfaz es limpia y sin distracciones, con un equilibrio adecuado de texto, imágenes y espacio en blanco. Además, según el veterinario don Alfonso, la página tiene SEO en sus textos para su posicionamiento.
+
+El logotipo de la clínica es prominente en la parte superior izquierda de cada página, es fácilmente identificable. Las fotografías utilizadas en el sitio web son de alta calidad, con una buena resolución y un recorte adecuado. Las imágenes de los animales y las instalaciones de la clínica son especialmente atractivas y ayudan a transmitir la calidad de los servicios que ofrece la clínica. El tamaño de la fuente es suficientemente grande para facilitar la lectura, y el tipo de fuente, los efectos tipográficos y la alineación del texto están diseñados para mejorar la legibilidad. El color de la fuente contrasta bien con el fondo, lo que también ayuda a mejorar la legibilidad del texto.
+
+| Puntos fuertes | Puntos débiles | Soluciones |
+|--|--|--|
+|Diseño visual y estructura de la página. Información concisa, ordenada y con lenguaje amigable. Información importante accesible visualmente desde el comienzo ó a menos de dos clics.|Falta más formas de contacto para con la organización. Algunos errores en el texto o la jerarquía de la información provocan desorientación. Falta barra de búsqueda para velocidad en la navegación. Faltan precios, puede provocar después "sorpresas".|Corregir la información mostrada. Reestructurar la jerarquía de la información para evitar la "pérdida en el hiperespacio" del usuario. Añadir más formas de contacto, como email o formulario. Incluir precios de los servicios brindados. Incluir horarios.|
