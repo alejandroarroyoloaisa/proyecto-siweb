@@ -332,29 +332,6 @@ Dentro del sitio web no se dispone de buscador. Desde cualquier navegador web, p
 
 #### Análisis de usabilidad 
 
-BORRAR ESTAS PREGUNTAS AL TERMINAR. SON LAS QUE SE TRATARÁN DE RESPONDER PARA EL ANÁLISIS
-    ¿Cuáles son los objetivos del sitio web? ¿Son concretos y bien deﬁnidos?
-    ¿Los contenidos y servicios que ofrece se corresponden con esos objetivos?
-    ¿Tiene una URL correcta, clara y fácil de recordar? ¿Y las URL de sus páginas internas? ¿Son claras y permanentes?
-    ¿Muestra de forma precisa y completa qué contenidos o servicios ofrece realmente el sitio web?
-    ¿La estructura general del sitio web está orientada al usuario?
-    ¿El look & feel general se corresponde con los objetivos, características, contenidos y servicios del sitio web?
-    ¿Es coherente el diseño general del sitio web?
-    ¿Es reconocible el diseño general del sitio web?
-    ¿El sitio web se actualiza periódicamente? ¿Indica cuándo se actualiza?
-    El logotipo, ¿es signiﬁcativo, identiﬁcable y suﬁcientemente visible?
-    ¿Se proporciona mecanismos para ponerse en contacto con la empresa?
-    ¿Emplea un lenguaje claro y conciso?
-    ¿Es amigable, familiar y cercano?
-    El título de las páginas, ¿es correcto? ¿ha sido planiﬁcado?
-    ¿Se ha evitado la sobrecarga informativa?
-    ¿Es una interfaz limpia, sin ruido visual?
-    ¿Existen zonas en "blanco" entre los objetos informativos de la página para poder descansar la vista?
-    ¿Las fotografías están bien recortadas? ¿son comprensibles? ¿se ha cuidado su resolución?
-    ¿El tamaño de fuente se ha deﬁnido de forma relativa, o por lo menos, la fuente es lo suﬁcientemente grande como para no diﬁcultar la legibilidad del texto?
-    ¿El tipo de fuente, efectos tipográﬁcos, ancho de línea y alineación empleados facilitan la lectura?
-    ¿Existe un alto contraste entre el color de fuente y el fondo?
-
 El sitio web de la clínica veterinaria tiene como objetivo principal proporcionar información sobre los servicios que ofrece, tales como consultas, vacunaciones, cirugías y otros tratamientos para animales. Los objetivos son claros y bien definidos, y los contenidos y servicios que ofrece el sitio web se corresponden con estos objetivos. La URL del sitio web es clara y fácil de recordar, puesto que es el mismo nombre de la clínica. Las URL de las páginas internas también son claras y permanentes, siguiendo una estructura lógica basada en los servicios que ofrece la clínica. Aunque hay algunas páginas de la misma que se salen un poco de la estructura seguida por la mayoría, sin razón aparente.
 
 Además, muestra de forma precisa y completa los servicios que ofrece, con páginas dedicadas a cada tipo de servicio, así como información sobre las instalaciones de la clínica. La estructura del sitio web está claramente orientada al usuario, con un menú de navegación intuitivo y amigable. A diferencia de muchas páginas web de veterinaria, el diseño del sitio web es profesional y atractivo, con un esquema de colores suaves y característicos, y fotografías de alta calidad de las instalaciones y la maquinaria de la clínica. El diseño es coherente en todas las páginas, lo que facilita la navegación y proporciona una experiencia de usuario uniforme. El sitio web no se actualiza regularmente, no incluye noticias y ni artículos sobre cuidado de animales y salud veterinaria. Solo incluye información relativa a los servicios veterinarios que ofrece. De hecho, los dueños de la organización dicen que están contactando actualmente con el diseñador de la página para actualizar los contenidos y añadir más información. Proporciona una única forma de contacto, el número de teléfono. También hay información sobre la ubicación de la clínica, pero no de su horario de apertura.
@@ -462,3 +439,57 @@ En general, es un sitio web mediocre.
 |--|--|--|
 | Las URL son fáciles de recordar. La combinación de colores es ideal y coincide con la usada en el logotipo del negocio. El logotipo de la clínica veterinaria es ideal, ya que destaca a los animales sobre los que se especializan, y está visible en todo momento. Se proporcionan mecanismos para ponerse en contacto con la empresa. | Los objetivos del sitio web no parecen estar bien definidos ni orientados al usuario. La información proporcionada es escasa o inexistente en algunos casos, y no hay imágenes disponibles del negocio físico. La estructura general del sitio web no parece estar orientada al usuario. El diseño general del sitio web es muy básico y aburrido. El sitio web no parece actualizarse periódicamente. | Definir mejor los objetivos del sitio web y orientarlos al usuario. Proporcionar más información y agregar imágenes del negocio físico. Reorientar la estructura general del sitio web para satisfacer las necesidades del usuario. Mejorar el diseño general del sitio web para hacerlo más atractivo. Actualizar periódicamente el sitio web. |
 
+
+
+### Clínica Veterinaria AniCura
+
+![](./images/clinicas/anicura_home.png)
+
+- **¿De qué va el sitio?**
+
+Es un sitio web de una clínica veterinaria. que como las anteriores, ofrece una variedad de servicios para mascotas, desde todo tipo de tratamientos hasta multitud de especialidades. AniCura Jaén Norte pertenece a una comunidad de veterinarios altamente cualificados y esta es una de sus sucursales.
+
+- **¿En qué página estoy?**
+
+Se está en la página principal, que no es más que un apartado de la web principal de la comunidad de veterinarios AniCura. Aún siendo ya un directorio secundario, esta página es tratada como principal bajo todos los casos, aunque no es mencionada como tal, ya que no está etiquetada de esta manera. Es la primera página que se ve al entrar en el sitio web. Como las demás, esta página ofrece una descripción general de las especializaciones del negocio e información general de contacto. Aunque en este sitio web se ha priorizado en la primera página la información indispensable de toda Clínica Veterinaria, antes incluso que los Servicios ofrecidos, que es la Información de Contacto y Horario de Apertura.
+
+- **¿Cuáles son las principales secciones del sitio?**
+
+Las principales secciones del sitio son: *Tratamientos, Especialidades, Refiere tu caso, Contacto*. Este sitio web no cuenta con sección para regresar a la página principal. Si se desea hacer esto, se debe clicar sobre el logotipo de la empresa.
+
+
+- **¿Qué opciones tengo en este nivel (navegación)?**
+
+Desde la página principal, se abren varias rutas de navegación:
+1. Utilizar el Menú superior para entrar en cualquiera de las secciones principales del sitio web, listadas anteriormente.
+2. Desplazar verticalmente la página principal, para encontrar algunos tratamientos que se ofrecen en el negocio, además de toda la información de contacto. Se pueden acceder a estas opciones desde aquí, al igual que desde el Menú superior.
+3. Y una opción que hasta ahora ninguna página de las anteriores había incluido: una barra de búsqueda. Aunque esta barra de búsqueda realmente es inútil, porque te busca en todos los negocios AniCura, y no te deja filtrar para solo en el que te encuentras.
+
+- **¿Dónde estoy en el esquema del sitio?**
+
+Este sitio web ayuda al usuario en todo momento a no desorientarse dentro de la arquitectura de la información del sitio web. Salvo el *"pequeño desliz"* de no etiquetar la página principal (lo que se perdona por ser una sucursal de una empresa mayor y usar todos el mismo sitio web), el resto parece estar construido en torno a ayudar al usuario a no perderse y encontrar lo que busca. En todo momento se te indica mediante rótulos a modo de Título dónde te encuentras, todas las URLs siguen una estructura regular y correcta, y además todas las subsecciones del sitio web tienen lo que se conoce como *"migas de pan"* para no desorientar al usuario.
+
+- **¿Cómo busco algo?**
+
+Navegando a través de las diferentes secciones del sitio para encontrar la información que se busca. Antes se ha mencionado una barra de búsqueda en la página principal que como se ha comentado, no sirve para nada, por lo que no ayuda durante la búsqueda. Por alguna razón de diseño, la sección de *"Tratamientos"* si contiene su propia barra de búsqueda, que sirve para filtrar de entre los más de 50 tratamientos de los que dispone la clínica veterinaria (todos de ellos con su propia descripción, breve pero suficiente) y que se valora positivamente.
+
+#### Análisis de usabilidad 
+
+El sitio web de la Clínica Veterinaria AniCura parece tener como objetivo principal proporcionar información sobre los servicios y especialidades que ofrece, así como facilitar el contacto con la clínica. Estos objetivos parecen estar bien definidos y los contenidos y servicios que ofrece el sitio web se corresponden con ellos.
+
+Las URL de las páginas internas siguen una estructura regular y correcta, lo que sugiere que son claras y permanentes, pero es confuso que cuelguen de la página web principal de la organización AniCura. El sitio web parece mostrar de forma precisa y completa los contenidos y servicios que ofrece. La estructura general del sitio web está orientada al usuario, con indicaciones claras de dónde se encuentra el usuario en el sitio en todo momento.
+
+El *"look & feel"* general parece corresponderse con sus objetivos, características, contenidos y servicios, y el diseño general del sitio web parece ser coherente y reconocible, siguiendo la línea de diseño de AniCura. A pesar de que la organización principal sí actualiza periódicamente su sitio web, este negocio concreto no lleva a cabo esta tarea, salvo que su sitio web se sienta actual.
+
+El sitio web proporciona muchos mecanismos para ponerse en contacto con la empresa, priorizando esta información en la página principal. Estos mecanismos son muy destacables y se extienden aquí: *"Teléfono, Correo, Dirección Física del negocio, Reserva de cita en línea"* y una manera para que otros veterinarios refieran su caso a esta clínica veterinaria en concreto, ya que cuentan con muy buenas capacidades, según lo descrito. Lo que se realiza mediante un formulario muy completo. 
+
+El lenguaje utilizado en el sitio web parece ser claro y conciso, y se describe como amigable, familiar y cercano. El título de las páginas parece ser correcto y haber sido planificado. El sitio web parece evitar la sobrecarga informativa, proporcionando una interfaz limpia sin ruido visual y con zonas en "blanco" para descansar la vista. Visualmente es impecable.
+
+Las fotografías son inexistentes. El tamaño de la fuente parece haberse definido de forma relativa, o al menos es lo suficientemente grande como para no dificultar la legibilidad del texto. El tipo de fuente, los efectos tipográficos, el ancho de línea y la alineación empleados parecen facilitar la lectura. Se observa un alto contraste entre el color de la fuente y el fondo, lo que también facilita la lectura. 
+
+Este sitio web tiene bastantes ideas muy bien implementadas que podrán sernos útil en nuestra arquitectura de información.
+
+
+| Puntos fuertes | Puntos débiles | Soluciones |
+|--|--|--|
+| Las URL de las páginas internas son claras y permanentes. El *“look & feel”* general es coherente y reconocible, siguiendo la línea de diseño de AniCura. El sitio web proporciona muchos mecanismos para ponerse en contacto con la empresa. El lenguaje utilizado en el sitio web es claro y conciso, y se describe como amigable, familiar y cercano. Barra de Búsqueda en la Sección *"Tratamientos"*. | Es confuso que las URL cuelguen de la página web principal de la organización AniCura. Este negocio concreto no actualiza periódicamente su sitio web. Las fotografías son escasas e inexistentes. La funcionalidad de la barra de búsqueda tiene áreas de mejora potencial. | Mejorar la estructura de las URL para que no cuelguen de la página web principal de la organización AniCura. Actualizar periódicamente el sitio web de este negocio concreto. Agregar más fotografías. Mejorar la funcionalidad de la barra de búsqueda. |
