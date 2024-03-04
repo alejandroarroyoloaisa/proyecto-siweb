@@ -366,3 +366,99 @@ El logotipo de la clínica es prominente en la parte superior izquierda de cada 
 | Puntos fuertes | Puntos débiles | Soluciones |
 |--|--|--|
 |Diseño visual y estructura de la página. Información concisa, ordenada y con lenguaje amigable. Información importante accesible visualmente desde el comienzo ó a menos de dos clics.|Falta más formas de contacto para con la organización. Algunos errores en el texto o la jerarquía de la información provocan desorientación. Falta barra de búsqueda para velocidad en la navegación. Faltan precios, puede provocar después "sorpresas".|Corregir la información mostrada. Reestructurar la jerarquía de la información para evitar la "pérdida en el hiperespacio" del usuario. Añadir más formas de contacto, como email o formulario. Incluir precios de los servicios brindados. Incluir horarios.|
+
+
+
+### Hospital Veterinario Albacora
+
+![](./images/clinicas/albacora_home.png)
+
+- **¿De qué va el sitio?**
+
+Es un sitio web de un hospital veterinario que ofrece una variedad de servicios para mascotas, desde consultas de rutina hasta cirugías especializadas.
+- **¿En qué página estoy?**
+
+Se está en la página de inicio (aquí llamada *"Home"*), que es la primera página que se ve al entrar en el sitio web. Esta página ofrece una visión general del hospital y sus servicios.
+- **¿Cuáles son las principales secciones del sitio?**
+
+Las principales secciones del sitio son: *Home, El Hospital, Servicios, Equipo, Galería, Blog, Contacto y Legal.* 
+- **¿Qué opciones tengo en este nivel (navegación)?**
+
+Desde la página de “*Home*” se abren dos rutas de navegación:
+1. Utilizar el Menú situado a la izquierda para entrar en cualquiera de las secciones principales del sitio web, listadas anteriormente.
+2. Desplazar verticalmente la página principal. Las primeras cuatro secciones del menú del punto 1 (*Home, El Hospital, Servicios, Equipo*) aparecen formando una única página en la de Inicio/Home. Es decir, clicar en las secciones del menú solo te desplaza verticalmente sobre la página principal.
+
+- **¿Dónde estoy en el esquema del sitio?**
+
+Este sitio web no te ayuda a entender dónde te encuentras en el esquema del sitio. Al recorrer la arquitectura de la información del hospital veterinario, la única orientación que se recibe son los *Títulos de página* y la *URL*. Ni siquiera queda marcado en el menú situado a la izquierda en qué parte del sitio web estás al clicar sobre sus botones.
+
+- **¿Cómo busco algo?**
+
+El sitio no tiene una función de búsqueda integrada, por lo que se tendrá que navegar a través de las diferentes secciones del sitio para encontrar la información que se busca. Sin embargo, la información está bien organizada y es fácil de encontrar, lo que se agradece.
+
+#### Análisis de usabilidad 
+
+El sitio web del hospital veterinario parece tener como objetivo principal proporcionar información sobre los servicios que ofrece el hospital, desde consultas de rutina hasta cirugías especializadas. Los contenidos y servicios que ofrece el sitio web parecen estar en línea con este objetivo. La URL del sitio web es correcta, clara y fácil de recordar. Lo mismo ocurre con las URL de las páginas internas. Ofrece una descripción precisa y completa de los contenidos y servicios que ofrece, ya que proporciona una visión general del hospital y sus servicios en la página de inicio, y permite a los usuarios navegar a otras secciones para obtener más detalles.
+
+La estructura general del sitio web parece estar orientada al usuario, con un menú de navegación claro y la opción de desplazarse verticalmente por la página de inicio para ver las primeras cuatro secciones, que son las que más serían frecuentadas por el usuario promedio. Sin embargo, el sitio web no proporciona indicaciones claras de dónde se encuentra el usuario en el esquema del sitio, lo cual podría ser confuso.
+
+El look & feel general del sitio web es bastante agradable. Con colores claros que proporcionan luz y tranquilidad. Además, el diseño es muy reconocible, y va acorde con el Hospital Veterinario. Prácticamente la totalidad de las imágenes insertadas en el sitio web están pixeladas, lo que *"afea"* el estilo de la web. Pero incluye muchas imágenes, tanto del negocio físico como del personal, denotando cercanía para con el cliente. El tamaño y tipo de fuente, sin embargo, es correcto y no cuenta con efectos tipográficos, lo que se agradece, puesto que muchas páginas para negocios pequeños abusan de estas prácticas. 
+
+El lenguaje utilizado en el sitio web parece ser claro y conciso, y esto sugiere un negocio familiar y cercano. Los títulos de las páginas parecen ser correctos y planificados, ya que proporcionan orientación a medida que se navega por el sitio. Cuenta con horario de apertura e información de contacto insuficiente, puesto que solo se proporciona teléfono de contacto. La ubicación del establecimiento se encuentra algo *"escondida"*, resulta extraño.  El sitio web parece evitar la sobrecarga informativa y tener una interfaz limpia, sin ruido visual. Existen zonas en "blanco" entre los objetos informativos de la página para descansar la vista, lo cual es una buena práctica de diseño. 
+
+El sitio web, sin embargo, no se actualiza periódicamente. Tienen un Blog cuya última entrada data del 2018. 
+
+
+| Puntos fuertes | Puntos débiles | Soluciones |
+|--|--|--|
+| Estilo muy logrado, amable y tranquilizador. Diseño simple pero muy funcional. Muchas imágenes, incluso del personal. Amplias descripciones, para todos los servicios. | No se ayuda muy bien al usuario a ubicarse en el hiperespacio. Imágenes en pésima resolución. Falta de actualización del sitio web. | Añadir navegación con *"migas de pan"*. Cuidar la correcta visualización de las imágenes. Considerar un contenido que perdure en el tiempo, o eliminar Blogs que necesiten actualizaciones. |
+
+
+
+### Clínica Veterinaria Mamíferos
+
+![](./images/clinicas/mamiferos_home.png)
+
+- **¿De qué va el sitio?**
+
+Es un sitio web de una clínica veterinaria. que como las anteriores, ofrece una variedad de servicios para mascotas, desde consultas de rutina, medicina interna hasta cirugía general. Indican que están especializados en perros, gatos y caballos.
+- **¿En qué página estoy?**
+
+Se está en la página de *"Inicio"*, que es la primera página que se ve al entrar en el sitio web. Esta página ofrece una descripción general de solo algunos de los servicios del negocio. Aunque sea solo la *"página principal"*, y a través de esta se puedan acceder a todas las demás, no se han destacado los servicios más importantes, sino lo que parece una selección arbitraria de ellos.
+
+- **¿Cuáles son las principales secciones del sitio?**
+
+Las principales secciones del sitio son: *Inicio, Planes VIP, Plasma Rico en Factores de Crecimiento, Nuestros Servicios, Blog, Contacto*. Las secciones *"Planes VIP"* y *"Plasma Rico en Factores de Crecimiento"* se han priorizado como más importantes en el Menú, antes siquiera de los servicios que ofrece el negocio. Para conocer la gravedad de esto, hay que destacar que estas dos secciones versan sobre unos *"servicios especiales y novedosos"* que se ofrecen y que cuestan bastante dinero. Por lo que, y con solo esto, la Arquitectura de la información que se ha elaborado para este negocio queda suspensa, sin tener que navegar por el resto de ella, puesto que no se ha priorizado al usuario sino al dinero del usuario, por así decirlo.
+
+- **¿Qué opciones tengo en este nivel (navegación)?**
+
+Desde la página de “*Inicio*”, y al igual que los anteriores sitios web, se abren dos rutas de navegación:
+1. Utilizar el Menú situado arriba para entrar en cualquiera de las secciones principales del sitio web, listadas anteriormente.
+2. Desplazar verticalmente la página principal, para encontrar algunos servicios que se ofrecen en el negocio, y que sí parecen aparecer antes en la página principal, en comparación con el Menú. Se pueden acceder a estas opciones desde aquí, al igual que desde el Menú superior.
+
+- **¿Dónde estoy en el esquema del sitio?**
+
+Este sitio web no te ayuda a entender dónde te encuentras en el esquema del sitio. No solo eso, sino que algunas secciones que aparecen en el Menú superior y no están listadas en *"Nuestros servicios"*, después en la URL aparecen colgando del mismo directorio, confundiendo bastante al usuario. 
+
+- **¿Cómo busco algo?**
+
+Navegando a través de las diferentes secciones del sitio para encontrar la información que se busca, debido a la inexistencia de un motor de búsqueda integrado. Aún con este esfuerzo extra, la información es pobre o inexistente, y si se desea buscar imágenes sobre el negocio físico no hay ni una sola.
+
+#### Análisis de usabilidad 
+
+Los objetivos del sitio web de la Clínica Veterinaria Mamíferos parecen ser proporcionar información sobre los servicios que ofrece la clínica, destacando sus especialidades en perros, gatos y caballos, y promover sus servicios especiales y novedosos, como los Planes VIP y el Plasma Rico en Factores de Crecimiento. Sin embargo, estos objetivos no parecen estar bien definidos ni orientados al usuario, ya que la arquitectura de la información prioriza estos servicios costosos en lugar de los servicios más comunes y necesarios para la mayoría de los dueños de mascotas.
+
+En cuanto a los contenidos y servicios que ofrece, parecen corresponderse con los objetivos del sitio, aunque la información proporcionada es escasa o inexistente en algunos casos, y no hay imágenes disponibles del negocio físico. Esto puede dificultar la capacidad del usuario para obtener una comprensión completa de lo que la clínica ofrece.
+
+La estructura general del sitio web no parece estar orientada al usuario, ya que algunas secciones importantes no están destacadas en la página de inicio y las secciones que se han priorizado en el menú son las que ofrecen servicios especiales y costosos. Esto sugiere que la estructura del sitio está más orientada a maximizar los ingresos que a satisfacer las necesidades del usuario. Aunque, al menos, las direcciones URL son fáciles de recordar.
+
+En cuanto al diseño general del sitio web, es muy básico y aburrido. No tiene prácticamente estilo propio, y no resulta llamativo para el usuario. La combinación de colores, al menos, es ideal y coincide con la usada en el logotipo del negocio. El logotipo de la clínica veterinaria es ideal, ya que destaca a los animales sobre los que se especializan, y está visible en todo momento. El sitio web no parece actualizarse periódicamente. El lenguaje utilizado en el sitio web parece ser, simplemente, correcto. No tiene nada destacable.
+
+Se proporcionan mecanismos para ponerse en contacto con la empresa. Teléfono, dirección del negocio físico, email y hasta un formulario para enviar directamente a la organización un mensaje. Punto a favor, se agradece.
+
+En general, es un sitio web mediocre.
+
+| Puntos fuertes | Puntos débiles | Soluciones |
+|--|--|--|
+| Las URL son fáciles de recordar. La combinación de colores es ideal y coincide con la usada en el logotipo del negocio. El logotipo de la clínica veterinaria es ideal, ya que destaca a los animales sobre los que se especializan, y está visible en todo momento. Se proporcionan mecanismos para ponerse en contacto con la empresa. | Los objetivos del sitio web no parecen estar bien definidos ni orientados al usuario. La información proporcionada es escasa o inexistente en algunos casos, y no hay imágenes disponibles del negocio físico. La estructura general del sitio web no parece estar orientada al usuario. El diseño general del sitio web es muy básico y aburrido. El sitio web no parece actualizarse periódicamente. | Definir mejor los objetivos del sitio web y orientarlos al usuario. Proporcionar más información y agregar imágenes del negocio físico. Reorientar la estructura general del sitio web para satisfacer las necesidades del usuario. Mejorar el diseño general del sitio web para hacerlo más atractivo. Actualizar periódicamente el sitio web. |
+
