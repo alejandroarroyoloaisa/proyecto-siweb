@@ -493,3 +493,39 @@ Este sitio web tiene bastantes ideas muy bien implementadas que podrán sernos �
 | Puntos fuertes | Puntos débiles | Soluciones |
 |--|--|--|
 | Las URL de las páginas internas son claras y permanentes. El *“look & feel”* general es coherente y reconocible, siguiendo la línea de diseño de AniCura. El sitio web proporciona muchos mecanismos para ponerse en contacto con la empresa. El lenguaje utilizado en el sitio web es claro y conciso, y se describe como amigable, familiar y cercano. Barra de Búsqueda en la Sección *"Tratamientos"*. | Es confuso que las URL cuelguen de la página web principal de la organización AniCura. Este negocio concreto no actualiza periódicamente su sitio web. Las fotografías son escasas e inexistentes. La funcionalidad de la barra de búsqueda tiene áreas de mejora potencial. | Mejorar la estructura de las URL para que no cuelguen de la página web principal de la organización AniCura. Actualizar periódicamente el sitio web de este negocio concreto. Agregar más fotografías. Mejorar la funcionalidad de la barra de búsqueda. |
+
+
+
+## DISEÑO DEL PROYECTO
+
+Toda Arquitectura de la Información debe tener en cuenta:
+
+- El **contexto** de la AI
+- Los **destinatarios** de dicha AI
+- Los **contenidos** mostrados en la AI
+
+Por lo tanto, para diseñar un sitio web de calidad deberemos investigar y reflexionar acerca de cada uno de estos factores, individualmente y en profundidad.
+
+### CONTEXTO
+
+
+- **OBJETIVOS**: Los objetivos del proyecto incluyen el diseño de un sistema hipermedia para el sitio web, la implementación de un sistema de comercio electrónico, el desarrollo de una base de datos distribuida y proporcionar información veraz y útil, para diferenciarse de otros negocios similares. Con esto se busca no solo mejorar el servicio ya disponible a los actuales clientes del negocio, si no también captar la atención de nuevos clientes por el factor diferenciador, comodidad.
+
+- **TECNOLOGÍA**: Las oportunidades tecnológicas incluyen la posibilidad de mejorar la experiencia del cliente a través de un sitio web fácil de usar y funcional, un sistema de citas en línea, una tienda en línea y un sistema de consulta de historial clínico. Las limitaciones podrían incluir la necesidad de integrar con la base de datos existente de la clínica y garantizar la seguridad de los datos de los usuarios. Realmente no hay ninguna limitación tecnológica, debido a que no hay imposiciones en lenguajes ni tecnologías a utilizar en el desarrollo del proyecto, y el mantenimiento de un sitio web de estas características es sencillo, debido a la naturaleza del mismo: no es un sitio muy complejo.
+
+- **DISEÑO**: Las restricciones de diseño pueden incluir la necesidad de que el sitio web sea intuitivo y fácil de navegar, cumpliendo con los requisitos de usabilidad esto se satisface. Además, el diseño debe ser atractivo y reflejar la marca y la identidad de la Clínica Veterinaria La Florida.
+
+- **POLÍTICAS DE EMPRESA**: La organización trabaja proporcionando atención a Caninos, Felinos y Especies Exóticas, y ofrece una variedad de servicios. Esto afectará al proyecto en términos de la información que se debe incluir en el sitio web y los servicios que se deben ofrecer en línea. La empresa se rige, por encima de todo, por unos valores muy bien cimentados basados en años de experiencia en los que priman el cariño y amor por los animales y la profesión, para ayudar a los animales y brindar el servicio más cercano, pero satisfactorio y profesional posible.
+
+- **PARTES INTERESADAS** Las partes interesadas en el proyecto incluyen a los estudiantes que están realizando el proyecto, los dueños de la Clínica Veterinaria La Florida (*Don Alfonso y Doña Pilar*), y los clientes de la clínica que utilizarán el sitio web. También, aunque en menor medida, otras Clínicas Veterinarias cuyos clientes hayan requerido de sus servicios pero no hayan estado disponibles para ellos y deriven su caso a una Clínica Veterinaria que satisfaga lo necesitado.
+
+Como requisito mínimo para todo sitio web, debe cumplir con la Ley de protección de datos y privacidad. Por ello, debe darse un AVISO LEGAL, AVISO DE COOKIES y AVISO DE TRATAMIENTO DE DATOS Y PRIVACIDAD. Esta información aparecerá para que el usuario la revise al visitar la página o será accesible de una manera rápida en cualquier momento desde el sitio web para su verificación. Un ejemplo de estos avisos sería el siguiente:
+
+
+**Política de Cookies**
+
+La Clínica Veterinaria La Florida utiliza cookies en su sitio web para mejorar la experiencia del usuario y proporcionar funcionalidades personalizadas. Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita nuestro sitio web. Estas cookies nos permiten recordar sus preferencias, como su idioma preferido, y proporcionar características personalizadas, como mostrar anuncios relevantes. Puede optar por aceptar o rechazar nuestras cookies, y puede cambiar sus preferencias en cualquier momento a través de la configuración de su navegador. Para obtener más información sobre cómo utilizamos las cookies, consulte nuestra Política de Cookies completa.
+
+**Política de Tratamiento de Datos y Privacidad**
+
+En la Clínica Veterinaria La Florida, nos tomamos muy en serio la privacidad de nuestros usuarios. Recopilamos y utilizamos sus datos personales solo para proporcionar los servicios que solicita, como programar citas y realizar compras en línea. Protegemos sus datos utilizando medidas de seguridad adecuadas y no compartimos sus datos con terceros sin su consentimiento explícito. Además, tiene derecho a acceder, corregir o eliminar sus datos personales en cualquier momento. Para obtener más información sobre cómo recopilamos, utilizamos y protegemos sus datos personales, consulte nuestra Política de Tratamiento de Datos y Privacidad completa.
