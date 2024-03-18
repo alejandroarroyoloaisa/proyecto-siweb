@@ -640,16 +640,16 @@ Lo que sugiere que una clínica veterinaria podría beneficiarse de invertir en 
 
 | Imagen | Nombre y Edad | Ocupación y Gustos | Expectativas | Frustraciones |
 | -- | -- | -- | -- | -- |
-| dasd | Alex Martínez, 21 años | Estudiante universitario y trabajador a tiempo parcial. Interesado en las redes sociales, la tecnología y el bienestar animal. | Busca un sitio web rápido, con un diseño moderno y fácil de navegar. Espera poder reservar citas en línea y tener acceso a una base de datos de información sobre el cuidado de mascotas. |  Se frustra con los sitios web lentos o que no son móviles amigables. También le molesta la falta de información detallada sobre los servicios y precios. |
+| ![](./images/arquetipos_usuario/arquetipo_persona_1.png) | Alex Martínez, 21 años | Estudiante universitario y trabajador a tiempo parcial. Interesado en las redes sociales, la tecnología y el bienestar animal. | Busca un sitio web rápido, con un diseño moderno y fácil de navegar. Espera poder reservar citas en línea y tener acceso a una base de datos de información sobre el cuidado de mascotas. |  Se frustra con los sitios web lentos o que no son móviles amigables. También le molesta la falta de información detallada sobre los servicios y precios. |
 
 #### Arquetipo de Usuario 2: Adulto Medio (35-55 años)
 
 | Imagen | Nombre y Edad | Ocupación y Gustos | Expectativas | Frustraciones |
 | -- | -- | -- | -- | -- |
-| dasd | Laura Gómez, 40 años | Profesional a tiempo completo y madre de dos hijos. Valora la eficiencia, la atención al cliente y la información clara y concisa. | Prefiere un sitio web que ofrezca una navegación intuitiva y la posibilidad de interactuar con el personal de la clínica, como chats en vivo o foros de preguntas y respuestas. |  Se frustra con los sitios web que no proporcionan información sobre seguros y opciones de pago. La falta de testimonios o reseñas de otros clientes también es una fuente de desconfianza para ella. |
+| ![](./images/arquetipos_usuario/arquetipo_persona_2.png) | Laura Gómez, 40 años | Profesional a tiempo completo y madre de dos hijos. Valora la eficiencia, la atención al cliente y la información clara y concisa. | Prefiere un sitio web que ofrezca una navegación intuitiva y la posibilidad de interactuar con el personal de la clínica, como chats en vivo o foros de preguntas y respuestas. |  Se frustra con los sitios web que no proporcionan información sobre seguros y opciones de pago. La falta de testimonios o reseñas de otros clientes también es una fuente de desconfianza para ella. |
 
 #### Arquetipo de Usuario 3: Senior (más de 60 años)
 
 | Imagen | Nombre y Edad | Ocupación y Gustos | Expectativas | Frustraciones |
 | -- | -- | -- | -- | -- |
-| dasd | José Ramírez, 70 años | Jubilado, dedica su tiempo a actividades comunitarias y al cuidado de su mascota. Prefiere la simplicidad y la facilidad de uso por encima de las características sofisticadas. | Busca un sitio web con información fácil de leer (letra grande), explicaciones claras de los servicios y acceso directo a la asistencia por teléfono. |  Las interfaces complicadas y la falta de opciones de contacto directo son sus principales puntos de frustación. También le preocupa la seguridad en línea y la privacidad de sus datos personales. |
+| ![](./images/arquetipos_usuario/arquetipo_persona_3.png) | José Ramírez, 70 años | Jubilado, dedica su tiempo a actividades comunitarias y al cuidado de su mascota. Prefiere la simplicidad y la facilidad de uso por encima de las características sofisticadas. | Busca un sitio web con información fácil de leer (letra grande), explicaciones claras de los servicios y acceso directo a la asistencia por teléfono. |  Las interfaces complicadas y la falta de opciones de contacto directo son sus principales puntos de frustación. También le preocupa la seguridad en línea y la privacidad de sus datos personales. |
