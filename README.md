@@ -532,10 +532,24 @@ Como requisito mínimo para todo sitio web, debe cumplir con la Ley de protecci�
 
 ### PERSONAS
 
-¿Qué necesita la gente?
-¿Qué hacen las personas con la información?
-¿Dónde se utiliza?
-¿Cómo describen las cosas?
+#### ¿Qué necesita la gente?
+
+Cuando las personas buscan información en línea sobre una clínica veterinaria en su ciudad, generalmente necesitan conocer varios detalles. Estos pueden incluir la ubicación de la clínica, los horarios de atención, los servicios que ofrece (como vacunaciones, cirugías, chequeos regulares, servicios de emergencia, etc.), los costos de estos servicios, y las opiniones o calificaciones de otros clientes. También pueden estar interesados en saber sobre el personal de la clínica, como la experiencia y las calificaciones de los veterinarios y el personal de apoyo.
+
+#### ¿Qué hacen las personas con la información?
+
+Una vez que las personas obtienen esta información, la utilizan para tomar decisiones informadas sobre el cuidado de sus mascotas. Por ejemplo, pueden decidir visitar la clínica para un chequeo regular, para un procedimiento específico, o en caso de una emergencia. La información sobre los costos les ayuda a planificar y presupuestar los gastos de atención médica de sus mascotas. Las opiniones o calificaciones de otros clientes pueden influir en su decisión de confiar en la clínica con el bienestar de sus mascotas.
+
+#### ¿Dónde se utiliza?
+
+La información se utiliza principalmente en el contexto local del usuario, es decir, en su ciudad. Esto se debe a que la mayoría de las veces, las personas buscan servicios veterinarios cerca de donde viven. Sin embargo, en algunos casos, si los servicios requeridos son especializados y no están disponibles localmente, la información puede utilizarse para buscar clínicas en ciudades cercanas o incluso en otros estados o países.
+
+#### ¿Cómo describen las cosas?
+
+Las personas suelen describir las cosas en términos de sus propias experiencias y percepciones. Por ejemplo, pueden describir la clínica como “acogedora” o “profesional”, o pueden hablar sobre cómo se sintieron tratados por el personal. También pueden describir los servicios en términos de su calidad, como “excelente atención al paciente” o “tratamiento eficaz”. En términos de costos, pueden describirlos como “razonables” o “caros”. En general, las descripciones tienden a ser subjetivas y están influenciadas por las expectativas y experiencias individuales de las personas.
+
+
+#### Investigación Cualitativa
 
 Se va a realizar una Investigación Cualitativa, con Recogida Directa de información. Esto es, se va a **entrevistar** a varias personas *in situ*, para conocer acerca de sus necesidades e intereses sobre el tema. La población escogida serán clientes encontrados en la sala de espera de la Clínica Veterinaria La Florida, ocho, concretamente. Se le realizarán las siguientes preguntas:
 
