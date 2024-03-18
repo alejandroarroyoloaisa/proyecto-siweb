@@ -667,3 +667,38 @@ Lo que sugiere que una clínica veterinaria podría beneficiarse de invertir en 
 | Imagen | Nombre y Edad | Ocupación y Gustos | Expectativas | Frustraciones |
 | -- | -- | -- | -- | -- |
 | ![](./images/arquetipos_usuario/arquetipo_persona_3.png) | José Ramírez, 70 años | Jubilado, dedica su tiempo a actividades comunitarias y al cuidado de su mascota. Prefiere la simplicidad y la facilidad de uso por encima de las características sofisticadas. | Busca un sitio web con información fácil de leer (letra grande), explicaciones claras de los servicios y acceso directo a la asistencia por teléfono. |  Las interfaces complicadas y la falta de opciones de contacto directo son sus principales puntos de frustación. También le preocupa la seguridad en línea y la privacidad de sus datos personales. |
+
+
+### CONTENIDO
+
+Es crucial determinar el contenido que debe incluir el sitio web. El contenido debe: satisfacer las necesidades de las personas que utilizan su sitio y lograr objetivos de su proyecto. Lo primero es identificar los posibles contenidos analizando:
+
+- Los comportamientos actuales
+- La investigación del usuario
+- Sus propias ideas sobre el contenido (o las del cliente)
+- Análisis de la competencia
+
+En base a la investigación realizada hasta ahora, se sintetizarán la información acerca de los siguientes apartados:
+
+#### Los comportamientos actuales
+#### La investigación del usuario
+#### Tormenta de ideas
+A continuación se muestran una serie de ideas que podrán ser incluidas en el producto final o no. Se valorará su inclusión en apartados posteriores del diseño:
+
+| **IDEA** | **DESCRIPCIÓN** |
+| -- | -- |
+| **Inicio** | Una introducción a la clínica, con una foto del equipo y un mensaje de bienvenida. |
+| **Servicios** | Una lista detallada de los servicios que ofrece la clínica, como consultas, cirugías, vacunaciones, etc. |
+| **Equipo** | Perfiles del personal, incluyendo su formación y experiencia. |
+| **Citas** | Un sistema para reservar citas online. |
+| **Contacto** | Información de contacto, incluyendo dirección, número de teléfono, y un formulario de contacto. |
+| **Blog** | Artículos sobre el cuidado de las mascotas, noticias de la clínica, etc. |
+| **Testimonios** | Reseñas y testimonios de clientes satisfechos. |
+| **Galería de fotos** | Fotos de la clínica, el equipo y los pacientes. |
+| **Preguntas frecuentes (FAQ)** | Respuestas a preguntas comunes sobre la clínica y el cuidado de las mascotas. |
+| **Tienda online** | Como la clínica vende productos para mascotas, una tienda online sería una buena adición. |
+
+#### Análisis de la competencia
+Durante el análisis de sitios web de Clínicas Veterinarias, se realizó
+
+### CARD SORTING
