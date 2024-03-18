@@ -524,8 +524,114 @@ Como requisito mínimo para todo sitio web, debe cumplir con la Ley de protecci�
 
 **Política de Cookies**
 
-La Clínica Veterinaria La Florida utiliza cookies en su sitio web para mejorar la experiencia del usuario y proporcionar funcionalidades personalizadas. Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita nuestro sitio web. Estas cookies nos permiten recordar sus preferencias, como su idioma preferido, y proporcionar características personalizadas, como mostrar anuncios relevantes. Puede optar por aceptar o rechazar nuestras cookies, y puede cambiar sus preferencias en cualquier momento a través de la configuración de su navegador. Para obtener más información sobre cómo utilizamos las cookies, consulte nuestra Política de Cookies completa.
+"*La Clínica Veterinaria La Florida utiliza cookies en su sitio web para mejorar la experiencia del usuario y proporcionar funcionalidades personalizadas. Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita nuestro sitio web. Estas cookies nos permiten recordar sus preferencias, como su idioma preferido, y proporcionar características personalizadas, como mostrar anuncios relevantes. Puede optar por aceptar o rechazar nuestras cookies, y puede cambiar sus preferencias en cualquier momento a través de la configuración de su navegador. Para obtener más información sobre cómo utilizamos las cookies, consulte nuestra Política de Cookies completa.*"
 
 **Política de Tratamiento de Datos y Privacidad**
 
-En la Clínica Veterinaria La Florida, nos tomamos muy en serio la privacidad de nuestros usuarios. Recopilamos y utilizamos sus datos personales solo para proporcionar los servicios que solicita, como programar citas y realizar compras en línea. Protegemos sus datos utilizando medidas de seguridad adecuadas y no compartimos sus datos con terceros sin su consentimiento explícito. Además, tiene derecho a acceder, corregir o eliminar sus datos personales en cualquier momento. Para obtener más información sobre cómo recopilamos, utilizamos y protegemos sus datos personales, consulte nuestra Política de Tratamiento de Datos y Privacidad completa.
+"*En la Clínica Veterinaria La Florida, nos tomamos muy en serio la privacidad de nuestros usuarios. Recopilamos y utilizamos sus datos personales solo para proporcionar los servicios que solicita, como programar citas y realizar compras en línea. Protegemos sus datos utilizando medidas de seguridad adecuadas y no compartimos sus datos con terceros sin su consentimiento explícito. Además, tiene derecho a acceder, corregir o eliminar sus datos personales en cualquier momento. Para obtener más información sobre cómo recopilamos, utilizamos y protegemos sus datos personales, consulte nuestra Política de Tratamiento de Datos y Privacidad completa.*"
+
+### PERSONAS
+
+¿Qué necesita la gente?
+¿Qué hacen las personas con la información?
+¿Dónde se utiliza?
+¿Cómo describen las cosas?
+
+Se va a realizar una Investigación Cualitativa, con Recogida Directa de información. Esto es, se va a **entrevistar** a varias personas *in situ*, para conocer acerca de sus necesidades e intereses sobre el tema. La población escogida serán clientes encontrados en la sala de espera de la Clínica Veterinaria La Florida, ocho, concretamente. Se le realizarán las siguientes preguntas:
+
+- **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**
+- **¿Con qué motivo realizó la búsqueda del sitio web?**
+- **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**
+- **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**
+- **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**
+
+Testimonio de la persona entrevistada nº1 (*María, 22 años, estudiante universitaria*):
+
+| PREGUNTA | RESPUESTA |
+|----------|----------|
+| **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**   | "Sí, he buscado la página web de mi clínica veterinaria varias veces. Como estudiante, a menudo estoy fuera de casa y necesito información rápida y accesible." |
+| **¿Con qué motivo realizó la búsqueda del sitio web?**   | "Principalmente, busco el horario de apertura y el número de teléfono para hacer una cita para mi gato. También me gusta leer sobre los diferentes servicios que ofrecen." |
+| **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**    | "Sí, encontré la información que buscaba. La página web es bastante intuitiva y fácil de navegar, lo que me permite encontrar rápidamente lo que necesito." |
+| **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**   | "Me gustaría ver una lista completa de los servicios que ofrecen, incluyendo los precios. También me gustaría la posibilidad de hacer citas en línea, ya que esto me ahorraría mucho tiempo." |
+| **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**    | "Creo que sería muy útil poder hacer citas en línea. Además, tener acceso a los registros médicos de mi mascota en línea sería genial, ya que podría seguir su salud de cerca." |
+
+Testimonio de la persona entrevistada nº2 (*Carlos, 45 años, padre de dos hijos*):
+
+| PREGUNTA | RESPUESTA |
+|----------|----------|
+| **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**   | "Sí, he buscado la página web de la clínica veterinaria de nuestro perro varias veces. Como padre, quiero asegurarme de que nuestro perro recibe la mejor atención posible." |
+| **¿Con qué motivo realizó la búsqueda del sitio web?**   | "Estaba buscando información sobre los diferentes tipos de vacunas para perros, ya que quería entender mejor qué vacunas necesita nuestro perro y por qué." |
+| **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**    | "Encontré algo de información, pero no todo lo que estaba buscando. Tuve que buscar en otros sitios web también para obtener una imagen completa." |
+| **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**   | "Me gustaría encontrar información más detallada sobre las enfermedades comunes en perros y cómo prevenirlas. Creo que esto ayudaría a muchos dueños de mascotas a cuidar mejor de sus animales." |
+| **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**    | "Creo que sería útil poder ordenar y recoger medicamentos para mascotas en línea. Esto nos ahorraría tener que hacer viajes adicionales a la clínica." |
+
+Testimonio de la persona entrevistada nº3 (*Luisa, 65 años, jubilada*):
+
+| PREGUNTA | RESPUESTA |
+|----------|----------|
+| **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**   | "No, nunca he buscado la página web de una clínica veterinaria. Soy de la vieja escuela y prefiero hacer las cosas en persona." |
+| **¿Con qué motivo realizó la búsqueda del sitio web?**   | "No tengo motivo para buscarla, prefiero hablar directamente con el veterinario. Creo que es importante tener una relación personal con las personas que cuidan de nuestras mascotas." |
+| **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**    | "No he buscado la página web." |
+| **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**   | "No estoy segura de qué me gustaría encontrar en un sitio web de una clínica veterinaria. Supongo que información sobre cómo cuidar a las mascotas en su vejez podría ser útil." |
+| **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**    | "No, prefiero hacer todo en persona. Me gusta la interacción humana y creo que es importante para el cuidado de las mascotas." |
+
+Testimonio de la persona entrevistada nº4 (*Javier, 35 años, profesional de TI*):
+
+| PREGUNTA | RESPUESTA |
+|----------|----------|
+| **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**   | "Sí, he buscado la página web de varias clínicas veterinarias. Como profesional de TI, valoro la eficiencia y la facilidad de acceso a la información." |
+| **¿Con qué motivo realizó la búsqueda del sitio web?**   | "Estaba comparando precios y servicios antes de decidir a qué clínica llevar a mi nuevo cachorro. Quería asegurarme de que estaba tomando la mejor decisión posible." |
+| **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**    | "Sí, encontré lo que buscaba en la mayoría de los sitios web. Algunos sitios web eran más fáciles de navegar que otros, pero en general, pude encontrar la información que necesitaba." |
+| **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**   | "Me gustaría encontrar información detallada sobre los servicios, precios, horarios de apertura y cierre, y la posibilidad de hacer citas en línea. Creo que esto haría que la experiencia de cuidado de mascotas fuera mucho más eficiente." |
+| **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**    | "Creo que sería útil poder hacer citas en línea, ordenar y recoger medicamentos, y tal vez incluso tener consultas virtuales para problemas menores. Esto haría que el cuidado de las mascotas fuera mucho más conveniente." |
+
+Testimonio de la persona entrevistada nº5 (*Ana, 30 años, madre primeriza*):
+
+| PREGUNTA | RESPUESTA |
+|----------|----------|
+| **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**   | "Sí, he buscado la página web de la clínica veterinaria donde llevamos a nuestro perro. Como madre primeriza, quiero asegurarme de que estoy haciendo todo lo posible para que la transición sea fácil tanto para nuestro bebé como para nuestro perro." |
+| **¿Con qué motivo realizó la búsqueda del sitio web?**   | "Estaba buscando información sobre cómo introducir un perro a un bebé. Quería entender mejor el proceso y asegurarme de que estaba haciendo todo correctamente para garantizar la seguridad y la felicidad de ambos." |
+| **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**    | "Encontré algunos consejos útiles en la página web, pero me hubiera gustado encontrar más información detallada. Creo que este es un tema importante que puede ser de interés para muchos dueños de mascotas." |
+| **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**   | "Me gustaría encontrar artículos o blogs sobre cómo manejar situaciones específicas con mascotas, como la introducción de un nuevo miembro de la familia. Creo que esto sería muy útil para los dueños de mascotas que se encuentran en situaciones similares." |
+| **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**    | "Creo que sería útil poder hacer preguntas en línea a un veterinario o a un experto en comportamiento animal. Esto podría ahorrar mucho tiempo y estrés, especialmente para situaciones no urgentes." |
+
+Testimonio de la persona entrevistada nº6 (*Pedro, 50 años, dueño de una tienda de mascotas*):
+
+| PREGUNTA | RESPUESTA |
+|----------|----------|
+| **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**   | "Sí, he buscado la página web de varias clínicas veterinarias para comparar servicios y precios. Como dueño de una tienda de mascotas, necesito estar al tanto de las últimas tendencias y servicios en el cuidado de mascotas." |
+| **¿Con qué motivo realizó la búsqueda del sitio web?**   | "Estaba buscando información sobre los servicios de cuidado dental para perros, ya que es un servicio que mis clientes suelen preguntar. Quería poder proporcionarles información precisa y actualizada." |
+| **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**    | "Encontré la información que buscaba en algunas páginas web, pero no en todas. Creo que es importante que las clínicas veterinarias proporcionen información detallada sobre sus servicios en sus páginas web." |
+| **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**   | "Me gustaría encontrar información detallada sobre todos los servicios que ofrecen, incluyendo precios y duración de las citas. Esto me ayudaría a proporcionar a mis clientes la mejor información posible." |
+| **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**    | "Creo que sería útil poder reservar citas en línea y tener una sección de preguntas frecuentes para resolver dudas comunes. Esto haría que la experiencia de cuidado de mascotas fuera más eficiente y conveniente." |
+
+Testimonio de la persona entrevistada nº7 (*Sofía, 18 años, estudiante de secundaria*):
+
+| PREGUNTA | RESPUESTA |
+|----------|----------|
+| **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**   | "Sí, he buscado la página web de la clínica veterinaria donde llevamos a nuestro hámster. Como estudiante de secundaria, valoro la facilidad de acceso a la información en línea." |
+| **¿Con qué motivo realizó la búsqueda del sitio web?**   | "Estaba buscando información sobre cómo cuidar a un hámster, ya que es la primera vez que tengo uno. Quería asegurarme de que estaba proporcionando el mejor cuidado posible para mi nueva mascota." |
+| **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**    | "Encontré algo de información en la página web, pero me hubiera gustado encontrar más detalles. Creo que es importante proporcionar información detallada para los dueños de mascotas, especialmente para aquellos que son nuevos en el cuidado de un tipo específico de mascota." |
+| **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**   | "Me gustaría encontrar guías detalladas sobre cómo cuidar diferentes tipos de mascotas. Creo que esto sería muy útil para los dueños de mascotas." |
+| **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**    | "Creo que sería útil poder hacer preguntas en línea a un veterinario, especialmente para situaciones no urgentes. Podría ahorrar mucho tiempo y estrés." |
+
+Testimonio de la persona entrevistada nº8 (*Fernando, 40 años, profesor universitario*):
+
+| PREGUNTA | RESPUESTA |
+|----------|----------|
+| **¿Ha buscado alguna vez la página web de alguna clínica veterinaria?**   | "Sí, he buscado la página web de la clínica veterinaria donde llevamos a nuestra tortuga. Como profesor universitario, valoro la importancia de la investigación y la educación continua." |
+| **¿Con qué motivo realizó la búsqueda del sitio web?**   | "Estaba buscando información sobre la alimentación adecuada para las tortugas, ya que queremos asegurarnos de que nuestra tortuga está recibiendo una dieta equilibrada. Creo que es importante proporcionar a nuestras mascotas el mejor cuidado posible, y eso incluye una alimentación adecuada." |
+| **¿Encontró lo que buscaba? En caso afirmativo, ¿le resultó fácil encontrar dicha información?**    | "Encontré la información que buscaba, pero tuve que buscar un poco para encontrarla. Creo que la información sobre el cuidado de las mascotas debería ser fácil de encontrar y de entender." |
+| **¿Qué le interesaría encontrar en un sitio web de una clínica veterinaria?**   | "Me gustaría encontrar información detallada sobre el cuidado de diferentes tipos de mascotas, no sólo perros y gatos. Creo que esto sería muy útil para los dueños de mascotas que tienen animales menos comunes." |
+| **¿Hay alguna gestión que usted considera que pudiera hacerse virtualmente sin tener que desplazarse hasta el negocio?**    | "Creo que sería útil poder hacer citas en línea y tener acceso a los registros médicos de nuestra mascota. Esto haría que el cuidado de las mascotas fuera más conveniente y eficiente." |
+
+Basándonos en los ocho testimonios, se puede concluir que:
+| **CONCLUSIONES** |
+|--|
+| La mayoría de las personas **buscan información en línea** sobre las clínicas veterinarias, ya sea para comparar servicios y precios, buscar horarios de apertura, hacer citas o buscar información sobre el cuidado de las mascotas. |
+| La **facilidad de acceso a la información** es muy valorada. Los usuarios aprecian una página web intuitiva y fácil de navegar que les proporciona la información que necesitan de manera rápida y eficiente. |
+| Los usuarios desean **encontrar información detallada** sobre los servicios que ofrecen las clínicas, incluyendo los precios y la duración de las citas. También valoran la información sobre el cuidado de diferentes tipos de mascotas. |
+| Existe un interés en poder **realizar gestiones en línea**, como hacer citas, ordenar y recoger medicamentos, y tener acceso a los registros médicos de las mascotas. Esto se percibe como una forma de hacer que el cuidado de las mascotas sea más conveniente y eficiente. |
+| Sin embargo, también hay personas que **prefieren la interacción humana** y el trato personalizado que se obtiene al visitar la clínica en persona. |
+
+Lo que sugiere que una clínica veterinaria podría beneficiarse de invertir en su presencia en línea y en ofrecer una gama más amplia de servicios en línea, siempre y cuando también mantenga un alto nivel de atención personalizada para aquellos clientes que lo prefieran.
