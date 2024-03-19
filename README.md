@@ -681,7 +681,22 @@ Es crucial determinar el contenido que debe incluir el sitio web. El contenido d
 En base a la investigación realizada hasta ahora, se sintetizarán la información acerca de los siguientes apartados:
 
 #### Los comportamientos actuales
+
+Para un sitio web de una clínica veterinaria, el comportamiento actual de los usuarios puede variar. Aunque ciertamente la variación es mínima a lo largo del tiempo, ya que lo que necesita un animal doméstico no va a variar.
+
+- **Contenido más popular**: Las páginas de servicios (como vacunación, cirugía, chequeos de salud) pueden ser las más visitadas. Los artículos o blogs sobre el cuidado de las mascotas también pueden ser populares.
+- **Contenido estacional**: Puedes notar un aumento en las visitas a páginas relacionadas con enfermedades estacionales (como garrapatas en verano) o eventos (como chequeos de salud gratuitos).
+- **Nuevo contenido**: Cuando se añade nuevo contenido, como un artículo sobre una nueva enfermedad de las mascotas, puede haber un pico inicial de interés que luego disminuye.
+
 #### La investigación del usuario
+
+La investigación de usuario puede revelar varios tipos de contenido que los visitantes de un sitio web de clínica veterinaria pueden encontrar útiles. Durante el desarrollo de este proyecto, se ha encontrado que los usuarios valoran positivamente:
+
+- **Información sobre servicios**: Los usuarios querrán saber qué servicios ofrece la clínica, incluyendo detalles sobre procedimientos, costos y horarios.
+- **Educación sobre el cuidado de las mascotas**: Los artículos o videos que proporcionan consejos sobre el cuidado de las mascotas pueden ser muy valorados. Esto podría incluir información sobre alimentación, ejercicio, salud mental y más.
+- **Testimonios y casos de estudio**: Los testimonios de clientes anteriores pueden ayudar a construir confianza. Los casos de estudio de mascotas que la clínica ha tratado pueden demostrar la competencia y el cuidado de la clínica.
+- **Información de contacto y ubicación**: Los usuarios necesitarán saber dónde se encuentra la clínica y cómo ponerse en contacto con ella. Esto podría incluir un mapa, horarios de apertura y detalles de contacto de emergencia.
+
 #### Tormenta de ideas
 A continuación se muestran una serie de ideas que podrán ser incluidas en el producto final o no. Se valorará su inclusión en apartados posteriores del diseño:
 
@@ -699,6 +714,77 @@ A continuación se muestran una serie de ideas que podrán ser incluidas en el p
 | **Tienda online** | Como la clínica vende productos para mascotas, una tienda online sería una buena adición. |
 
 #### Análisis de la competencia
-Durante el análisis de sitios web de Clínicas Veterinarias, se realizó
+
+Durante el análisis de sitios web de Clínicas Veterinarias, se realizó una búsqueda de Buenas y Malas ideas. Debido a que los sitios web, en general, no eran de muy buena calidad fue sencillo encontrar Malas ideas. Se detecta que no se ha valorado mucho en la competencia el diseño y construcción de las respectivas Arquitecturas de la Información, y que todo está simplemente dentro de "una página bonita" o, probablemente, una plantilla. Lo malo de usar plantillas, es que puede que no estén diseñadas para tu caso de uso, y tu Arquitectura de la Información se vea mermada en calidad debido a ello. Y, esto, se nota en la competencia. Todo este análisis realizado a lo largo del documento nos servirá como factor diferenciador para destacar del resto de sitios web.
+
+| Buenas Ideas | Malas Ideas |
+| -- | -- |
+| Priorizar la información de contacto por encima de todo. | Priorizar mostrar servicios "extra" que son caros antes que cualquier otra cosa en el sitio web. |
+| Incluir muchos mecanismos de contacto (incluido formulario). | Ausencia de precios en los productos o servicios. |
+| Listar todos los servicios, con barra de búsqueda, y mostrar información de ellos. | No incluir alguna barra de búsqueda, o filtrado/clasificación de la información. |
+| Información relevante accesible a menos de dos clics. | Escasas imágenes y de mala calidad. |
+| Incluir horarios del negocio. | Pérdida en el hiperespacio. |
+| | URLs confusas. |
+
+
 
 ### CARD SORTING
+
+El Card Sorting es una técnica que se utiliza para organizar la información de un sitio web de manera que sea fácil de encontrar para los usuarios, debido a que le pides a estos que organicen y agrupen los contenidos de la manera que a ellos les parece adecuada. Si tienes esto en cuenta, puedes analizar las tendencias de las personas y adaptar tu sitio web en consecuencia.
+
+En este caso, nuestro Card Sorting procederá de la siguiente manera:
+
+- **PRIMER PASO**: Se estudian, se extraen y se listan los contenidos y las categorías. El alumno realizará un Card Sorting Abierto para hacer una agrupación inicial.
+- **SEGUNDO PASO**: Se le hace un Card Sorting Abierto a Don Alfonso, el veterinario de la Clínica Veterinaria para la que se trabaja. 
+- **TERCER PASO**: Se comparan ambos Card Sorting, el del alumno y el del veterinario. Se comparan categorías, y se queda con la mejor.
+- **CUARTO PASO**: Se procede a hacer un Card Sorting a un par de personas más, pero esta vez Cerrado, con las categorías seleccionadas del paso anterior.
+
+#### Primer Paso
+
+- Contenidos
+
+| Perros | Gatos | Animales Exóticos | Peluquería Canina | Ecografía y ecocardiografía |
+|--|--|--|--|--|
+
+| Hospital | Cirugía | Radiología Digital | Laboratorio | Consultas Veterinarias |
+|--|--|--|--|--|
+
+| Información de contacto | Dirección | Formulario de contacto | Vacunación | Planes de desparasitación |
+|--|--|--|--|--|
+
+| Microchip | Medicina preventiva | Urgencias | Castración | Corte de uñas |
+|--|--|--|--|--|
+
+| Eutanasia e incineración | Odontología |
+|--|--|
+
+- Card Sorting Abierto del Alumno
+  
+| Inicio | Mascotas | Servicios Veterinarios | Peluquería Canina | Contacto |
+| -- | -- | -- | -- | -- |
+| Información de contacto | Perros | Ecografía y ecocardiografía | Peluquería Canina| Información de contacto |
+| Consultas Veterinarias | Gatos | Hospital | Corte de uñas | Dirección |
+| Peluquería Canina | Animales Exóticos | Cirugía | | Formulario de contacto
+| Urgencias | | Radiología Digital | | Urgencias
+| | | Laboratorio | | |
+| | | Consultas Veterinarias | | |
+| | | Vacunación | | |
+| | | Planes de desparasitación | | |
+| | | Microchip | | |
+| | | Medicina Preventiva | | |
+| | | Urgencias | | |
+| | | Castración | | |
+| | | Corte de uñas | | |
+| | | Eutanasia e incineración | | |
+| | | Odontología | | |
+
+
+#### Segundo Paso
+
+- Card Sorting Abierto del Veterinario
+
+#### Tercer Paso
+
+- Comparación de Card Sortings
+
+#### Cuarto Paso
