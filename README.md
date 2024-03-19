@@ -764,8 +764,8 @@ En este caso, nuestro Card Sorting procederá de la siguiente manera:
 | -- | -- | -- | -- | -- |
 | Información de contacto | Perros | Ecografía y ecocardiografía | Peluquería Canina| Información de contacto |
 | Consultas Veterinarias | Gatos | Hospital | Corte de uñas | Dirección |
-| Peluquería Canina | Animales Exóticos | Cirugía | | Formulario de contacto
-| Urgencias | | Radiología Digital | | Urgencias
+| Peluquería Canina | Animales Exóticos | Cirugía | | Formulario de contacto |
+| Urgencias | | Radiología Digital | | Urgencias |
 | | | Laboratorio | | |
 | | | Consultas Veterinarias | | |
 | | | Vacunación | | |
@@ -782,9 +782,60 @@ En este caso, nuestro Card Sorting procederá de la siguiente manera:
 #### Segundo Paso
 
 - Card Sorting Abierto del Veterinario
+- 
+| Información General | Servicios para Mascotas | Servicios Médicos | Prevención | Cuidado y Bienestar |
+| -- | -- | -- | -- | -- |
+| Información de contacto | Perros | Ecografía y ecocardiografía | Vacunación | Peluquería Canina |
+| Dirección | Gatos | Hospital | Planes de desparasitación | Corte de uñas |
+| Formulario de Contacto | Animales Exóticos | Cirugía | Micro chip | Castración |
+| | | Radiología Digital | | |
+| | | Laboratorio | | |
+| | | Consultas Veterinarias | | |
+| | | Vacunación | | |
+| | | Planes de desparasitación | | |
+| | | Microchip | | |
+| | | Medicina Preventiva | | |
+| | | Urgencias | | |
+| | | Castración | | |
+| | | Corte de uñas | | |
+| | | Eutanasia e incineración | | |
+| | | Odontología | | |
 
 #### Tercer Paso
 
 - Comparación de Card Sortings
 
+El Card Sorting del veterinario ha resultado ser muy interesante. Los servicios que ofrece la Clínica Veterinaria para mascotas, han sido catalogados en tres secciones muy fácilmente distinguibles para el usuario: "Servicios Médicos", "Prevención" y "Cuidado y Bienestar". Por lo tanto, la información sobre servicios ofrecidos va agrupada en dichas categorías. La información de contacto, en otra categoría. Y la información restante, esta vez sobre todo lo relacionado con los Animales, en otra categoría.
+
+Es una muy buena organización de la información, denota la experiencia que Don Alfonso tiene en el sector. Pero el veterinario no ha tenido en cuenta que se busca encontrar agrupaciones que funcionen para un sitio web. Por lo tanto, se mantendrán algunas categorías y se modificarán otras, haciendo una mezcla entre ambos Card Sortings:
+
+| Inicio | Mascotas | Servicios Médicos | Prevención | Cuidado y Bienestar | Contacto |
+|--|--|--|--|--|--|
+
 #### Cuarto Paso
+
+- Card Sorting persona número 1:
+
+| **Inicio** | **Mascotas** | **Servicios Médicos** | **Prevención** | **Cuidado y Bienestar** | **Contacto** |
+| --- | --- | --- | --- | --- | --- |
+| | Perros | Hospital | Vacunación | Peluquería Canina | Información de contacto |
+| | Gatos | Cirugía | Planes de desparasitación | Corte de uñas | Dirección |
+| | Animales Exóticos | Radiología Digital | Micro chip | Eutanasia e incineración | Formulario de contacto |
+| | | Laboratorio | Medicina preventiva | | |
+| | | Consultas Veterinaria | | | |
+| | | Ecografía y ecocardiografía | | | |
+| | | Urgencias | | | |
+| | | Castración | | | |
+| | | Odontología | | | |
+
+
+- Card Sorting persona número 2:
+
+| Inicio             | Mascotas          | Servicios Médicos      | Prevención            | Cuidado y Bienestar       | Contacto              |
+|--------------------|-------------------|------------------------|------------------------|---------------------------|-----------------------|
+| | Perros            | Ecografía y ecocardiografía | Vacunación             | Peluquería Canina         | Información de contacto |
+| | Gatos             | Hospital               | Planes de desparasitación | Corte de uñas          | Dirección             |
+| | Animales Exóticos | Cirugía                | Micro chip             | Eutanasia e incineración  | Formulario de contacto|
+| || Radiología Digital     | Medicina preventiva    | Odontología | |
+| |  | Laboratorio            | Urgencias  ||  |
+| | | Consultas Veterinaria  | Castración             | | |
