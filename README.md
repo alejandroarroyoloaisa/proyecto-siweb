@@ -911,3 +911,46 @@ Se van a utilizar dos sistemas de clasificación: *esquema ambiguo por asuntos y
 - **Esquema exacto por orden alfabético.** Concretamente para los tratamientos brindados por la Clínica Veterinaria La Florida. Estos aparecerán en un listado ordenados alfabéticamente para facilitar la búsqueda.
 
 ### DISEÑO DE LA NAVEGACIÓN
+
+La navegación ha sido diseñada durante la escritura de este documento. Puede estar sujeta a cambios convenientes, si se estima en un futuro. Se han realizado SKETCHES, WIREFRAMES y PROTOTIPOS de:
+
+- La página de **Inicio**
+- La página de **Servicios Médicos**
+- La página de **Tienda**
+- La página de **Registro de un Animal**
+
+#### Tipos de Navegación
+
+- **Barra de navegación horizontal:** Se extiende a lo largo de la página, en la parte superior de la pantalla. Incluye opciones de navegación que se entiende que son las principales del sitio web. En este caso, lo entenderemos como el Menú principal y será colocado arriba, al lado del logotipo del negocio. Contendrá: "*Inicio, Mascotas, Servicios Médicos, Prevención, Cuidado y Bienestar, Contacto, Tienda*".
+- **Navegación en el cuerpo de la página:** Incluyen hiperenlaces en forma de texto o imágenes en el cuerpo de la página, usualmente en forma de malla. En nuestro sitio web esto será utilizado tanto en la Tienda de la Clínica, como en la página de Inicio, a la hora de resaltar los servicios más destacados que se ofrecen, que serán mostrados en forma de rejilla con imágenes.
+- **Enlaces contextuales:** Ofrecen la navegación más típica. Son enlaces en formato texto, resaltados con un color que se ajuste al sitio web. Serán utilizados a lo largo de todo el sitio web, si hay información que se enlace y esté contenida en el sitio.
+
+#### Ayudas de Navegación
+
+
+- **Índice A-Z:** Enumera el contenido clave mediante una lista alfabética. Las listas AZ son muy útiles cuando la gente sabe exactamente lo que está buscando y cómo se llama. También son una buena manera de ayudar a la gente a entender la diferencia entre su terminología y los términos técnicos, siempre que se muestren juntos. Será utilizado en el apartado de Tratamientos, mencionado a lo largo del documento, para mostrar todos los tratamientos que da la Clínica Veterinaria.
+
+- **Migas de pan (*breadcrumbs*):** Es un camino que aparece en la parte superior de la página web que muestra la posición de la página actual en la jerarquía. Esta ayuda le permite saber a los usuarios en contexto, la sección a la que pertenece la página actual, por tanto, cómo se han organizado los contenidos jerárquicamente. Es también un mecanismo para saltar directamente a un nivel superior. Aparecerá en todas las páginas del sitio web que no correspondan al nivel 0 (Inicio) en la jerarquía.
+
+#### SKETCHES DEL SITIO WEB
+
+![](./images/designs/sketches/inicio.jpg)
+![](./images/designs/sketches/servicio.jpg)
+![](./images/designs/sketches/mascotas.jpg)
+![](./images/designs/sketches/tienda.jpg)
+
+
+#### WIREFRAMES DEL SITIO WEB
+
+![](./images/designs/wireframe/inicio.png)
+![](./images/designs/wireframe/servicio.png)
+![](./images/designs/wireframe/mascotas.png)
+![](./images/designs/wireframe/tienda.png)
+
+
+#### PROTOTIPOS DEL SITIO WEB
+
+![](./images/designs/prototypes/inicio.png)
+![](./images/designs/prototypes/servicio.png)
+![](./images/designs/prototypes/mascotas.png)
+![](./images/designs/prototypes/tienda.png)
