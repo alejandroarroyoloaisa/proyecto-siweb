@@ -782,7 +782,7 @@ En este caso, nuestro Card Sorting procederá de la siguiente manera:
 #### Segundo Paso
 
 - Card Sorting Abierto del Veterinario
-- 
+
 | Información General | Servicios para Mascotas | Servicios Médicos | Prevención | Cuidado y Bienestar |
 | -- | -- | -- | -- | -- |
 | Información de contacto | Perros | Ecografía y ecocardiografía | Vacunación | Peluquería Canina |
@@ -839,3 +839,75 @@ Es una muy buena organización de la información, denota la experiencia que Don
 | || Radiología Digital     | Medicina preventiva    | Odontología | |
 | |  | Laboratorio            | Urgencias  ||  |
 | | | Consultas Veterinaria  | Castración             | | |
+
+
+### DISEÑO DE LOS CONTENIDOS
+
+El Contenido es un pilar básico en un sistema web, es lo que debe ofrecer un sitio web. Como ya se cuenta con un sitio web por parte del negocio y se va a rediseñar y añadir nuevas características, el primer paso será saber con qué contenidos se cuenta (textos, vídeo, audio, descargas, archivos, RSS y funciones), por lo que se va a realizar un **inventario parcial** y una **auditoría de contenido** para el sitio web de la Clínica Veterinaria La Florida:
+
+#### Inventario Parcial
+
+| Jerarquía | | | Título de Navegación | Título de Página | URL |
+|-- |-- |-- | --|-- | -- |
+| 1 | | | Inicio | Veterinario en Linares - Clínica Veterinaria La Florida | https://www.clinicaveterinarialaflorida.es/ |
+| | 1.1 | | Perros | Veterinario para perros en Linares - Clínica Veterinaria La Florida| https://www.clinicaveterinarialaflorida.es/veterinario-para-perros-en-linares/ |
+| | 1.2 | | Gatos | Veterinario para gatos en Linares - Clínica Veterinaria La Florida| https://www.clinicaveterinarialaflorida.es/veterinario-para-gatos-en-linares/ | 
+| | 1.3 | | Animales Exóticos | Veterinario de animales exóticos en Linares - Clínica Veterinaria La Florida | https://www.clinicaveterinarialaflorida.es/veterinario-animales-exoticos-en-linares/ | 
+| | 1.4 | | Servicios | Servicios Veterinarios en Linares - Clínica Veterinaria La Florida | https://www.clinicaveterinarialaflorida.es/servicios-veterinarios-en-linares/ | 
+| | | 1.4.1 | Ecografía y ecocardiografía | Ecografía y ecocardiografía - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/ecografia-y-ecocardiografia-veterinario-en-linares/ | 
+| | | 1.4.2 | Hospital | Hospital - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/hospital-para-perros-y-gatos-en-linares/ | 
+| | | 1.4.3 | Cirugía | Cirugía - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/cirugia-operaciones-perros-y-gatos-en-linares/ | 
+| | | 1.4.4 | Radiología Digital | Radiología Digital - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/diagnostico-por-imagen-veterinario-en-linares/ | 
+| | | 1.4.5 | Laboratorio | Laboratorio - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/laboratorio-veterinario-en-linares/ | 
+| | | 1.4.6 | Consulta Veterinaria | Consulta Veterinaria - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/consulta-veterinaria-en-linares/ | 
+| | 1.5 | | Peluquería | Peluquería Canina en Linares | https://www.clinicaveterinarialaflorida.es/peluqueria-canina-en-linares/ | 
+
+#### Auditoría de Contenido
+
+| Título de Navegación | Título de Página | URL | Tipo de Contenido | Recursos | Estado y fecha de actualización | Propietario |
+|--|--|--|--|--|--|--|
+| Inicio | Veterinario en Linares - Clínica Veterinaria La Florida | https://www.clinicaveterinarialaflorida.es/ | Presentación. Muestra las características más importantes de la Clínica y forma de contacto. | Texto e imágenes del sitio | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Perros | Veterinario para perros en Linares - Clínica Veterinaria La Florida| https://www.clinicaveterinarialaflorida.es/veterinario-para-perros-en-linares/ | Información acerca de algunos de los servicios más importantes que ofrecen para perros. | Texto, tablas e imágenes ilustrativas de la información brindada | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Gatos | Veterinario para gatos en Linares - Clínica Veterinaria La Florida| https://www.clinicaveterinarialaflorida.es/veterinario-para-gatos-en-linares/ |  Información acerca de algunos de los servicios más importantes que ofrecen para gatos. | Texto, tablas e imágenes ilustrativas de la información brindada | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Animales Exóticos | Veterinario de animales exóticos en Linares - Clínica Veterinaria La Florida | https://www.clinicaveterinarialaflorida.es/veterinario-animales-exoticos-en-linares/ |  Información acerca de algunos de los servicios más importantes que ofrecen para animales exóticos. | Texto, tablas e imágenes ilustrativas de la información brindada | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Servicios | Servicios Veterinarios en Linares - Clínica Veterinaria La Florida | https://www.clinicaveterinarialaflorida.es/servicios-veterinarios-en-linares/ | Listado en forma de malla de los servicios que ofrecen.  | Texto e imágenes del sitio, relacionados con dichos servicios. | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Ecografía y ecocardiografía | Ecografía y ecocardiografía - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/ecografia-y-ecocardiografia-veterinario-en-linares/ |  Información acerca de este servicio | Texto e imágenes del sitio que ilustran este servicio | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Hospital | Hospital - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/hospital-para-perros-y-gatos-en-linares/ |  Información acerca de este servicio | Texto e imágenes del sitio que ilustran este servicio | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Cirugía | Cirugía - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/cirugia-operaciones-perros-y-gatos-en-linares/ |  Información acerca de este servicio | Texto e imágenes del sitio que ilustran este servicio | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Radiología Digital | Radiología Digital - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/diagnostico-por-imagen-veterinario-en-linares/ |  Información acerca de este servicio | Texto e imágenes del sitio que ilustran este servicio | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Laboratorio | Laboratorio - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/laboratorio-veterinario-en-linares/ |  Información acerca de este servicio | Texto e imágenes del sitio que ilustran este servicio | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Consulta Veterinaria | Consulta Veterinaria - Clínica Veterinaria La Florida - Linares | https://www.clinicaveterinarialaflorida.es/consulta-veterinaria-en-linares/ |  Información acerca de este servicio | Texto e imágenes del sitio que ilustran este servicio | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+| Peluquería | Peluquería Canina en Linares | https://www.clinicaveterinarialaflorida.es/peluqueria-canina-en-linares/ | Información acerca de la peluquería canina de la clínica | Texto, imágenes y vídeos de la peluquería canina de la clínica | Sin actualizar. Hace dos Años | Don Alfonso, veterinario |
+
+
+#### Formatos
+El sitio web de la Clínica Veterinaria contará con información en formato texto, imagen y vídeo. El texto utilizará siempre un lenguaje profesional, pero cercano, tratando que cualquier posible cliente entienda la información y sienta que todo ha sido escrito como si lo dijera Don Alfonso, el veterinario, aportando familiaridad. Las imágenes y vídeos se aportarán para enseñar las instalaciones de la Clínica Veterinaria e ilustrar los servicios que esta pone a disposición de los clientes. También, se estudiará con los dueños la aparición de imágenes del veterinario y la auxiliar, para que los clientes conozcan al personal antes incluso de personarse en el negocio.
+
+Por otro lado, como se contará con un sistema de venta de productos por parte de la Clínica Veterinaria, se mostrarán listados de productos con sus respectivas imágenes y su correspondiente buscador.
+Además, el sitio web contará con un sistema de usuarios y registro de mascotas que tendrá una base de datos y mostrará la información cuando el cliente lo solicite.
+
+#### Audiencias
+Como la intención es informar de los servicios de la Clínica Veterinaria La Florida y, además, añadir un factor diferenciador para atraer nuevos clientes, la audiencia de nuestro sitio web será: cualquier persona con o sin mascota y de cualquier rango de edad que pretenda informarse de los servicios brindados por el negocio, o hacer uso de ellos, por ejemplo, con el sistema de citas en línea.
+
+#### Contenidos Estructurados
+El contenido de nuestro sitio web será estructurado. La forma de presentación de la información será siempre la misma, y se reutilizará la estructura, con ligeros cambios. Esto se explica porque, pese a que, por ejemplo, se muestren diferentes servicios, todos ellos se presentarán de la misma manera: "Nombre", "Descripción", Imagen de referencia...
+
+#### Prioridades
+Se priorizará la información acerca de los Servicios principales brindados por el negocio y, sobre todo, los más demandados por los clientes. Estos quedarán destacados por encima de todos los demás porque aparecerán en la página principal. Los contenidos prioritarios serán los relacionados con "*Perros*", la mascota más frecuente.
+
+#### Frecuencia de actualización
+Una vez construido el sitio web, la frecuencia de actualización será muy baja o casi nula. Esto es porque debido a que el sitio web vende los servicios de la Clínica Veterinaria, salvo que estos cambien o se actualicen o dejen de estar operativos, el sitio web no debe cambiar. Distinto es que se actualicen las bases de datos para las cuentas de cada cliente, esto no se toma en cuenta en la frecuencia de actualización, porque esto es automático desde el sistema y por parte de los usuarios/veterinario desde sus cuentas.
+
+#### Contenido Básico
+El contenido entendido como central o núcleo del sitio web será el considerado, sobre todo, como prioritario. Esto es:
+- Los **servicios** que ofrece la organización. En este caso: "*Ecografía y Ecocardiografía, Hospital, Cirugía, Laboratorio, Consulta Veterinaria y Peluquería*".
+- Además, se contará con un listado de **tratamientos** que la Clínica pone a disposición del cliente, y para cada uno de ellos se contará con información relativa a dichos tratamientos.
+- Por último, pero no menos importante, la **información de contacto**, dirección y formulario.
+
+#### Sistemas de Clasificación
+Se van a utilizar dos sistemas de clasificación: *esquema ambiguo por asuntos y esquema exacto por orden alfabético*.
+
+- **Esquema ambiguo por asuntos.** Para el sitio web, y tras hacer el *Card Sorting*, se consideraron unas categorías para la organización de la información en nuestro sitio web. Estas categorías fueron agrupadas por Asuntos, pero de manera totalmente subjetiva, a consideración personal del diseñador de este proyecto.
+- **Esquema exacto por orden alfabético.** Concretamente para los tratamientos brindados por la Clínica Veterinaria La Florida. Estos aparecerán en un listado ordenados alfabéticamente para facilitar la búsqueda.
+
+### DISEÑO DE LA NAVEGACIÓN
