@@ -962,72 +962,100 @@ La navegación ha sido diseñada durante la escritura de este documento. Puede e
 ## DISEÑO Y DESARROLLO DE LA TIENDA EN LÍNEA
 Después de construir la Arquitectura de la Información, se tiene la página base sobre la que colgará el resto de los servicios de la Clínica Veterinaria. En este caso una **TIENDA EN LÍNEA**.
 
-Los servicios de la empresa han sido colocados como dos botones siempre visibles en la parte superior del sitio web. Para este apartado, como se mencionó, se profundizará en la tienda. Cuando se hace clic en ellos se redirige a una nueva página donde se desplegarán todos los productos disponibles en forma de tarjetas, y a su vez, en forma de malla. Se ha buscado un formato atractivo siguiendo el estilo del resto de la página. Además, encima de estos, se cuenta con un buscador textual de productos y un filtro con categorías para los mismos. Se puede filtrar y buscar a la vez, conjuntando estas dos herramientas. El resultado es el siguiente:
+Los servicios de la empresa han sido colocados como dos botones siempre visibles en la parte superior del sitio web. Para este apartado, como se mencionó, se profundizará en la tienda. Cuando se hace clic en ellos se redirige a una nueva página donde se desplegarán todos los productos disponibles en forma de *tarjetas*, y a su vez, en forma de malla. Se ha buscado un formato atractivo siguiendo el estilo del resto de la página. Además, encima de estos, se cuenta con un **buscador textual** de productos y un **filtro con categorías** para los mismos. Se puede filtrar y buscar a la vez, conjuntando estas dos herramientas. El resultado es el siguiente:
 
------METER PANTALLAZO DE LA TIENDA
-
+![](./images/finalweb/shop/shop.png)
 
 ### ESTRUCTURA BÁSICA DE LA TIENDA
 
 Para construir nuestra tienda de prueba, se han añadido un inventario de productos de ejemplo como los que se venderían en la Clínica Veterinaria. Estos son los siguientes:
 
------METER TABLA DE PRODUCTOS CON INFORMACIÓN
+|ID|Nombre|Precio|Descripción|Ruta|Categoría|
+|--|--|--|--|--|--|
+| 1| Alimento para gatos|15.99 | Alimento balanceado para gatos adultos, rico en proteínas y vitaminas.| images\productos\1.jpg| Alimentos|
+| 2| Correa retráctil para perros| 20.5|Correa retráctil de 5 metros para pasear a perros, ideal para entrenamiento. | images\productos\2.jpg|Accesorios |
+| 3| Collar antipulgas| 8.99| Collar ajustable que protege a tu mascota de pulgas y garrapatas durante varios meses.| images\productos\3.jpg|Accesorios |
+| 4| Juguete mordedor para cachorros|7.5 | Juguete de goma resistente para cachorros, ideal para aliviar la dentición y el aburrimiento.| images\productos\4.jpg| Juguetes|
+| 5| Shampoo hipoalergénico|12.75 | Shampoo suave formulado especialmente para mascotas con piel sensible o alergias.| images\productos\5.jpg| Cuidado e Higiene|
+| 6| Cepillo para gatos| 5.99| Cepillo de cerdas suaves para acicalar el pelaje de los gatos y eliminar el pelo suelto.| images\productos\6.jpg|Accesorios |
+| 7| Snacks dentales para perros| 9.25| Snacks sabrosos que ayudan a mantener la salud dental de los perros, reduciendo el sarro.| images\productos\7.png| Alimentos|
+| 8| Arenero para gatos|25 | Arenero espacioso y fácil de limpiar, con filtro de carbono para eliminar olores.| images\productos\8.jpg|Accesorios |
+| 9| Suplemento vitamínico para mascotas|18.99 | Suplemento multivitamínico que promueve la salud general y el bienestar de las mascotas.| images\productos\9.jpg| Salud y Bienestar|
+| 10| Cama ortopédica para perros| 35.5| Cama cómoda y ortopédica para perros mayores o con problemas articulares, con relleno de espuma viscoelástica.|images\productos\10.jpg | Accesorios|
 
-Toda la información acerca de estos productos se guarda en la Base de Datos del sitio web, sobre la que se hablará más adelante, salvo las imágenes, que se guardan en el directorio base del que cuelga la página. Es decir, para cargar dinámicamente los productos se hacen peticiones a la Base de Datos para que devuelva todos los documentos contenidos en la colección Productos. Para cada Producto, se almacena:
+Toda la información acerca de estos productos se guarda en la Base de Datos del sitio web, sobre la que se hablará más adelante, salvo las imágenes, que se guardan en el directorio base del que cuelga la página. Es decir, para cargar dinámicamente los productos se hacen peticiones a la Base de Datos para que devuelva todos los documentos contenidos en la colección **Productos**. Para cada Producto, se almacena:
 
-Producto:{
+```
+Productos:[{
     id_producto
     nombre
     descripción
     imageroute
-}
+    categoría
+}]
+```
+*Las colecciones NoSQL de la Base de Datos mencionadas aquí y durante el resto del documento han sido adjuntadas en ficheros .json junto con el resto del proyecto.* 
 
-Como se puede observar, la Base de Datos no devuelve una imagen para cada producto sino una ruta a esa imagen. De esta manera, el sitio web es capaz de identificar qué imagen es de qué producto y cargarla en consecuencia, además de toda la información respecto de dicho producto. Estas imágenes, como se mencionó, se almacenan en el directorio de la página web en /imagenes/productos y su nombre corresponderá al id de producto que tienen asignado.
+Como se puede observar, la Base de Datos no devuelve una imagen para cada producto sino una ruta a esa imagen. De esta manera, el sitio web es capaz de identificar qué imagen es de qué producto y cargarla en consecuencia, además de toda la información respecto de dicho producto. Estas imágenes, como se mencionó, se almacenan en el directorio de la página web en *proyecto/imagenes/productos* y su nombre corresponderá al id de producto que tienen asignado.
 
-Toda esta información es almacenada en una tarjeta HTML/CSS que se crea al resolverse la petición en tiempo de ejecución, y se insertan en la malla tantas tarjetas como productos haya, siempre que no se haya aplicado ningún filtro de búsqueda o de categoría y se tenga conexión con la Base de Datos. Todas las tarjetas tienen el mismo estilo y, además de contener la información de los productos, son interactuables de tres maneras diferentes:
+Toda esta información es almacenada en una tarjeta *HTML/CSS* que se crea al resolverse la petición en tiempo de ejecución, y se insertan en la malla tantas tarjetas como productos haya, siempre que no se haya aplicado ningún filtro de búsqueda o de categoría y se tenga conexión con la Base de Datos. Todas las tarjetas tienen el mismo estilo y, además de contener la información de los productos, son interactuables de tres maneras diferentes:
 
-- Se puede pasar el ratón por encima y se realizará una animación destacando claramente el producto sobre los demás.
-- Se puede clicar en un pequeño de botón con un icono de carrito en la esquina inferior derecha de la tarjeta, insertando UNA unidad de producto en el carrito para su compra.
-- Se puede clicar en cualquier parte del resto de la tarjeta, para ser redirigido a una nueva página con el DETALLE INDIVIDUAL del producto. En esta nueva página, simplemente se muestra el producto seleccionado en un tamaño mucho mayor y se añade la posibilidad de indicar el número de unidades de producto que se desean añadir al carrito.
+- Se puede **pasar el ratón por encima y se realizará una animación** destacando claramente el producto sobre los demás.
+- Se puede **clicar** en un pequeño de botón con un icono de carrito en la esquina inferior derecha de la tarjeta, **insertando UNA unidad de producto en el carrito** para su compra.
+- Se puede **clicar** en cualquier parte del resto de la tarjeta, **para ser redirigido a una nueva página con el DETALLE INDIVIDUAL del producto**. En esta nueva página, simplemente se muestra el producto seleccionado en un tamaño mucho mayor y se añade la posibilidad de indicar el número de unidades de producto que se desean añadir al carrito.
 
-------METER TRES IMÁGENES DE LAS TRES MANERAS DE INTERACTUAR CON LOS PRODUCTOS
+|1era opción de interacción con los productos|
+|---------|
+|![](./images/finalweb/shop/product1.png)|
 
-Para filtrar estos productos, hay dos herramientas que se encuentran encima de estos en la estructura de la página. Se puede escribir en la Barra de Búsqueda una cadena de texto con el producto que se busca o se puede clicar en la Categoría (las cateogorías son excluyentes), accionando cualquiera de estas dos herramientas desaparecen los productos que no coincidan y permanecen los que sí. Estas herramientas de filtrado se pueden conjuntar, para concretar más la búsqueda. Cabe mencionar que, pese a que los productos sean interactuables, la opción de carrito en el sitio web solo estará disponible siempre y cuando estés con la Sesión Iniciada. Si no, se mostrará un mensaje alertando de esto y denegándote la acción. El mensaje es el siguiente:
+|2nda opción de interacción con los productos|
+|---------|
+|![](./images/finalweb/shop/product2.png)|
+
+|3era opción de interacción con los productos|
+|---------|
+|![](./images/finalweb/shop/product3.png)|
 
 
--------METER IMAGEN DEL MENSAJE DE LOGEATE PARA AÑADIR AL CARRITO
 
-Si sí estás con la Sesión Iniciada (servicio sobre el que se hablará más adelante), podrás añadir productos al carrito desde la página principal de la tienda y el detalle de producto, así como acceder al carrito desde un botón que se encuentra constante en la esquina inferior derecha de la página. Se redirigirá entonces a un Panel de Usuario de la cuenta, donde dos de sus aspectos clave tienen que ver con la tienda:
+Para filtrar estos productos, hay dos herramientas que se encuentran encima de estos en la estructura de la página. Se puede escribir en la Barra de Búsqueda una cadena de texto con el producto que se busca o se puede clicar en la Categoría (las cateogorías son excluyentes y son: *TODOS, ALIMENTOS, JUGUETES, ACCESORIOS y CUIDADO E HIGIENE*), accionando cualquiera de estas dos herramientas desaparecen los productos que no coincidan y permanecen los que sí. Estas herramientas de filtrado se pueden conjuntar, para concretar más la búsqueda. Cabe mencionar que, pese a que los productos sean interactuables, la opción de carrito en el sitio web solo estará disponible siempre y cuando estés con la *Sesión Iniciada*. Si no, se mostrará un mensaje alertando de esto y denegándote la acción. El mensaje es el siguiente:
+
+![](./images/finalweb/shop/pleaselogin.png)
+
+Si sí estás con la **Sesión Iniciada** (servicio sobre el que se hablará más adelante), podrás **añadir productos al carrito** desde la página principal de la tienda y el detalle de producto, así como **acceder al carrito** desde un botón que se encuentra constante en la esquina inferior derecha de la página. Se redirigirá entonces a un **Panel de Usuario** de la cuenta, donde dos de sus aspectos clave tienen que ver con la tienda:
 
 ### CARRITO
 
-Es el carrito tradicional de un sitio web. Una estructura donde se guardan los productos que han sido seleccionados para su compra. En este caso, no se almacenan en memoria localmente sino en la Base de Datos. Cada vez que se pulsa para introducir productos en el carrito, se hace una petición de POSTEO en la Base de Datos. Si se resuelve satisfactoriamente, se guarda en la Base de Datos, "metiéndose en el carrito".
+Es el carrito tradicional de un sitio web. Una estructura donde se guardan los productos que han sido seleccionados para su compra. En este caso, no se almacenan en memoria localmente sino en la Base de Datos. Cada vez que se pulsa para introducir productos en el carrito, se hace una petición de *POSTEO* en la Base de Datos. Si se resuelve satisfactoriamente, se guarda en la Base de Datos, "*metiéndose en el carrito*".
 
-Cada Usuario tiene su propio carrito, pero solo uno. Es decir, nuestro sistema guarda tantos carritos como Usuarios haya. Como está almacenado en la Base de Datos, la información del carrito persiste entre sesiones y no se borra a no ser que el usuario así lo quiera. La información almacenada de cada Carrito es un conjunto de Productos y Cantidades. El precio total de cada carrito no se guarda, porque se calcula dinámicamente para disminuir el volumen de datos almacenados. El carrito se ve de la siguiente forma dentro del Panel de Control de cada Usuario:
+Cada Usuario tiene su propio carrito, pero solo uno. Es decir, nuestro sistema guarda tantos carritos como Usuarios haya. Como está almacenado en la Base de Datos, la información del **carrito persiste entre sesiones** y no se borra a no ser que el usuario así lo quiera. La información almacenada de cada Carrito es un conjunto de Productos y Cantidades. El precio total de cada carrito no se guarda, porque se calcula dinámicamente para disminuir el volumen de datos almacenados. El carrito se ve de la siguiente forma dentro del Panel de Control de cada Usuario:
 
---------METER FOTO DEL CARRITO
+![](./images/finalweb/shop/cart.png)
 
-Como se puede observar, se muestra la información más básica de cada producto: IMAGEN, NOMBRE, PRECIO UNITARIO, CANTIDAD, PRECIOxCANTIDAD. Se añade adicionalmente a cada producto la posibilidad de eliminarlo de la lista o aumentar la cantidad de este en el carrito, lo que variará el PRECIO TOTAL dinámicamente. Cada producto redirecciona a su DETALLE de producto cuando se clica en su imagen. Esta lista puede contener todos los productos que uno quiera o ninguno, mostrándose entonces vacía. Si ya se ha decidido comprar los productos seleccionados, se puede hacer clic en el botón situado en la esquina inferior derecha con el texto COMPRAR. Entonces se borrará la información del Carrito (de la Base de Datos), convirtiéndose esta en un PEDIDO, de lo que se hablará en el siguiente punto.
+Como se puede observar, se muestra la información más básica de cada producto: *IMAGEN, NOMBRE, PRECIO UNITARIO, CANTIDAD, PRECIOxCANTIDAD*. Se añade adicionalmente a cada producto la posibilidad de eliminarlo de la lista o aumentar la cantidad de este en el carrito, lo que variará el PRECIO TOTAL dinámicamente. Cada producto redirecciona a su DETALLE de producto cuando se clica en su imagen. Esta lista puede contener todos los productos que uno quiera o ninguno, mostrándose entonces vacía. Si ya se ha decidido comprar los productos seleccionados, se puede hacer clic en el botón situado en la esquina inferior derecha con el texto COMPRAR. Entonces se borrará la información del Carrito (de la Base de Datos), convirtiéndose esta en un PEDIDO, de lo que se hablará en el siguiente punto.
 
 ### HISTORIAL DE PEDIDOS
 
 Es una lista de todos los Pedidos realizados por el Usuario, de los que hay constancia. Los Pedidos se añaden al historial de la manera que se explicó en el punto anterior, y consisten en la siguiente estructura:
 
-Pedidos {
+```
+Pedidos:[{
     id_pedido
+    fecha
     precio_total
     productos: [
-        {id_producto1, precio, cantidad},
-        {id_producto2, precio, cantidad},
+        {id_producto1, cantidad, precio},
+        {id_producto2, cantidad, precio},
         ...
     ]
-}
+}]
+```
 
 Se almacena lo que costó (ahora sí) y una lista de productos, precios y cantidades. El historial de Pedidos se ve de la siguiente manera:
 
------- METER FOTO DEL HISTORIAL DE CARRITOS
+![](./images/finalweb/shop/historial.png)
 
-Este historial consiste simplemente en listar todos los productos agrupados por pedidos contenidos en la estructura de Pedidos de cada Usuario. Por lo que, si no se han realizado Pedidos, la lista está vacía mostrándose el mensaje "No se han realizado pedidos todavía". Además, cada producto redirecciona a su DETALLE de producto cuando se clica en su imagen. De esta lista no se pueden eliminar datos, como es evidente. Los registros de tu actividad en la tienda no se pueden borrar.
+Este historial consiste simplemente en listar todos los productos agrupados por pedidos contenidos en la estructura de Pedidos de cada Usuario. Por lo que, si no se han realizado Pedidos, la lista está vacía mostrándose el mensaje "*No se han realizado pedidos todavía*". Además, cada producto redirecciona a su DETALLE de producto cuando se clica en su imagen. De esta lista no se pueden eliminar datos, como es evidente. Los registros de tu actividad en la tienda no se pueden borrar.
 
 Si se quiere regresar a la tienda, se podrá pulsar en el botón correspondiente en la parte superior derecha del Panel de Control del Usuario.
 
