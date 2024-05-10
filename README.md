@@ -957,7 +957,54 @@ La navegación ha sido diseñada durante la escritura de este documento. Puede e
 
 
 
+# DESARROLLO SOFTWARE DEL PROYECTO
+
+Una vez se ha descrito el proyecto, se ha realizado una investigación profunda del mismo, se ha diseñado la navegación y los contenidos... es decir, se ha construido la Arquitectura de la Información, hay que desarrollar un producto software en torno a los resultados obtenidos durante el proceso. Se ha dividido el desarrollo en tres partes:
+
+- **Primera parte: desarrollo del sitio web básico**. Tiene que ver con toda la estructura esencial de la página, la parte que sostiene el resto de servicios que brinda la Clínica Veterinaria y, además, contiene información sobre la misma. Equivale a el desarrollo software de la Arquitectura de la Información, plasmar todo lo investigado durante este proyecto.
+- **Segunda parte: diseño y desarrollo de la Tienda Online**. Se diseñará y se desarrollará el primer servicio que se incluirá en la página, la tienda en línea mediante la que la empresa venderá sus productos a sus clientes.
+- **Tercera parte: diseño y desarrollo de la Base de Datos**. Se diseñará y se implementará todo lo relacionado con el almacenamiento de información para el sitio web. La Base de Datos es algo tan intrínsecamente importante que no solo se desarrollará sobre ella en su propio apartado, sino también durante el resto.
+
+## TECNOLOGÍAS UTILIZADAS EN EL DESARROLLO DEL SITIO WEB
+
+### Lenguajes de programación
+HTML (para la estructura de la página), CSS (para el estilo de la página) y JAVASCRIPT (para la funcionalidad de la página).
+### Entorno de programación
+El proyecto al completo ha sido programado en Visual Studio Code debido a la versatibilidad de este entorno, que hace más sencillas la mayoría de las tareas. Además, se ha utilizado el plugin de VSC llamado "Server", que abre un servidor cargando un HTML, para que se recargue automáticamente la página tras aplicar cambios sobre los ficheros (simplemente por comodidad).
+### Base de Datos
+Se ha utilizado una Base de Datos en MongoDB que se ha llamado "LaFlorida" y a la que se le han creado tres colecciones: Usuarios, Productos, Citas. Todas ellas se han rellenado con los documentos de ejemplo que se han adjuntado con los archivos del proyecto. Además, se ha utilizado MongoDB Compass realizando una conexión a la Base de Datos alojada en *localhost* para la gestión de la Base de Datos, por comodidad y sencillez de uso.
+### BackEnd 
+Para conectar la Base de Datos al sitio web y realizar comunicaciones entre ambos, se debe construir una estructura BackEnd que no es visible a los ojos del usuario pero que hace que todos los elementos de la web desarrollen la función correcta. Esto se ha realizado creando un servidor NodeJS programado en JAVASCRIPT cuyos archivos se encuentran en *proyecto/utilidades/server*. Este servidor se ha implementado con las librerías de Express para el tema de la programación del servidor, y Mongoose para realizar la conexión con MongoDB de manera sencilla. En este caso, el servidor se conecta a "*mongodb://localhost:27017/LaFlorida*", que es donde se encuentra alojada la Base de Datos, y se queda en espera escuchando en "*http://localhost:3000*". Esto significa que todas las peticiones que lleguen al puerto 3000 de localhost, serán recogidas por el servidor, interpretadas y procesadas en él y se enviarán a la Base de Datos para consultar o colocar información, devolviéndose en formato respuesta del servidor al cliente.
+
+Todas las peticiones son escuchadas en el servidor mediante "rutas". Esto es una manera de discriminar y catalogar los tipos de peticiones, para asignarle una funcionalidad diferente a cada una. Estas rutas pueden ser de tipo GET (obtener información de la BBDD), POST (publicar información en la BBDD) o DELETE (eliminar información de la BBDD). El servidor mantendrá siempre conectadas las siguientes rutas de escucha:
+
+- **app.post('/producto')**: ruta para publicar productos en la base de datos.
+- **app.get('/productos')**: ruta para obtener todos los productos de la base de datos.
+- **app.get('/productos/:id_producto')**: ruta para obtener toda la información de un producto dado un id_producto específico
+- **app.post("/login")**: ruta para verificar la información introducida durante el login y dar paso al usuario en el sistema. Se utiliza una ruta POST debido a que se trabaja con información sensible y esta solo devuelve si se llevó a cabo con éxito o no.
+- **app.get('/usuarios/mascotas')**: ruta para obtener todas las mascotas de un usuario específico indicado.
+- **app.get('/usuarios/pedidos')**: ruta para obtener todos los pedidos realizados por un usuario específico indicado.
+- **app.get('/usuarios/perfil')**: ruta para obtener toda la información del perfil de un usuario específico indicado.
+- **app.post('/usuarios/carrito')**: ruta para colocar productos en el carrito de un usuario específico indicado.
+- **app.get('/usuarios/carrito')**: ruta para obtener todos los productos que se encuentran en el carrito de un usuario específico indicado.
+- **app.delete('/usuarios/carrito')**: ruta para borrar un producto concreto del carrito de un usuario específico indicado.
+- **app.delete('/usuarios/carritocompleto')**: ruta para borrar todos los productos del carrito de un usuario específico indicado.
+- **app.put('/usuarios/carrito')**: ruta para modificar la cantidad de un producto concreto del carrito de un usuario específico indicado.
+- **app.post('/usuarios/pedidos')**: ruta para guardar unos productos como un pedido realizado por un usuario específico indicado.
+- **app.get('/citas')**: ruta para recoger de la base de datos todas las citas almacenadas.
+- **app.get('/citas/usuario')**: ruta para recoger de la base de datos las citas de un usuario específico indicado.
+- **app.post('/citas')**: ruta para marcar como solicitada una cita por un usuario específico indicado.
+
+Cada una de estas rutas, se coloca en la dirección donde se encuentra el servidor (localhost) y el puerto en el que está escuchando (3000). De manera que cada ruta quedaría como: "*http://localhost:3000/ruta*". Las peticiones serán enviadas desde cliente a estas rutas con este formato y según sea el tipo de petición se acudirá a una dirección u otra.
+
+Para levantar el servidor BackEnd, basta con ejecutar la función "node" desde cualquier terminal, seguido del nombre del fichero que contiene toda la programación del servidor. Por comodidad, se ha instalado una dependencia llamada "nodemon" que hace que si ejecutas el server a través de esta dependencia con la función "nodemon" desde cualquier terminal seguido del nombre del fichero, se recargará el servidor automáticamente después de que detecte cambios en el fichero js del servidor. 
+
+### Cookies
+Se ha implementado el uso de Cookies para mantener y recordar la sesión de un usuario tras haber iniciado sesión en nuestro sistema, y no perderla al cambiar entre páginas del sitio web. De esta manera, además, podemos identificar de manera sencilla al usuario que está conectado para poder hacer peticiones al servidor NodeJS a su nombre. La cookie se crea justo después de iniciar sesión correctamente, y se destruye al cerrar sesión. Mientras tanto se mantiene hasta que se cierre el navegador. Para la creación simplemente basta con el código "*document.cookie = ...*" al que se le asignará pares clave valor con los datos que te interese almacenar. En nuestro caso, *username=username_activo*. Así, si se revisa esta cookie se podrá comprobar qué usuario es el que se logeó y actuar en consecuencia. Se recomendaría almacenar un token cifrado por seguridad.
+
+
 ## DESARROLLO DE LA ARQUITECTURA DE LA INFORMACIÓN
+ 
 
 ## DISEÑO Y DESARROLLO DE LA TIENDA EN LÍNEA
 Después de construir la Arquitectura de la Información, se tiene la página base sobre la que colgará el resto de los servicios de la Clínica Veterinaria. En este caso una **TIENDA EN LÍNEA**.
