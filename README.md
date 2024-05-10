@@ -1013,6 +1013,41 @@ Los servicios de la empresa han sido colocados como dos botones siempre visibles
 
 ![](./images/finalweb/shop/shop.png)
 
+### INFORMACIÓN ADICIONAL DE LA TIENDA
+Es muy frecuente que una Clínica Veterinaria oferte productos desde su tienda, aunque la selección siempre es muy reducida, pero se les puede solicitar algo y normalmente te lo encargan. Las Clínicas Veterinarias de Linares, localidad donde se encuentra la empresa para la que se desarrolla este proyecto, no cuentan con Tienda Online a pesar de que venden productos *in situ*. Por lo que se podría decir que la competencia es nula. No se mete en el mismo saco a las tiendas de animales, porque no son unos competidores directos: la competencia de la Clínica Veterinaria La Florida y todos sus servicios son otras Clínicas Veterinarias.
+
+Sobre **los proveedores**, se ha hablado directamente con el veterinario jefe de la Clínica Veterinaria La Florida, don Alfonso, y este ha comentado que compra los productos que oferta o utiliza con:
+
+- Rafael del Campo
+- Valservet
+- Francisco Díaz Pérez
+- Dimavet Granada SL
+- Royal Canin
+
+Ha comentado, también, que con los dos primeros trabaja de manera digital y con los tres siguientes por teléfono. La selección de productos que normalmente suele comprar va acorde a lo que suele necesitarse mientras trabaja y la pequeña selección que oferta en físico. Ahora, con la introducción de la Tienda Online, esta selección se ha ampliado a: todos los productos disponibles que un cliente cualquiera, dentro de lo razonable, quisiera y pueda comprar. Por ejemplo, se venderán Suplementos Alimenticios pero no Medicinas (porque estas deben ser recetadas por el Veterinario), ó se venderán Accesorios para mascotas pero no Material Veterinario (porque esto es de uso exclusivo veterinario). Los productos ofertados no se tendrán en tienda física ni en un almacén de la Clínica Veterinaria La Florida, sino que cada pedido será enviado al proveedor, y este lo administrará y distribuirá a la Clínica Veterinaria, siendo la tienda de la Clínica Veterinaria un mero intermediario que obviamente se lleva su parte del pastel. Los productos llegarán a la Clínica Veterinaria y se almacenarán en un local (una vez pedidos) que tiene el veterinario jefe justo al lado, a la espera de su envío al correspondiente cliente. Algunos plazos de distribución de estos proveedores son:
+
+| Proveedor | Tiempo de Entrega | Comisión por Entrega |
+| -- | -- | -- |
+| Rafael del Campo | En menos de 24h si pides de Lunes a Jueves antes de las 14:00 | Envíos gratuitos por encima de 100€. 5€+IVA si inferior a 100€ |
+| Valservet | En menos de 24h | No consta |
+| Royal Canin | En aproximadamente un par de días | Envío gratis a partir de 50€. 6€ si inferior |
+
+Los envíos desde la tienda de Clínica Veterinaria La Florida solo estarán disponibles para domicilios en la provincia de Jaén, que son los clientes que la empresa tiene (Linares y alrededores). Ampliar este rango sería invertir en la ínfima posibilidad de que alguien fuera de las cercanías del negocio quiera comprar algún producto: despilfarro. Los productos serán repartidos por los **transportistas DAVISA EXPRESS SL**. Son una empresa que se dedica al transporte nacional de paquetería por carretera con disponibilidad dlas 24h. En total, se estima que cada pedido desde que se realiza hasta que se entrega tarda aproximadamente una semana (se espera a la acumulación de bastantes pedidos para liberarlos todos juntos e invertir menos dinero y tiempo en transporte). También existirá la posibilidad de comprar en línea pero recoger en tienda. Lo que reduciría el tiempo de entrega de una semana a un día, si el cliente va a recogerlo en cuanto llega.
+
+Los **clientes potenciales** de la Tienda Online son:
+
+- Cualquier usuario, sea cliente o no, que requiera de productos para animales en la provincia de la organización y busque información por internet (usuario que no conoce del negocio interesado en productos para animales que encuentra la página).
+
+- Cualquier usuario, sea cliente o no, y quiera consultar qué productos venden en la Clínica Veterinaria (usuario que sí conoce del negocio interesado en productos para animales por voluntad propia).
+
+- Cualquier usuario que, sea cliente o no, necesite comprar alguno de los productos ofertados por recomendación del veterinario (usuario que sí conoce del negocio interesado en productos para animales por recomendación).
+
+- Cualquier usuario que, sea cliente o no, por comparación con otros negocios prefiera comprar a Clínica Veterinaria La Florida.
+
+El género, edad y nivel cultural de los posibles clientes puede ser cualquiera, debido a que ya prácticamente todo el mundo pide por Internet. Aunque sí es cierto, que hay más probabilidad de que un cliente entre dentro de la siguiente descripción:
+
+**Persona de entre 24-45 años, cliente habitual de la Clínica Veterinaria La Florida con una o más mascotas.**
+
 ### ESTRUCTURA BÁSICA DE LA TIENDA
 
 Para construir nuestra tienda de prueba, se han añadido un inventario de productos de ejemplo como los que se venderían en la Clínica Veterinaria. Estos son los siguientes:
