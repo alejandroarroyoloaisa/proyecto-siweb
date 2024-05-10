@@ -1003,8 +1003,99 @@ Para levantar el servidor BackEnd, basta con ejecutar la función "node" desde c
 Se ha implementado el uso de Cookies para mantener y recordar la sesión de un usuario tras haber iniciado sesión en nuestro sistema, y no perderla al cambiar entre páginas del sitio web. De esta manera, además, podemos identificar de manera sencilla al usuario que está conectado para poder hacer peticiones al servidor NodeJS a su nombre. La cookie se crea justo después de iniciar sesión correctamente, y se destruye al cerrar sesión. Mientras tanto se mantiene hasta que se cierre el navegador. Para la creación simplemente basta con el código "*document.cookie = ...*" al que se le asignará pares clave valor con los datos que te interese almacenar. En nuestro caso, *username=username_activo*. Así, si se revisa esta cookie se podrá comprobar qué usuario es el que se logeó y actuar en consecuencia. Se recomendaría almacenar un token cifrado por seguridad.
 
 
-## DESARROLLO DE LA ARQUITECTURA DE LA INFORMACIÓN
- 
+
+
+
+
+## DESARROLLO DEL SITIO WEB BÁSICO
+
+Habiendo realizado un estudio exhaustivo sobre la Arquitectura de Información que se buscaba conseguir para nuestro sitio web, este ya se puede empezar a construir. Es una parte fundamental, porque equivale a construir los cimientos de una casa, será la base sobre lo que colgará todo lo demás y a la que, con toda probabilidad, accedan primero los usuarios. Por lo tanto, es muy importante.
+
+Respecto al diseño que se propuso inicialmente con los prototipos, hay bastantes cambios, considerados para muy mejor:
+- El menú superior tenía 7 opciones: INICIO, MASCOTAS, SERVICIOS MÉDICOS, PREVENCIÓN, CUIDADO Y BIENESTAR, CONTACTO, TIENDA. Estas se han reducido a 4 opciones: MASCOTAS, SERVICIOS MÉDICOS, PREVENCIÓN y CUIDADO Y BIENESTAR. Se ha considerado eliminar Inicio, porque ya es accesible siempre clicando al logo de la Clínica Veterinaria, que está siempre visible. Se ha considerado mover Contacto y Tienda, a la altura de Iniciar Sesión, convirtiéndolos también en botones. Ahora el Menú Superior está menos cargado, más limpio.
+- En un principio no estaba contemplado ni opciones desplegables del Menú Superior, ni un Menú de hamburguesa. Ambos han sido incluidos
+- Se ha añadido una pequeña sección que se encuentra encima del Menú Superior, esta sección será constante navegues por donde navegues y mostrará en todo momento: el logo de la empresa, información importante de contacto, botones de Contacto, Tienda e Iniciar Sesión.
+- Se ha añadido un Footer, debajo de cada página, con un Menú completo con las opciones de navegación del sitio web, además del aviso de privacidad, términos de uso y redes sociales de la empresa.
+- Las páginas de información han sido modificadas, siguen todas el mismo patrón, pero son visualmente más atractivas.
+- El diseño de la Tienda ha cambiado por completo, siendo más claro, visual y dinámico, siguiendo el estilo logrado del resto de la página.
+- La información de Usuario y sus Mascotas se ha convertido en un Dashboard, que además tiene Historial de pedidos, Carrito y Selector para pedir cita.
+
+Los colores, a destacar, que más se han utilizado para el sitio web son los siguientes:
+
+| #30297f | #0572b8 | #0a98f0 | #ffffff | #8783D1 | #daa41c | #dc3545 |
+|--|--|--|--|--|--|--|
+| ![](./images/finalweb/pagina_principal/paleta_color/30297f.png) | ![](./images/finalweb/pagina_principal/paleta_color/0572b8.png) | ![](./images/finalweb/pagina_principal/paleta_color/0a98f0.png) | ![](./images/finalweb/pagina_principal/paleta_color/ffffff.png) | ![](./images/finalweb/pagina_principal/paleta_color/8783D1.png) | ![](./images/finalweb/pagina_principal/paleta_color/daa41c.png) | ![](./images/finalweb/pagina_principal/paleta_color/dc3545.png) |
+
+Estos fueron extraidos de la gama de colores que ya tenía el logo de la Clínica Veterinaria, además de variantes de estos. Todos, más o menos, tratando de seguir la misma tonalidad.
+
+A continuación se van a describir y enseñar los tipos de página que incluye el sitio web, y sus aspectos más destacables (todo lo relacionado con la Tienda será descrito en su correspondiente apartado más adelante en este documento). La página web al completo ha sido desarrollada para que sea RESPONSIVE. A continuación se verán algunos ejemplos:
+
+### Inicio
+Es la página Inicial del sitio web. Esta página sirve como una breve Presentación a la Clínica Veterinaria La Florida, sus múltiples servicios veterinarios, mascotas que atienden, teléfono de urgencias, servicio de peluquería canina y, también, como expositor de la galería de la empresa. Todos los aspectos mencionados pueden ser clicados para navegar hasta su correspondiente bloque de información. Esta página Inicial ha sido construida lo más visual posible y directa a lo que el usuario pudiera llegar a necesitar.
+
+![](./images/finalweb/pagina_principal/gifs/inicio_pagina.gif)
+
+
+### Página de información
+Las páginas que cuelgan en los níveles segundo y tercero de la jerarquía del sitio web, son páginas de información. Estas tratan de exponer más información acerca de servicios, tratamientos, prevenciones, mascotas que se atienden... Tienen todas más o menos una estructura similar, ya que se realizaron con plantilla (como dicta la Estrategia de Contenidos). Son accesibles desde su correspondiente opción en el menú superior, menú de hamburguesa, página principal (si está), footer e incluso enlazada con un hiperenlace desde cualquier sitio que se hable de dicha información.
+
+![](./images/finalweb/pagina_principal/gifs/pagina_informacion.gif)
+
+
+### Contacto
+Esta página brinda información a los usuarios sobre cómo contactar con la organización. Tiene información de contacto sobre la que se puede clicar y llamar ó mandar un correo, tiene un widget de Google Maps con la ubicación de la Clínica Veterinaria y tiene, también, un formulario para mandar un mensaje directo desde la página al correo del veterinario y adjuntar más información sobre tu caso.
+
+![](./images/finalweb/pagina_principal/contacto.png)
+
+
+### Menú superior con desplegables
+Como ya se comentaba, es un Menú colocado en la parte superior de la pantalla, que es visible desde cualquier página nada más entrar. Tiene 4 opciones de navegación, de las que se despliegan sus correspondientes secciones si pasas el ratón por encima. Este menú no se desplaza verticalmente contigo, así que para no perder el Menú durante la navegación, si el Menú Superior no es visible aparece un Menú de Hamburguesa a la derecha.
+
+![](./images/finalweb/pagina_principal/gifs/menu_superior.gif)
+
+Además, el Menú Superior es responsive. Si ya no caben las opciones porque el tamaño de ventana es muy pequeño, aparecerá también el Menú de Hamburguesa.
+
+![](./images/finalweb/pagina_principal/gifs/menu_superior_responsive.gif)
+
+
+### Menú de hamburguesa
+Es el menú que sustituye al Menú Superior principal cuando este no es accesible de alguna manera (aparece porque ya no sea visible o porque no quepan sus opciones en pantalla). Al clicar sobre él, se abre un Menú lateral vertical con las mismas opciones que el Menú Superior, con la salvedad de que si no estás en la página de Inicio también tiene una opción de Inicio (por temas de usabilidad, por si se diera el caso de que este Menú tapa toda la pantalla). De este Menú también cuelgan opciones desplegables.
+
+![](./images/finalweb/pagina_principal/gifs/menu_hamburguesa.gif)
+
+
+### Top-section
+Como ya se describió es una barra que se mantiene constante y anclada a la parte superior de la pantalla, es siempre visible. Principalmente, muestra el teléfono y ubicación de la Clínica Veterinaria y un botón de Contacto para que estés donde estés siempre puedas contactar con la Clínica Veterinaria, y un botón de Tienda y otro de Inicio de Sesión.
+
+![](./images/finalweb/pagina_principal/top_section.png)
+
+Esto, al igual que el resto del sitio web, es responsive, y se adaptará a tu navegación y tamaño de pantalla para ocultar o visualizar cierta información importante y que no se amontone. Por ejemplo, si el logo deja de estar visible porque el Menú Superior ya no se ve, aquí aparece un logo (para que siempre se vea el logo en pantalla). O según vas reduciendo el tamaño de la pantalla, la información mostrada se reestructura para que quepa toda.
+
+![](./images/finalweb/pagina_principal/gifs/top_section_responsive.gif)
+
+
+### Footer
+Está debajo de todas las páginas. Contiene todas las opciones de navegación del sitio web, ordenadas por sus correspondientes categorías. Además, tiene un botón de contacto, las redes sociales, y el aviso de privacidad, términos de uso y cookies.
+
+![](./images/finalweb/pagina_principal/footer.png)
+
+
+### Migas de pan
+Es una de las ayudas de navegación más útiles, porque te ayudan de una manera simple, rápida y directa a orientarte por el sitio web. En este caso, las Migas de Pan aparecen siempre debajo del título de la página que se visita salvo en la página principal, que no aparece.
+
+![](./images/finalweb/pagina_principal/migas_de_pan.png)
+
+
+### Hiperenlaces
+Es una ayuda de navegación que enriquece mucho la Arquitectura de la Información del sitio web. Siempre que a lo largo del sitio se mencione alguna información que esté desarrollada en otro punto, se pone un hiperenlace en dicha información que lleve hasta ella. De esta manera, logramos que la información sea más accesible, y que el usuario pueda descubrir más fácilmente contenidos relacionados. Todo lo que tenga el color: #0a98f0 es un hiperenlace.
+
+![](./images/finalweb/pagina_principal/hiperenlaces.png)
+
+
+
+
+
+
 
 ## DISEÑO Y DESARROLLO DE LA TIENDA EN LÍNEA
 Después de construir la Arquitectura de la Información, se tiene la página base sobre la que colgará el resto de los servicios de la Clínica Veterinaria. En este caso una **TIENDA EN LÍNEA**.
