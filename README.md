@@ -1104,7 +1104,7 @@ Los servicios de la empresa han sido colocados como dos botones siempre visibles
 
 ![](./images/finalweb/shop/shop.png)
 
-### INFORMACIÓN ADICIONAL DE LA TIENDA
+### Información adicional de la Tienda
 Es muy frecuente que una Clínica Veterinaria oferte productos desde su tienda, aunque la selección siempre es muy reducida, pero se les puede solicitar algo y normalmente te lo encargan. Las Clínicas Veterinarias de Linares, localidad donde se encuentra la empresa para la que se desarrolla este proyecto, no cuentan con Tienda Online a pesar de que venden productos *in situ*. Por lo que se podría decir que la competencia es nula. No se mete en el mismo saco a las tiendas de animales, porque no son unos competidores directos: la competencia de la Clínica Veterinaria La Florida y todos sus servicios son otras Clínicas Veterinarias.
 
 Sobre **los proveedores**, se ha hablado directamente con el veterinario jefe de la Clínica Veterinaria La Florida, don Alfonso, y este ha comentado que compra los productos que oferta o utiliza con:
@@ -1139,7 +1139,7 @@ El género, edad y nivel cultural de los posibles clientes puede ser cualquiera,
 
 **Persona de entre 24-45 años, cliente habitual de la Clínica Veterinaria La Florida con una o más mascotas.**
 
-### ESTRUCTURA BÁSICA DE LA TIENDA
+### Estructura básica de la Tienda
 
 Para construir nuestra tienda de prueba, se han añadido un inventario de productos de ejemplo como los que se venderían en la Clínica Veterinaria. Estos son los siguientes:
 
@@ -1197,7 +1197,7 @@ Para filtrar estos productos, hay dos herramientas que se encuentran encima de e
 
 Si sí estás con la **Sesión Iniciada** (servicio sobre el que se hablará más adelante), podrás **añadir productos al carrito** desde la página principal de la tienda y el detalle de producto, así como **acceder al carrito** desde un botón que se encuentra constante en la esquina inferior derecha de la página. Se redirigirá entonces a un **Panel de Usuario** de la cuenta, donde dos de sus aspectos clave tienen que ver con la tienda:
 
-### CARRITO
+#### Carrito
 
 Es el carrito tradicional de un sitio web. Una estructura donde se guardan los productos que han sido seleccionados para su compra. En este caso, no se almacenan en memoria localmente sino en la Base de Datos. Cada vez que se pulsa para introducir productos en el carrito, se hace una petición de *POSTEO* en la Base de Datos. Si se resuelve satisfactoriamente, se guarda en la Base de Datos, "*metiéndose en el carrito*".
 
@@ -1207,7 +1207,7 @@ Cada Usuario tiene su propio carrito, pero solo uno. Es decir, nuestro sistema g
 
 Como se puede observar, se muestra la información más básica de cada producto: *IMAGEN, NOMBRE, PRECIO UNITARIO, CANTIDAD, PRECIOxCANTIDAD*. Se añade adicionalmente a cada producto la posibilidad de eliminarlo de la lista o aumentar la cantidad de este en el carrito, lo que variará el PRECIO TOTAL dinámicamente. Cada producto redirecciona a su DETALLE de producto cuando se clica en su imagen. Esta lista puede contener todos los productos que uno quiera o ninguno, mostrándose entonces vacía. Si ya se ha decidido comprar los productos seleccionados, se puede hacer clic en el botón situado en la esquina inferior derecha con el texto COMPRAR. Entonces se borrará la información del Carrito (de la Base de Datos), convirtiéndose esta en un PEDIDO, de lo que se hablará en el siguiente punto.
 
-### HISTORIAL DE PEDIDOS
+#### Historial de Pedidos
 
 Es una lista de todos los Pedidos realizados por el Usuario, de los que hay constancia. Los Pedidos se añaden al historial de la manera que se explicó en el punto anterior, y consisten en la siguiente estructura:
 
