@@ -1116,9 +1116,25 @@ Es una ayuda de navegación que enriquece mucho la Arquitectura de la Informaci�
 
 ![](./images/finalweb/pagina_principal/hiperenlaces.png)
 
+### Login de Usuario
+Es un Login de Usuario común. Si el usuario está registrado, te da acceso a su Panel de Control. Si no, te avisa de que tus credenciales son incorrectos. Hace uso de las Cookies para mantener la sesión iniciada tras realizar el acceso.
 
+![](./images/finalweb/dashboard/login.png)
 
+### Perfil del Usuario
+Muestra en formato tabla la información del Usuario que realizó el acceso al Panel de Control.
 
+![](./images/finalweb/dashboard/perfil.png)
+
+### Mascotas del Usuario
+Muestra en formato tabla la información acerca de las Mascotas que tiene el Usuario que realizó el acceso al Panel de Control. De las mascotas se muestran citas pasadas y motivo de visita.
+
+![](./images/finalweb/dashboard/perfil_mascotas.png)
+
+### Pedir Cita
+Es un sistema de Solicitud de Citas de manera virtual. Consiste en un calendario interactivo en el que se puede seleccionar el día que uno desee solicitar una cita y, si está libre, seleccionar también la hora. Después de confirmar que reservamos dicha hora, la página se recarga, se bloquea la hora seleccionada y aparece asociada a tu cuenta, a la izquierda, la cita correspondiente.
+
+![](./images/finalweb/dashboard/pedir_cita.png)
 
 
 
