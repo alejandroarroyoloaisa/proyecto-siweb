@@ -1633,12 +1633,9 @@ Se va a realizar un planteamiento teórico de una arquitectura distribuida para 
 
 ||
 |--|
-| El veterinario de Clínica Veterinaria “La Florida” está muy contento con el desarrollo de su sitio web y los nuevos servicios que ofrece. Se estima que el volumen de clientes que lo utilizan está en torno a 1000 usuarios, con más o menos frecuencia.
+| El veterinario de Clínica Veterinaria “La Florida” está muy contento con el desarrollo de su sitio web y los nuevos servicios que ofrece. Se estima que el volumen de clientes que lo utilizan está en torno a 1000 usuarios, con más o menos frecuencia. El servidor y la base de datos están alojados en el propio establecimiento de la Clínica Veterinaria. Lo que ha supuesto un problema: “*debido a la alta carga eléctrica de todas las máquinas que se utilizan, a veces se va la luz y la página web queda sin servicio. Muchas veces, esto ha ocurrido después de cerrar y el sitio web queda inoperativo medio día*”. |
 
-El servidor y la base de datos están alojados en el propio establecimiento de la Clínica Veterinaria. Lo que ha supuesto un problema: “*debido a la alta carga eléctrica de todas las máquinas que se utilizan, a veces se va la luz y la página web queda sin servicio. Muchas veces, esto ha ocurrido después de cerrar y el sitio web queda inoperativo medio día*”. 
-
-El veterinario lamenta mucho esta situación y ha pedido consejo al desarrollador de este proyecto.|
-
+El veterinario lamenta mucho esta situación y ha pedido consejo al desarrollador de este proyecto.
 
 Tras aconsejarle al veterinario que pague por un servidor en la nube, su respuesta fue: “*sí hombre, esos son todos unos ladrones. Mi página web la pongo yo*”, así que dicha idea quedó descartada.
 
