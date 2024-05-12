@@ -1,0 +1,149 @@
+@keyframes expand {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: #0572b8 0px 10px 37px -5px, #30297f 0px 5px 10px -8px;
+    margin: 50px auto;
+    position: relative;
+    animation: expand 0.5s ease-out forwards;
+}
+
+.producto img {
+    width: 30%;
+    height: auto;
+}
+
+.producto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    text-align: left;
+}
+
+.producto-info h2 {
+    margin: 10px 0;
+    font-size: 2em;
+    color: #30297f;
+}
+
+.producto-info hr {
+    border: 0;
+    height: 1px;
+    background: #30297f;
+    margin: 0;
+}
+
+.producto-info p {
+    margin: 100px 0;
+}
+
+.precio {
+    padding: 10px;
+    margin-top: auto;
+    width: fit-content;
+    align-self: center;
+    font-weight: bold;
+    color: #30297f;
+
+}
+
+
+@media (min-width: 800px) {
+    .producto {
+        flex-direction: row;
+    }
+
+}
+
+.producto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.producto,
+.back-button {
+    width: 100%;
+}
+
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-quantity {
+    width: 50px;
+}
+
+.add-to-cart-btn {
+    background: none;
+    border: none;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.product-quantity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-quantity-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.product-quantity {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product-quantity-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #30297f;
+}
+
+.icon-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 9999;
+}

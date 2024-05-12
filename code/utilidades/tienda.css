@@ -1,0 +1,235 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.container p {
+    color: #30297f;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 290px;
+    height: 454px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-img {
+    background-color: white;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding-top: 10%;
+    overflow: auto;
+}
+
+.container svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #30297f;
+
+    margin-top: auto;
+}
+
+/*Text*/
+.text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #30297f;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+    border: 1px solid #30297f;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+/*Hover*/
+.card:hover {
+    transform: translateY(-5%);
+    box-shadow: #0572b8 0px 13px 47px -5px, #30297f 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #0572b8;
+    background-color: #57baf89c;
+}
+
+
+
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.input-search {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #30297f;
+    padding-right: 40px;
+    color: #30297f;
+}
+
+.input-search::placeholder {
+    color: #30297f;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color: #30297f;
+    background-color: transparent;
+    pointer-events: painted;
+}
+
+.btn-search:focus~.input-search {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #30297f;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #30297f;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    width: 95%;
+    margin: auto;
+    gap: 60px;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#search-container {
+    margin: 1em 0;
+}
+
+#search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #30297f;
+    padding: 1em 0.3em;
+}
+
+#search-container input:focus {
+    border-bottom-color: #30297f;
+}
+
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #30297f;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+.button-value {
+    border: 2px solid #30297f;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #30297f;
+    cursor: pointer;
+}
+
+.button-value.selected {
+    background-color: #30297f;
+    color: #ffffff;
+}
+
+.button-value:hover {
+    background-color: #30297f;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.active {
+    background-color: #30297f;
+    color: #ffffff;
+}
+
+
+
+#titulotienda {
+    height: 100px;
+}
+
+.icon-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 9999;
+}

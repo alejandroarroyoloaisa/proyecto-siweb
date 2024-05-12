@@ -1,0 +1,242 @@
+#citas html,
+#citas body,
+#citas :root,
+#citas * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+#citas body {
+    display: flex;
+    background: #435165;
+    width: 100%;
+}
+
+#citas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+    width: 650px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    background: #435165;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    /* Agregar un borde blanco */
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: #0572b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.left-arrow,
+.right-arrow {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.month-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.month-name {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.mon-sun-container {
+    width: 100%;
+    height: 40px;
+    background: #0572b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-name {
+    width: calc(100% / 7);
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.day-name:not(:nth-last-child(1)) {
+    border-right: 1px #ffffff solid;
+}
+
+.day-name-text {
+    margin: auto;
+    color: white;
+}
+
+.calendar-container {
+    width: 100%;
+    height: calc(100% - 120px);
+    background: #0572b8;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.15rem;
+    text-align: center;
+}
+
+.calendar-container *:hover {
+    border: grey solid 2px;
+    cursor: pointer;
+}
+
+.calendar-day,
+.current-day {
+    padding: 0.5rem;
+    color: #435165;
+    font-family: roboto;
+    font-size: 1.25rem;
+    background: white;
+}
+
+.next-day {
+    color: #9c9c9c;
+    border: white solid 2px;
+    background: #435165;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.current-day {
+    background: #69c4fd;
+    color: white;
+    font-weight: 700;
+}
+
+.calendar-container .current-day:hover {
+    border: 2px #30297f solid;
+}
+
+.prev-day {
+    border: white solid 2px;
+    background: #435165;
+    color: #9c9c9c;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.past-day {
+    background: #fc4e5f;
+    border: white solid 2px;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+#selected-day-box {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    width: 440px;
+    height: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+#selected-day-box h2 {
+    text-align: center;
+    color: #435165;
+}
+
+#selected-day-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+#selected-day-box button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #0572b8;
+    border: white solid 2px;
+    color: #fff;
+    font-family: Poppins;
+    border: none;
+    cursor: pointer;
+}
+
+#selected-day-box button:hover {
+    background: #035a88;
+}
+
+.hour-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    max-height: 600px;
+    position: fixed;
+    top: 27%;
+    right: 2%;
+
+}
+
+.hour-selector .hour-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4px 0;
+}
+
+#selected-day-box button,
+.hour-selector .hour-set button {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+#left-box {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 440px;
+    height: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+#left-box h2 {
+    text-align: center;
+    color: #435165;
+    margin-bottom: 40px;
+}
+
+#left-box p {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
