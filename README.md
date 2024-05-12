@@ -999,6 +999,31 @@ Cada una de estas rutas, se coloca en la dirección donde se encuentra el servid
 
 Para levantar el servidor BackEnd, basta con ejecutar la función "node" desde cualquier terminal, seguido del nombre del fichero que contiene toda la programación del servidor. Por comodidad, se ha instalado una dependencia llamada "nodemon" que hace que si ejecutas el server a través de esta dependencia con la función "nodemon" desde cualquier terminal seguido del nombre del fichero, se recargará el servidor automáticamente después de que detecte cambios en el fichero js del servidor. 
 
+#### Peticiones al servidor NodeJS
+Las peticiones son solicitudes de información del sitio web al servidor NodeJS, que consultará la Base de Datos, realizará alguna acción y devolverá una respuesta. Para realizar estas peticiones usaremos AJAX, que puede importarse en el proyecto web en cualquier fichero HTML que necesite de su uso con:
+
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+```
+Después, desde un fichero javascript podemos hacer uso de AJAX con: **$.ajax({ });**.  Las peticiones se componen de dos partes: envío de la petición y respuesta a la petición. Esta última puede ser una respuesta positiva (success) ó negativa (error). Las peticiones, sin embargo, tienen tres partes: a dónde se enviará (*url*), qué tipo de petición es (*type*) y qué datos se envían con la petición (*data*). Un ejemplo de uso de AJAX sería:
+
+```
+$.ajax({
+               url: 'http://localhost:3000/citas',
+               type: TIPO DE PETICIÓN ('GET', 'POST', 'DELETE')
+               data: {
+                   DATOS A ENVIAR 
+                   (cualquier variable o conjunto de variables)
+               },
+               success: function (respuesta) {
+		         QUÉ SE EJECUTA SI LA PETICIÓN TUVO ÉXITO
+               },
+	         error: function() {
+		         QUÉ SE EJECUTA SI LA PETICIÓN NO TUVO ÉXITO
+	         }
+ });
+```
+
 ### Cookies
 Se ha implementado el uso de Cookies para mantener y recordar la sesión de un usuario tras haber iniciado sesión en nuestro sistema, y no perderla al cambiar entre páginas del sitio web. De esta manera, además, podemos identificar de manera sencilla al usuario que está conectado para poder hacer peticiones al servidor NodeJS a su nombre. La cookie se crea justo después de iniciar sesión correctamente, y se destruye al cerrar sesión. Mientras tanto se mantiene hasta que se cierre el navegador. Para la creación simplemente basta con el código "*document.cookie = ...*" al que se le asignará pares clave valor con los datos que te interese almacenar. En nuestro caso, *username=username_activo*. Así, si se revisa esta cookie se podrá comprobar qué usuario es el que se logeó y actuar en consecuencia. Se recomendaría almacenar un token cifrado por seguridad.
 
@@ -1232,4 +1257,409 @@ Este historial consiste simplemente en listar todos los productos agrupados por 
 
 Si se quiere regresar a la tienda, se podrá pulsar en el botón correspondiente en la parte superior derecha del Panel de Control del Usuario.
 
+
+
+
+
 ## DISEÑO Y DESARROLLO DE LA BASE DE DATOS
+
+Para cumplir los requisitos de un sistema con los servicios descritos en este documento, es necesario **ALMACENAR** y **CONSULTAR** información que se encuentre guardada en algún sitio. Por ejemplo:
+
+- Si quiero iniciar sesión y ver toda mi información de usuario, mis credenciales necesitarán ser contrastadas con los almacenados y asociados a mi cuenta.
+- Si entro a la tienda, los productos que se me muestran son los que la empresa vende y que serán recuperados de donde están almacenados.
+
+Por lo tanto, se necesitará crear una **BASE DE DATOS** que almacene toda la información que se intercambie con el cliente.
+
+### Descripción y análisis del problema
+#### Análisis y requerimientos de los datos
+
+La Clínica Veterinaria busca ofrecer una variedad de servicios con el sitio web que son:
+
+- **Tienda en línea**: mostrar productos, añadirlos a un carrito, ver historial de pedidos.
+- **Registro de usuarios**: panel de control de usuario, mostrando información de cuenta y de mascotas, así como de información sobre sus visitas al veterinario.
+- **Sistema de solicitud de citas en línea**
+
+Por lo tanto, los datos principales que deben ser almacenados y gestionados incluyen:
+
+- **Información del cliente**: usuario, contraseña, nombre, dirección, número de teléfono, correo electrónico, mascotas que tiene registradas, pedidos que realizó, citas que tiene solicitadas, productos que tiene en el carrito.
+- **Información de los productos**: nombre, precio, descripción, categoría.
+- **Información de la mascota**: nombre, tipo, edad, peso, historial de visitas.
+- **Información de los pedidos**: fecha, precio total, productos involucrados.
+- **Información del carrito**: productos involucrados, cantidad, precio
+
+#### Requisitos de rendimiento, escalabilidad, memoria, de procesamiento
+
+Considerando que la base de datos será utilizada para gestionar datos de clientes, mascotas, citas y ventas, se deben establecer requisitos de rendimiento para garantizar la eficiencia del sistema, que son:
+
+- **Rendimiento**: La base de datos debe ser capaz de manejar múltiples transacciones simultáneas sin experimentar una degradación significativa del rendimiento. No se espera un gran volumen de datos, ni decenas de transacciones simultáneas, debido a que la empresa se encuentra en una localidad pequeña. Pero se desea que cada una de estas transacciones se lleve a cabo en el menor tiempo posible, por lo que se debe diseñar en torno a esto con estructuras y consultas eficientes.
+- **Escalabilidad**: El sistema debe ser escalable para adaptarse al crecimiento futuro del negocio, tanto en términos de volumen de datos como de usuarios concurrentes. Debido a la creación del sitio web con los servicios descritos, se espera no solo que sea utilizado por clientela habitual sino captar la atención de muchos más posibles clientes. Se estima un crecimiento bastante grande tras la salida del sitio web, así que se debe favorecer la escalabilidad y que ello no reduzca el rendimiento.
+- **Procesamiento**: Se requiere un procesamiento eficiente para que las consultas sean devueltas en el menor tiempo posible y favorecer la satisfacción del usuario. Por suerte, las consultas que se procesarán serán sencillas.
+
+Teniendo en cuenta estos requisitos, y el problema para el que se quieren aplicar, realmente la máquina sobre la que tendría que correr todo el sistema de la base de datos y su procesamiento no tiene por qué ser muy potente. El negocio se puede permitir un servidor de potencia media-baja e incluso sobraría.
+
+La máquina sobre la que se puso a funcionar el proyecto durante su prueba tuvo las siguientes características:
+
+*Procesador:    Intel(R) Core(TM) i5-8600 CPU @ 3.10GHz   3.10 GHz*
+*RAM instalada:    32,0 GB (31,9 GB usable)*
+*Tipo de sistema:    Sistema operativo de 64 bits, procesador basado en x64*
+
+No se apreció ningún problema de rendimiento durante su prueba, considérese que no se puso en funcionamiento con múltiples peticiones de clientes a la vez, lo que podría cambiar las cosas pero se estima que sea suficiente.
+
+
+#### Requerimientos funcionales. Vistas de usuario y/o aplicaciones para los que va a servir la base de datos
+
+Los usuarios del sistema incluyen al personal de la clínica (veterinarios, auxiliares) y los clientes. Para satisfacer las necesidades de estos usuarios, se requieren las siguientes funcionalidades:
+
+- Registro de clientes y mascotas.
+- Programación de citas en línea.
+- Visualización del historial médico de las mascotas.
+- Gestión de ventas de productos y medicamentos.
+
+El administrador del sistema (veterinario) podrá ver la información de todos sus clientes, pero cada cliente solo podrá acceder a la información asociada a su cuenta. Por lo tanto, cada cliente tendrá una vista de las tablas del sistema relacionada con su identificador, mientras que el veterinario tendrá una vista completa de todos los datos del sistema.
+
+![](./images/finalweb/bbdd_info_acceso.png)
+
+Obsérvese que el administrador tiene acceso completo a todos los bloques de información, y cada usuario solo a su información concreta, solo a los productos disponibles y a todas las citas del sistema. Respecto a las citas, no se tendrá información sobre las personas que reservaron una cita, si no si está disponible o no.
+
+### Diseño de la Base de Datos
+
+#### Diseño conceptual
+
+Una vez desarrollados los requisitos y las funcionalidades, es fácil deducir las siguientes entidades de nuestra Base de Datos:
+
+
+**Usuarios:**
+- Atributos:
+  - Nombre de usuario
+  - Contraseña
+  - Nombre
+  - Dirección
+  - Teléfono
+- Relaciones:
+  - Un cliente puede tener múltiples mascotas, pero una mascota solo puede ser de un cliente.
+  - Un cliente puede tener múltiples pedidos, pero cada pedido solo puede ser de un cliente.
+  - Un cliente solo puede tener un carrito, y un carrito solo puede pertenecer a un cliente.
+  
+**Mascotas:**
+- Atributos:
+  - Identificador
+  - Nombre
+  - Tipo
+  - Edad
+  - Peso
+- Relaciones:
+  - Una mascota pertenece a un solo cliente, pero un cliente puede tener múltiples mascotas.
+  - Una mascota puede tener múltiples citas, pero una cita puede ser solo de una mascota.
+  
+**Citas:**
+- Atributos:
+  - Identificador
+  - Fecha
+  - Hora
+  - Descripción
+- Relaciones:
+  - Una cita pertenece a una sola mascota, pero una mascota puede tener múltiples citas.
+ 
+  
+**Pedidos:**
+- Atributos:
+  - Identificador
+  - Fecha
+  - Total
+- Relaciones:
+  - Un pedido puede tener múltiples productos, y un producto puede estar en múltiples pedidos.
+  - Un pedido puede ser de un solo cliente, pero un cliente puede tener múltiples pedidos.
+    
+**Carrito:**
+- Atributos:
+  - Identificador
+  - Precio total
+- Relaciones:
+  - Un carrito puede tener múltiples productos, y un producto puede estar en múltiples carritos.
+  - Un carrito puede ser de un solo cliente, y un cliente solo puede tener un carrito.
+    
+**Productos:**
+- Atributos:
+  - Identificador
+  - Nombre
+  - Descripción
+  - Precio
+  - Categoría
+- Relaciones:
+  - Un producto puede estar en múltiples pedidos, y un pedido puede tener múltiples productos.
+  - Un producto puede estar en múltiples carritos, y un carrito puede tener múltiples productos.
+
+
+#### Esquema lógico global (modelo relacional): tablas, atributos, dominio, restricciones
+
+Habiendo construido el diseño conceptual de nuestra base de datos, con sus entidades y sus respectivas relaciones con otras entidades, podemos preparar un Diagrama Entidad-Relación que nos ayude a trabajar nuestro esquema lógico global:
+
+![](./images/finalweb/bbdd_diagramaER.png)
+
+Definiendo entonces las siguientes tablas:
+
+**CLIENTE (Username, Password, Nombre, Dirección, Teléfono)**
+
+Donde:
+  - Username: es un string de texto, que puede incluir números y caracteres especiales. Es la clave principal.
+  - Password: es un string de texto, que puede incluir números y caracteres especiales.
+  - Nombre: es un string de texto.
+  - Dirección: es un string de texto, que puede incluir números y caracteres especiales.
+  - Teléfono: es un string de texto, que puede incluir números y caracteres especiales (para considerar los teléfonos de afuera de España y colocar la procedencia. P.ej: +52 7068591969)
+
+
+
+**MASCOTA (ID_Mascota, Nombre, Tipo, Edad, Peso, ID_Cliente)**
+
+Donde:
+  - ID_Mascota: es un identificador númerico. Es la clave principal.
+  - Nombre: es un string de texto.
+  - Tipo: es un string de texto.
+  - Edad: es un número.
+  - Peso: es un número. Puede tener decimales.
+  - ID_Cliente: clave foránea que hace referencia al ID del Cliente al que pertenece la mascota.
+
+**CITA: (ID_Cita, Fecha, Hora, Descripción, ID_Mascota)**
+
+Donde:
+  - ID_Cita: es un identificador númerico. Es la clave principal.
+  - Fecha: es un string de texto, que puede incluir números y caracteres especiales (más fácil de procesar un string que un objeto tipo fecha).
+  - Hora: es un string de texto, que puede incluir números y caracteres especiales (más fácil de procesar un string que un objeto tipo hora).
+  - Fecha: es un string de texto, que puede incluir números y caracteres especiales.
+  - ID_Mascota: clave foránea que hace referencia al ID de la Mascota para la que se solicitó la cita
+
+**PRODUCTO: (ID_Producto, Nombre, Descripción, Precio)**
+
+Donde:
+  - ID_Producto: es un identificador númerico. Es la clave principal.
+  - Nombre: es un string de texto, que puede incluir números y caracteres especiales.
+  - Descripción: es un string de texto, que puede incluir números y caracteres especiales.
+  - Precio: es un número. Puede tener decimales.
+
+**PEDIDOS: (ID_Pedido, Fecha, Total, ID_Cliente)**
+
+Donde:
+  - ID_Pedido: es un identificador númerico. Es la clave principal.
+  - Fecha: es un string de texto, que puede incluir números y caracteres especiales (más fácil de procesar un string que un objeto tipo fecha).
+  - Total: es un número. Puede tener decimales.
+  - ID_Cliente: clave foránea que hace referencia al ID del Cliente que realizó el pedido.
+
+**CARRITO: (ID_Carrito, Total, ID_Producto)**
+
+Donde:
+  - ID_Carrito: es un identificador númerico. Es la clave principal.
+  - Total: es un número. Puede tener decimales.
+  - ID_Producto:clave foránea que hace referencia al ID del Producto agregado al carrito.
+
+
+
+#### Consultas del sistema
+
+Definidas las tablas de nuestro sistema, estamos listos para preguntarnos sobre el tipo de consultas que tendría nuestro sistema. Siendo el sistema y la utilidad que se busca conseguir muy sencillas, las consultas lo serán también en consecuencia:
+
+
+- Consulta para obtener TODOS los productos disponibles (TIENDA).
+- Consulta para obtener los productos disponibles de una categoría en concreto (FILTRADO).
+- Consulta para obtener un producto con un id concreto (DETALLE DE PRODUCTO).
+- Consulta para obtener USERNAMES y PASSWORDS (LOGIN).
+- Consulta para obtener toda la información de un usuario, dado su ID (DASHBOARD).
+- Consulta para obtener todas las mascotas de un usuario, dado su ID (DASHBOARD).
+- Consulta para obtener toda la información de una mascota, dado su ID (DASHBOARD).
+- Consulta para obtener todos los pedidos de un usuario, dado su ID (DASHBOARD).
+- Consulta para obtener todos los productos de un carrito, dado el ID de usuario (DASHBOARD).
+- Consulta para obtener todas las citas ocupadas (DASHBOARD).
+- Consulta para obtener todas las citas ocupadas por un usuario concreto (DASHBOARD).
+
+
+
+### Creación de la Base de Datos
+
+
+Con el Diseño completo de la Base de Datos, ya es posible crearla y poblarla. 
+
+Se decidió utilizar **MongoDB** por su sencillez no solo de creación sino también de gestión y conexión. Se crea la Base de Datos “*LaFlorida*” en el URI: “*mongodb://localhost:27017*”. Se crean las colecciones siguientes:
+
+- **Usuarios**
+- **Productos**
+- **Citas**
+
+Debido al cambio realizado, hay que adaptar el modelo ENTIDAD-RELACIÓN para que sea lo más eficiente posible trabajar con NoSQL. Se agruparon las tablas en tres colecciones:
+
+||
+|--|
+|Usuarios. Contiene toda la información de usuario, sus mascotas (y estas las citas que tienen asociadas), los pedidos realizados (y los productos del pedido) y el carrito asociado (junto a los productos del carrito).|
+
+||
+|--|
+|Productos. Contiene toda la información de cada producto tal y como se indicó en el diseño.|
+
+||
+|--|
+|Citas. Contiene toda la información de las citas solicitadas en el sistema tal y como se indicó en diseño.|
+
+
+Como se puede observar, las tablas que se han eliminado han pasado a formar parte de la tabla Usuarios en forma de atributos suyos. Es decir, cada Usuario almacenará SUS mascotas, SUS pedidos y SU carrito. Esto es, cada Usuario almacenará toda la información relacionada con él.
+
+El motivo de este cambio es porque es muy conveniente devolver con cada Usuario toda su información asociada. Dado un id, y habiendo recuperado el documento asociado a ese id, es muy fácil obtener la información que nos interesa sin que se pierda mucho tiempo en búsquedas.
+
+Es decir: la información que se suele preguntar junta se ha agrupado, reduciéndose a tres colecciones nuestra Base de Datos.
+
+Las colecciones, por tanto, tendrán la siguiente estructura:
+
+```
+USUARIOS: {
+  username
+  password
+  nombre"
+  direccion
+  numero_telefono
+  mascotas: [
+	{
+  	id_mascota
+  	nombre
+  	tipo
+  	edad
+  	peso
+  	cita: [
+    	{
+      	id_cita
+      	fecha
+      	descripcion
+    	},
+    	{ … }
+  		]
+		},
+		{ … }
+  ],
+  pedidos: [
+{
+  	id_pedido
+  	fecha
+  	precio_total
+  	productos: [
+    	{
+      	id_producto
+      	cantidad
+            precio
+    	},
+    	{ … }
+  	]
+		},
+		{ … }
+  ]
+  carrito: [
+{
+  	"id_producto": "3",
+  	"cantidad": 1
+	},
+	{ … }
+  ]
+}
+```
+
+```
+ PRODUCTOS: {
+  id_producto
+  nombre
+  precio
+  descripcion
+  imageroute
+  categoria
+}
+```
+
+```
+CITAS: {
+  fecha
+  hora
+  username
+}
+```
+
+
+#### Población de la Base de Datos
+
+Las colecciones han sido exportadas en ficheros .json y subidas al siguiente enlace de Drive para su revisión:
+
+https://drive.google.com/drive/folders/1aQYZoqor9v6Cw5W758lXEQUsmnRHUaG7?usp=sharing
+
+Están disponibles también en los ficheros del sitio web en este repositorio.
+
+
+### Consultas NoSQL
+
+A continuación, se mostrará el código NoSQL correspondiente a las consultas indicadas previamente en este documento. Estas consultas serán hechas por el servidor NodeJS tras las correspondientes peticiones del Usuario. 
+
+Antes de poder realizar las consultas, como estamos usando Mongoose hay que ejecutar dichas consultas sobre “esquemas”. Ejecutamos:
+
+```
+     const NewSchemaDB = new mongoose.Schema({}, { strict: false });
+     const Productos = mongoose.model('Productos', NewSchemaDB, 'Productos');
+     const Usuarios = mongoose.model('Usuarios', NewSchemaDB, 'Usuarios');
+     const Citas = mongoose.model('Citas', NewSchemaDB, 'Citas');
+```
+
+Otra opción que no contempla la extracción de esquemas, es ejecutarlas directamente sobre la conexión con la base de datos, extrayéndola de Mongoose.
+
+```
+     var db = mongoose.connection;
+
+     ...
+
+     db.productos.find(...)
+     db.usuarios.find(...)
+```
+
+Se ha considerado utilizar la primera opción, con el uso de esquemas.
+
+| | |
+|--|--|
+| Consulta para obtener TODOS los productos disponibles (TIENDA).| ```Productos.find({}) ```|
+|Consulta para obtener los productos disponibles de una categoría en concreto (FILTRADO). | ``` Productos.find({ categoria: categoria }) ```|
+|Consulta para obtener un producto con un id concreto (DETALLE DE PRODUCTO). | ``` Productos.findOne({ id_producto: id_producto }) ``` |
+| Consulta para obtener USERNAMES y PASSWORDS (LOGIN).| ``` Usuarios.findOne({ username: username, password: password }) ``` |
+| Consulta para obtener toda la información de un usuario, dado su ID (DASHBOARD).|  ``` Usuarios.findOne({ username: username }) ```|
+|Consulta para obtener todas las mascotas de un usuario, dado su ID (DASHBOARD). |  ``` Usuarios.find({ username: username }, { _id: 0, mascotas: 1 }) ```|
+| Consulta para obtener toda la información de una mascota, dado su ID (DASHBOARD).|  ``` Usuarios.find({ "mascotas.id_mascota": 1 }, { "_id": 0, "mascotas.$": 1 })```|
+|Consulta para obtener todos los pedidos de un usuario, dado su ID (DASHBOARD). |  ``` Usuarios.find({ "username": username }, { "_id": 0, "pedidos": 1 }) ```|
+|Consulta para obtener todos los productos de un carrito, dado el ID de usuario (DASHBOARD). |  ``` Usuarios.find({ "username": username }, { "_id": 0, "carrito": 1 })```|
+| Consulta para obtener todas las citas ocupadas (DASHBOARD).|  ``` Citas.find({}) ```|
+| Consulta para obtener todas las citas ocupadas por un usuario concreto (DASHBOARD).|  ``` Citas.find({ "username": username }) ```|
+
+
+### Arquitectura Distribuida: número de nodos y replicación
+
+Se va a realizar un planteamiento teórico de una arquitectura distribuida para el sitio web de la Clínica Veterinaria “La Florida”. Se tendrá en consideración lo siguiente:
+
+||
+|--|
+| El veterinario de Clínica Veterinaria “La Florida” está muy contento con el desarrollo de su sitio web y los nuevos servicios que ofrece. Se estima que el volumen de clientes que lo utilizan está en torno a 1000 usuarios, con más o menos frecuencia.
+
+El servidor y la base de datos están alojados en el propio establecimiento de la Clínica Veterinaria. Lo que ha supuesto un problema: “*debido a la alta carga eléctrica de todas las máquinas que se utilizan, a veces se va la luz y la página web queda sin servicio. Muchas veces, esto ha ocurrido después de cerrar y el sitio web queda inoperativo medio día*”. 
+
+El veterinario lamenta mucho esta situación y ha pedido consejo al desarrollador de este proyecto.|
+
+
+Tras aconsejarle al veterinario que pague por un servidor en la nube, su respuesta fue: “*sí hombre, esos son todos unos ladrones. Mi página web la pongo yo*”, así que dicha idea quedó descartada.
+
+Sin embargo, el veterinario quedó satisfecho con la siguiente propuesta: replicar la base de datos para aumentar la disponibilidad, poniendo una máquina de no muchos recursos (porque la página no requiere de tanto) en el local de al lado que utilizan como almacén, funcionando de respaldo en caso de avería. Esto es, una **Base de Datos con replicación con dos nodos**.
+
+#### Justificación
+
+La elección de una base de datos distribuida con replicación para el sitio web de la Clínica Veterinaria "La Florida" es una solución inteligente y beneficiosa por varias razones:
+
+- **Disponibilidad mejorada**: La replicación de la base de datos permite tener copias de los datos en múltiples ubicaciones. En caso de que el servidor principal falle debido a cortes de energía u otros problemas, la base de datos aún estará accesible desde la réplica, lo que reduce significativamente el tiempo de inactividad del sitio web. Esto asegura que los clientes puedan acceder a la página web de la clínica incluso durante cortes de energía, lo que mejora la satisfacción del cliente y la confiabilidad del servicio.
+- **Resiliencia ante fallos**: Con una base de datos distribuida y replicada, la clínica veterinaria estará protegida contra la pérdida de datos en caso de fallo de hardware o desastres. Si un servidor falla, la base de datos aún estará disponible en la réplica, lo que garantiza la integridad de los datos y la continuidad del servicio.
+- **Rendimiento mejorado**: Al distribuir la carga entre el servidor principal y la réplica de la base de datos, se puede mejorar el rendimiento del sitio web. Esto es especialmente beneficioso en momentos de alta demanda, ya que ambos servidores pueden compartir la carga de trabajo, evitando así la sobrecarga de un único servidor.
+- **Escalabilidad**: En caso de que el volumen de usuarios del sitio web aumente en el futuro, una arquitectura distribuida con replicación permite escalar horizontalmente agregando más nodos o réplicas según sea necesario. Esto garantiza que el sistema pueda crecer para satisfacer las demandas cambiantes del negocio sin comprometer el rendimiento o la disponibilidad.
+
+Por lo tanto, al optar por una base de datos distribuida con replicación, la Clínica Veterinaria "La Florida" puede mejorar significativamente la disponibilidad, la resiliencia ante fallos, el rendimiento y la escalabilidad de su sitio web, proporcionando así una mejor experiencia a sus clientes y asegurando la continuidad del servicio incluso en situaciones adversas como cortes de energía.
+
+#### Conexión con la Base de Datos Replicada
+
+Para conectarse a la Base de Datos replicada, la aplicación del sitio web tendrá en una lista los dos nodos que se han mencionado anteriormente. Aleatoriamente, escogerá uno u otro para realizar su conexión:
+
+- Si el intento de conexión tiene éxito, procederá con las peticiones porque el nodo está operativo. 
+- Si el intento de conexión no tiene éxito, la aplicación tratará de conectarse al otro nodo restante, debido a que esto significa que el seleccionado aleatoriamente quedó inoperativo.
+
+La réplica que se encuentra en la Clínica Veterinaria, corre sobre un ordenador más potente que puede soportar más carga, por lo que será el nodo primario. Sin embargo, el ordenador colocado en el almacén no es tan potente, este será el nodo secundario. Para conseguir balancear la carga en función de la potencia de los ordenadores, la selección aleatoria de los nodos trabajará con un 65% de posibilidades de elegir el nodo primario y un 35% de posibilidades de elegir el nodo secundario.
