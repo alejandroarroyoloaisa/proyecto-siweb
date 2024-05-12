@@ -342,7 +342,7 @@
                                         var productoRow = $('<tr></tr>');
                                         var productoInfo = $('<td></td>');
                                         productoInfo.append('ID Producto: ' + productoData.id_producto + '<br>' + productoData.nombre + '<br>Cantidad: ' + producto.cantidad + '<br>Precio: ' + productoData.precio + '<br>');
-                                        var img = $('<td><a href="/producto.html?id_producto=' + productoData.id_producto + '" target="_blank"><img src="' + productoData.imageroute + '" alt="Imagen del producto" class="producto-imagen"></a></td>');
+                                        var img = $('<td><a href="./producto.html?id_producto=' + productoData.id_producto + '" target="_blank"><img src="' + productoData.imageroute + '" alt="Imagen del producto" class="producto-imagen"></a></td>');
                                         productoRow.append(productoInfo);
                                         productoRow.append(img);
                                         productosTable.append(productoRow);
@@ -391,7 +391,7 @@
                                     type: 'GET',
                                     success: function(producto) {
                                         var row = $('<tr></tr>');
-                                        var img = $('<td style="text-align: center;"><a href="/producto.html?id_producto=' + producto.id_producto + '" target="_blank"><img src="' + producto.imageroute + '" alt="Imagen del producto" class="producto-imagen"></a></td>');
+                                        var img = $('<td style="text-align: center;"><a href="./producto.html?id_producto=' + producto.id_producto + '" target="_blank"><img src="' + producto.imageroute + '" alt="Imagen del producto" class="producto-imagen"></a></td>');
                                         row.append(img);
                                         row.append('<td>' + producto.nombre + '</td>');
                                         row.append('<td>' + producto.precio + '€'+'</td>');
