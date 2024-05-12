@@ -1,0 +1,431 @@
+[{
+  "_id": {
+    "$oid": "6637cb49790ecac144e81d57"
+  },
+  "username": "maria123",
+  "password": "contraseña123",
+  "nombre": "María Pérez",
+  "direccion": "Calle Principal 123",
+  "numero_telefono": "123456789",
+  "mascotas": [
+    {
+      "id_mascota": 1,
+      "nombre": "Max",
+      "tipo": "Perro",
+      "edad": 5,
+      "peso": 8.5,
+      "cita": [
+        {
+          "id_cita": 1,
+          "fecha": "2024-05-10",
+          "descripcion": "Vacunación anual"
+        },
+        {
+          "id_cita": 8,
+          "fecha": "2024-07-3",
+          "descripcion": "Revisión anual"
+        }
+      ]
+    }
+  ],
+  "pedidos": [],
+  "carrito": []
+},
+{
+  "_id": {
+    "$oid": "6637cb49790ecac144e81d58"
+  },
+  "username": "juanito78",
+  "password": "miclave",
+  "nombre": "Juan García",
+  "direccion": "Avenida Central 456",
+  "numero_telefono": "987654321",
+  "mascotas": [
+    {
+      "id_mascota": 2,
+      "nombre": "Luna",
+      "tipo": "Gato",
+      "edad": 3,
+      "peso": 4.2,
+      "cita": [
+        {
+          "id_cita": 2,
+          "fecha": "2024-05-15",
+          "descripcion": "Revisión dental"
+        }
+      ]
+    },
+    {
+      "id_mascota": 3,
+      "nombre": "Rocky",
+      "tipo": "Perro",
+      "edad": 2,
+      "peso": 7.8,
+      "cita": [
+        {
+          "id_cita": 3,
+          "fecha": "2024-06-01",
+          "descripcion": "Desparasitación"
+        }
+      ]
+    }
+  ],
+  "pedidos": [
+    {
+      "id_pedido": 1,
+      "fecha": "2024-04-28",
+      "precio_total": 35.5,
+      "productos": [
+        {
+          "id_producto": 1,
+          "cantidad": 1,
+          "precio": 15
+        },
+        {
+          "id_producto": 2,
+          "cantidad": 2,
+          "precio": 10.25
+        }
+      ]
+    },
+    {
+      "id_pedido": "1715021353765",
+      "fecha": "2024-05-06",
+      "precio_total": "41",
+      "productos": [
+        {
+          "id_producto": "4",
+          "cantidad": "3",
+          "precio": "7.5"
+        },
+        {
+          "id_producto": "7",
+          "cantidad": "2",
+          "precio": "9.25"
+        }
+      ]
+    },
+    {
+      "id_pedido": "1715093489826",
+      "fecha": "2024-05-07",
+      "precio_total": "822.95",
+      "productos": [
+        {
+          "id_producto": "3",
+          "cantidad": "1",
+          "precio": "8.99"
+        },
+        {
+          "id_producto": "4",
+          "cantidad": "100",
+          "precio": "7.5"
+        },
+        {
+          "id_producto": "1",
+          "cantidad": "4",
+          "precio": "15.99"
+        }
+      ]
+    }
+  ],
+  "carrito": [],
+  "__v": 38
+},
+{
+  "_id": {
+    "$oid": "6637cb49790ecac144e81d59"
+  },
+  "username": "luisa_vetlover",
+  "password": "luisa123",
+  "nombre": "Luisa Martínez",
+  "direccion": "Calle del Parque 789",
+  "numero_telefono": "555123456",
+  "mascotas": [
+    {
+      "id_mascota": 4,
+      "nombre": "Toby",
+      "tipo": "Perro",
+      "edad": 4,
+      "peso": 10.2,
+      "cita": [
+        {
+          "id_cita": 4,
+          "fecha": "2024-05-20",
+          "descripcion": "Revisión general"
+        }
+      ]
+    }
+  ],
+  "pedidos": [],
+  "carrito": []
+},
+{
+  "_id": {
+    "$oid": "6637cb49790ecac144e81d5a"
+  },
+  "username": "ana_petcare",
+  "password": "ana321",
+  "nombre": "Ana Rodríguez",
+  "direccion": "Avenida del Bosque 123",
+  "numero_telefono": "555789123",
+  "mascotas": [
+    {
+      "id_mascota": 5,
+      "nombre": "Lola",
+      "tipo": "Gato",
+      "edad": 2,
+      "peso": 5.5,
+      "cita": [
+        {
+          "id_cita": 5,
+          "fecha": "2024-06-05",
+          "descripcion": "Vacunación"
+        }
+      ]
+    }
+  ],
+  "pedidos": [],
+  "carrito": []
+},
+{
+  "_id": {
+    "$oid": "6637cb49790ecac144e81d5b"
+  },
+  "username": "carlos_animallover",
+  "password": "carlos456",
+  "nombre": "Carlos López",
+  "direccion": "Calle de los Pinos 456",
+  "numero_telefono": "555456789",
+  "mascotas": [
+    {
+      "id_mascota": 6,
+      "nombre": "Buddy",
+      "tipo": "Perro",
+      "edad": 1,
+      "peso": 6.8,
+      "cita": [
+        {
+          "id_cita": 6,
+          "fecha": "2024-06-10",
+          "descripcion": "Vacunación inicial"
+        }
+      ]
+    },
+    {
+      "id_mascota": 7,
+      "nombre": "Simba",
+      "tipo": "Gato",
+      "edad": 3,
+      "peso": 4.9,
+      "cita": [
+        {
+          "id_cita": 7,
+          "fecha": "2024-06-15",
+          "descripcion": "Revisión anual"
+        }
+      ]
+    }
+  ],
+  "pedidos": [],
+  "carrito": []
+},
+{
+  "_id": {
+    "$oid": "6638a29462a5e021d52f4d9e"
+  },
+  "username": "admin",
+  "password": "admin",
+  "nombre": "admin",
+  "direccion": "",
+  "numero_telefono": "",
+  "mascotas": [
+    {
+      "id_mascota": 1,
+      "nombre": "Max",
+      "tipo": "Perro",
+      "edad": 5,
+      "peso": 8.5,
+      "cita": [
+        {
+          "id_cita": 1,
+          "fecha": "2024-05-10",
+          "descripcion": "Vacunación anual"
+        },
+        {
+          "id_cita": 8,
+          "fecha": "2024-07-3",
+          "descripcion": "Revisión anual"
+        }
+      ]
+    },
+    {
+      "id_mascota": 2,
+      "nombre": "Luna",
+      "tipo": "Gato",
+      "edad": 3,
+      "peso": 4.2,
+      "cita": [
+        {
+          "id_cita": 2,
+          "fecha": "2024-05-15",
+          "descripcion": "Revisión dental"
+        }
+      ]
+    },
+    {
+      "id_mascota": 3,
+      "nombre": "Rocky",
+      "tipo": "Perro",
+      "edad": 2,
+      "peso": 7.8,
+      "cita": [
+        {
+          "id_cita": 3,
+          "fecha": "2024-06-01",
+          "descripcion": "Desparasitación"
+        }
+      ]
+    },
+    {
+      "id_mascota": 4,
+      "nombre": "Toby",
+      "tipo": "Perro",
+      "edad": 4,
+      "peso": 10.2,
+      "cita": [
+        {
+          "id_cita": 4,
+          "fecha": "2024-05-20",
+          "descripcion": "Revisión general"
+        }
+      ]
+    },
+    {
+      "id_mascota": 5,
+      "nombre": "Lola",
+      "tipo": "Gato",
+      "edad": 2,
+      "peso": 5.5,
+      "cita": [
+        {
+          "id_cita": 5,
+          "fecha": "2024-06-05",
+          "descripcion": "Vacunación"
+        }
+      ]
+    },
+    {
+      "id_mascota": 6,
+      "nombre": "Buddy",
+      "tipo": "Perro",
+      "edad": 1,
+      "peso": 6.8,
+      "cita": [
+        {
+          "id_cita": 6,
+          "fecha": "2024-06-10",
+          "descripcion": "Vacunación inicial"
+        }
+      ]
+    },
+    {
+      "id_mascota": 7,
+      "nombre": "Simba",
+      "tipo": "Gato",
+      "edad": 3,
+      "peso": 4.9,
+      "cita": [
+        {
+          "id_cita": 7,
+          "fecha": "2024-06-15",
+          "descripcion": "Revisión anual"
+        }
+      ]
+    }
+  ],
+  "pedidos": [
+    {
+      "id_pedido": "1715020592509",
+      "fecha": "2024-05-06",
+      "precio_total": 115.96,
+      "productos": [
+        {
+          "id_producto": "9",
+          "cantidad": "3",
+          "precio": "18.99"
+        },
+        {
+          "id_producto": "8",
+          "cantidad": "2",
+          "precio": "25"
+        },
+        {
+          "id_producto": "3",
+          "cantidad": "1",
+          "precio": "8.99"
+        }
+      ]
+    },
+    {
+      "id_pedido": "1715020685932",
+      "fecha": "2024-05-06",
+      "precio_total": 25.48,
+      "productos": [
+        {
+          "id_producto": "3",
+          "cantidad": "2",
+          "precio": "8.99"
+        },
+        {
+          "id_producto": "4",
+          "cantidad": "1",
+          "precio": "7.5"
+        }
+      ]
+    },
+    {
+      "id_pedido": "1715020740898",
+      "fecha": "2024-05-06",
+      "precio_total": 31.98,
+      "productos": [
+        {
+          "id_producto": "1",
+          "cantidad": "2",
+          "precio": "15.99"
+        }
+      ]
+    },
+    {
+      "id_pedido": "1715108504433",
+      "fecha": "2024-05-07",
+      "precio_total": "72.7",
+      "productos": [
+        {
+          "id_producto": "3",
+          "cantidad": "5",
+          "precio": "8.99"
+        },
+        {
+          "id_producto": "7",
+          "cantidad": "3",
+          "precio": "9.25"
+        }
+      ]
+    }
+  ],
+  "carrito": [
+    {
+      "id_producto": "3",
+      "cantidad": 1
+    },
+    {
+      "id_producto": "8",
+      "cantidad": 1
+    },
+    {
+      "id_producto": "6",
+      "cantidad": 2
+    }
+  ],
+  "__v": 323
+}]

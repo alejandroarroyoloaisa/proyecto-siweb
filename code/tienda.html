@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./utilidades/menu.css" />
+    <link rel="stylesheet" href="./utilidades/breadcrumb.css" />
+    <link rel="stylesheet" href="./utilidades/footer.css" />
+    <link rel="stylesheet" href="./utilidades/styles.css" />
+    <link rel="stylesheet" href="./utilidades/tienda.css" />
+    <title>Tienda - Clínica Veterinaria La Florida</title>
+    <link rel="icon" href="images/browser_icon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- SECCIÓN SUPERIOR DEL SITIO WEB -->
+    <div class="top-section">
+      <div class="background-image"></div>
+      <div id="mensajebienvenida"></div>
+      <a href="contacto.html">
+        <button class="contact-button">Contacto</button>
+      </a>
+      <a href="tienda.html">
+        <button class="shop-button">Tienda</button>
+      </a>
+      <a id="loginbutton2" href="login.html">
+        <button id="loginbutton1" class="login-button">Iniciar Sesión</button>
+      </a>
+    </div>
+    <!-- MENÚ LATERAL DEL SITIO WEB -->
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li>
+          <div class="dropdown">
+            <a href="mascotas.html">Mascotas</a>
+            <div class="dropdown-content">
+              <a href="perros.html">Perros</a>
+              <a href="gatos.html">Gatos</a>
+              <a href="exoticos.html">Exóticos</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="serviciosmedicos.html">Servicios Médicos</a>
+            <div class="dropdown-content">
+              <a href="ecografia.html">Ecografía y Ecocardiografía</a>
+              <a href="hospital.html">Hospital</a>
+              <a href="cirugia.html">Cirugía</a>
+              <a href="radiologia.html">Radiología Digital</a>
+              <a href="laboratorio.html">Laboratorio</a>
+              <a href="consulta.html">Consulta Veterinaria</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="prevencion.html">Prevención</a>
+            <div class="dropdown-content">
+              <a href="prevencion.html#planvacunacion">Planes de Vacunación</a>
+              <a href="prevencion.html#plandesparasitacion">Planes de Desparasitación</a>
+              <a href="prevencion.html#microchip">Microchip</a>
+              <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+              <a href="prevencion.html#urgencias">Urgencias</a>
+              <a href="prevencion.html#castracion">Castración</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="cuidadobienestar.html">Cuidado y Bienestar</a>
+            <div class="dropdown-content">
+              <a href="cuidadobienestar.html#peluqueria">Peluquería Canina</a>
+              <a href="cuidadobienestar.html#cortezarpas">Corte de Uñas</a>
+              <a href="cuidadobienestar.html#eutanasia">Eutanasia e Incineración</a>
+              <a href="cuidadobienestar.html#odontologia">Odontología</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <!-- MENÚ SUPERIOR DEL SITIO WEB Y MENÚ DE HAMBURGUESA -->
+    <nav>
+      <table class="navbar">
+        <tr>
+          <td class="logo-cell">
+            <img src="images/logo.png" alt="Logo de la empresa" class="logo" />
+          </td>
+          <td>
+            <div class="dropdown">
+              <a href="mascotas.html">Mascotas</a>
+              <div class="dropdown-content">
+                <a href="perros.html">Perros</a>
+                <a href="gatos.html">Gatos</a>
+                <a href="exoticos.html">Exóticos</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="serviciosmedicos.html">Servicios Médicos</a>
+              <div class="dropdown-content">
+                <a href="ecografia.html">Ecografía y Ecocardiografía</a>
+                <a href="hospital.html">Hospital</a>
+                <a href="cirugia.html">Cirugía</a>
+                <a href="radiologia.html">Radiología Digital</a>
+                <a href="laboratorio.html">Laboratorio</a>
+                <a href="consulta.html">Consulta Veterinaria</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="prevencion.html">Prevención</a>
+              <div class="dropdown-content">
+                <a href="prevencion.html#planvacunacion">Planes de Vacunación</a>
+                <a href="prevencion.html#plandesparasitacion">Planes de Desparasitación</a>
+                <a href="prevencion.html#microchip">Microchip</a>
+                <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+                <a href="prevencion.html#urgencias">Urgencias</a>
+                <a href="prevencion.html#castracion">Castración</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="cuidadobienestar.html">Cuidado y Bienestar</a>
+              <div class="dropdown-content">
+                <a href="cuidadobienestar.html#peluqueria">Peluquería Canina</a>
+                <a href="cuidadobienestar.html#cortezarpas">Corte de Uñas</a>
+                <a href="cuidadobienestar.html#eutanasia">Eutanasia e Incineración</a>
+                <a href="cuidadobienestar.html#odontologia">Odontología</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <script src="./utilidades/menu.js"></script>
+    <script src="./utilidades/extras.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#30297f" class="bi bi-cart2" viewBox="0 0 16 16">
+        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+      </svg>
+    </div>
+
+    <header id="titulotienda" class="header">
+      <h1>Tienda</h1>
+    </header>
+
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+
+    
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="  Busca un producto aquí..."
+        />
+        <button id="search">Buscar</button>
+      </div>
+      <div id="buttons">
+        <button id="todosboton" class="button-value" data-category="">Todos</button>
+        <button class="button-value" data-category="Alimentos">
+          Alimentos
+        </button>
+        <button class="button-value" data-category="Juguetes">
+          Juguetes
+        </button>
+        <button class="button-value" data-category="Accesorios">
+          Accesorios
+        </button>
+        <button class="button-value" data-category="Cuidado e Higiene">
+          Cuidado e Higiene
+        </button>
+      </div>
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="productos" class="container"></div>
+
+
+
+    <script>
+
+        // Función para obtener el valor de una cookie
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        let productos = [];
+
+        $(document).ready(function() {
+            $.get('http://localhost:3000/productos', function(data) {
+                productos = data; // Almacena los productos
+                renderProductos(productos); // Renderiza los productos
+            });
+
+        });
+
+        $(document).ready(function() {
+            // Hacer una solicitud AJAX a la API de perfil de usuario
+            $.ajax({
+                url: 'http://localhost:3000/usuarios/perfil',
+                type: 'GET',
+                data: {
+                    username: getCookie('username')
+                },
+                success: function(data) {
+                    // Cambiar el mensaje de bienvenida para incluir el nombre del usuario
+                    $('#mensajebienvenida').text('¡Bienvenido, ' + data.nombre + '!');
+                    $('#loginbutton1').text('Regresar al perfil');
+                    $('#loginbutton2').attr('href', 'dashboard.html');
+                }
+            });
+        });
+
+        function renderProductos(productos) {
+            $('#productos').empty(); // Limpia el contenedor de productos
+            productos.forEach(function(producto) {
+                $('#productos').append(
+                    '<a href="producto.html?id_producto=' + producto.id_producto + '">' +
+                    '<div class="card">' +
+                    '<div class="card-img">' +
+                    '<img src="' + producto.imageroute + '" alt="' + producto.nombre + '">' +
+                    '</div>' +
+                    '<div class="card-info">' +
+                    '<p class="text-title">' + producto.nombre + '</p>' +
+                    '<p class="text-body">' + producto.descripcion + '</p>' +
+                    '</div>' +
+                    '<div class="card-footer">' +
+                    '<span class="text-title">' + producto.precio + '€</span>' +
+                    '<div class="card-button">' +
+                    '<svg class="svg-icon" fill="#30297f" viewBox="0 0 20 20">' +
+                    '<path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>' +
+                    '<path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>' +
+                    '<path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>' +
+                    '</svg>' +
+                    '</div>' +
+                    '</div></div></a>');
+            });
+        }
+        $(document).ready(function() {
+
+            // Añade un evento click a todos los botones .card-button
+            $(document).on('click', '.card-button', function() {
+                event.preventDefault(); // Evita el comportamiento predeterminado del evento de clic
+
+                // Obtén el id del producto del elemento padre
+                var id_producto = $(this).closest('a').attr('href').split('=')[1];
+
+                // Hacer una solicitud AJAX a la API de carrito de usuario
+                $.ajax({
+                    url: 'http://localhost:3000/usuarios/carrito',
+                    type: 'POST',
+                    data: {
+                        username: getCookie('username'),
+                        id_producto: id_producto,
+                        cantidad: 1 // Asume que la cantidad es 1
+                    },
+                    success: function(data) {
+                        alert('Producto añadido al carrito');
+                    },
+                    error: function() {
+                        alert('Necesitas estar logeado para añadir productos al carrito.');
+                    }
+                });
+            });
+
+        });
+        $('.button-value').click(function() {
+            $('.button-value').removeClass('selected'); // Elimina la clase 'selected' de todos los botones
+            $(this).addClass('selected'); // Agrega la clase 'selected' al botón clicado
+
+            currentCategory = $(this).data('category'); // Actualiza la categoría actualmente seleccionada
+            filterProductos(); // Filtra los productos
+        });
+
+        $('#search').click(function() {
+            currentSearch = $('#search-input').val().toLowerCase(); // Actualiza el término de búsqueda actualmente ingresado
+            filterProductos(); // Filtra los productos
+        });
+
+        $('#todosboton').click();
+
+        var currentCategory = ""; // Categoría actualmente seleccionada
+        var currentSearch = ""; // Término de búsqueda actualmente ingresado
+        function filterProductos() {
+            var filteredProductos = productos;
+
+            if (currentCategory !== "") { // Si se ha seleccionado una categoría
+                filteredProductos = filteredProductos.filter(producto => producto.categoria === currentCategory);
+            }
+
+            if (currentSearch !== "") { // Si se ha ingresado un término de búsqueda
+                filteredProductos = filteredProductos.filter(producto => producto.nombre.toLowerCase().includes(currentSearch));
+            }
+
+            renderProductos(filteredProductos); // Muestra los productos filtrados
+        }
+
+        $(document).ready(function() {
+            // Añade un evento click al elemento .icon-wrapper
+            $(document).on('click', '.icon-wrapper', function(event) {
+                event.preventDefault(); // Evita el comportamiento predeterminado del evento de clic
+
+                // Obtén la cookie del usuario
+                const username = getCookie('username');
+
+                // Si el usuario está logueado, redirige al dashboard
+                if (username) {
+                    window.location.href = './dashboard.html?from=carrito';
+                } else {
+                    alert('Necesitas estar logeado para acceder al carrito.');
+                }
+            });
+        });
+
+    </script>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+    <!-- FOOTER DEL SITIO WEB -->
+    <div class="pg-footer">
+      <footer class="footer">
+        <svg
+          class="footer-wave-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            class="footer-wave-path"
+            d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"
+          ></path>
+        </svg>
+        <div class="footer-content">
+          <div class="footer-content-column">
+            <div class="footer-logo">
+              <a class="footer-logo-link" href="inicio.html">
+                <img src="images/logo.png" alt="Logo" width="212" height="65" />
+              </a>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name">Mascotas</h2>
+              <ul id="menu-get-started" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="perros.html">Perros</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="gatos.html">Gatos</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="exoticos.html">Animales Exóticos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name">Prevención</h2>
+              <ul id="menu-company" class="footer-menu-list">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#planvacunacion">Plan de Vacunación</a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                  <a href="prevencion.html#plandesparasitacion">Plan de Desparasitación</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#microchip">Microchip</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#urgencias">Urgencias</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#castracion">Castración</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name">Cuidado y Bienestar</h2>
+              <ul id="menu-legal" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434"
+                >
+                  <a href="cuidadobienestar.html#peluqueria">Peluquería canina</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="cuidadobienestar.html#cortezarpas">Corte de uñas</a>
+                </li>
+                <li
+                class="menu-item menu-item-type-post_type menu-item-object-page"
+              >
+                <a href="cuidadobienestar.html#eutanasia">Eutanasia e incineración</a>
+              </li>
+              <li
+              class="menu-item menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="cuidadobienestar.html#odontologia">Odontología</a>
+            </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name">Servicios Médicos</h2>
+              <ul id="menu-quick-links" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom"
+                >
+                  <a rel="noopener noreferrer" href="ecografia.html"
+                    >Ecografía y Ecocardiografía</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom"
+                >
+                  <a rel="noopener noreferrer" href="hospital.html"
+                    >Hospital</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="cirugia.html">Cirugía</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="radiologia.html">Radiología Digital</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type_archive menu-item-object-customer"
+                >
+                  <a href="laboratorio.html">Laboratorio</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="consulta.html">Consulta Veterinaria</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-call-to-action">
+              <h2 class="footer-call-to-action-title">Contacta con nosotros</h2>
+              <p class="footer-call-to-action-description">
+                ¿Tienes alguna pregunta?
+              </p>
+              <a
+                class="footer-call-to-action-button button"
+                href="contacto.html"
+                target="_self"
+              >
+                Contacto
+              </a>
+            </div>
+            <div class="footer-call-to-action">
+              <h2 class="footer-call-to-action-title">Aviso Legal</h2>
+              <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="privacidad.html"
+                target="_blank"> Privacidad y Términos de Uso </a></p>
+            </div>
+          </div>
+          <div class="footer-social-links">
+            <svg
+              class="footer-social-amoeba-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 236 54"
+            >
+              <path
+                class="footer-social-amoeba-path"
+                d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"
+              ></path>
+            </svg>
+            <a
+              class="footer-social-link facebook"
+              href="https://www.facebook.com/clinicaveterinarialaflorida"
+              target="_blank"
+            >
+              <span class="hidden-link-text">Facebook</span>
+              <svg
+                class="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="footer-social-icon-path"
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="footer-social-link whatsapp"
+              href="https://api.whatsapp.com/send?phone=34655%2058%2065%2083&text=Hola%20,%20quiero%20hacer%20una%20consulta%20veterinaria%20"
+              target="_blank"
+            >
+              <span class="hidden-link-text">WhatsApp</span>
+              <svg
+                class="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+              >
+                <path
+                  class="footer-social-icon-path"
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="footer-social-link instagram"
+              href="https://www.instagram.com/clinicaveterinarialaflorida/?hl=es"
+              target="_blank"
+            >
+              <span class="hidden-link-text">Instagram</span>
+              <svg
+                class="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="footer-social-icon-path"
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="footer-social-link twitter"
+              href="https://twitter.com/clinicaveterinarialaflorida"
+              target="_blank"
+            >
+              <span class="hidden-link-text">Twitter</span>
+              <svg
+                class="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  class="footer-social-icon-path"
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-wrapper">
+            <p class="footer-copyright-text">
+              <a class="footer-copyright-link" href="#" target="_self">
+                ©2024. | Diseñado por: Alejandro Arroyo Loaisa. | Todos los
+                derechos reservados.
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

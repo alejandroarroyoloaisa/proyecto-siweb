@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "663650a5e1053779a56e139e"
+  },
+  "id_producto": 1,
+  "nombre": "Alimento para gatos",
+  "precio": 15.99,
+  "descripcion": "Alimento balanceado para gatos adultos, rico en proteínas y vitaminas.",
+  "imageroute": "images\\productos\\1.jpg",
+  "categoria": "Alimentos"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e139f"
+  },
+  "id_producto": 2,
+  "nombre": "Correa retráctil para perros",
+  "precio": 20.5,
+  "descripcion": "Correa retráctil de 5 metros para pasear a perros, ideal para entrenamiento.",
+  "imageroute": "images\\productos\\2.jpg",
+  "categoria": "Accesorios"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e13a0"
+  },
+  "id_producto": 3,
+  "nombre": "Collar antipulgas",
+  "precio": 8.99,
+  "descripcion": "Collar ajustable que protege a tu mascota de pulgas y garrapatas durante varios meses.",
+  "imageroute": "images\\productos\\3.jpg",
+  "categoria": "Accesorios"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e13a1"
+  },
+  "id_producto": 4,
+  "nombre": "Juguete mordedor para cachorros",
+  "precio": 7.5,
+  "descripcion": "Juguete de goma resistente para cachorros, ideal para aliviar la dentición y el aburrimiento.",
+  "imageroute": "images\\productos\\4.jpg",
+  "categoria": "Juguetes"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e13a2"
+  },
+  "id_producto": 5,
+  "nombre": "Shampoo hipoalergénico",
+  "precio": 12.75,
+  "descripcion": "Shampoo suave formulado especialmente para mascotas con piel sensible o alergias.",
+  "imageroute": "images\\productos\\5.jpg",
+  "categoria": "Cuidado e Higiene"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e13a3"
+  },
+  "id_producto": 6,
+  "nombre": "Cepillo para gatos",
+  "precio": 5.99,
+  "descripcion": "Cepillo de cerdas suaves para acicalar el pelaje de los gatos y eliminar el pelo suelto.",
+  "imageroute": "images\\productos\\6.jpg",
+  "categoria": "Accesorios"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e13a4"
+  },
+  "id_producto": 7,
+  "nombre": "Snacks dentales para perros",
+  "precio": 9.25,
+  "descripcion": "Snacks sabrosos que ayudan a mantener la salud dental de los perros, reduciendo el sarro.",
+  "imageroute": "images\\productos\\7.png",
+  "categoria": "Alimentos"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e13a5"
+  },
+  "id_producto": 8,
+  "nombre": "Arenero para gatos",
+  "precio": 25,
+  "descripcion": "Arenero espacioso y fácil de limpiar, con filtro de carbono para eliminar olores.",
+  "imageroute": "images\\productos\\8.jpg",
+  "categoria": "Accesorios"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e13a6"
+  },
+  "id_producto": 9,
+  "nombre": "Suplemento vitamínico para mascotas",
+  "precio": 18.99,
+  "descripcion": "Suplemento multivitamínico que promueve la salud general y el bienestar de las mascotas.",
+  "imageroute": "images\\productos\\9.jpg",
+  "categoria": "Salud y Bienestar"
+},
+{
+  "_id": {
+    "$oid": "663650a5e1053779a56e13a7"
+  },
+  "id_producto": 10,
+  "nombre": "Cama ortopédica para perros",
+  "precio": 35.5,
+  "descripcion": "Cama cómoda y ortopédica para perros mayores o con problemas articulares, con relleno de espuma viscoelástica.",
+  "imageroute": "images\\productos\\10.jpg",
+  "categoria": "Accesorios"
+}]

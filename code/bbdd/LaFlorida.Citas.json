@@ -1,0 +1,294 @@
+[{
+  "_id": {
+    "$oid": "663b95f612363c3378ea4ecc"
+  },
+  "fecha": "10-05-2024",
+  "hora": "10:30",
+  "username": "juanito78"
+},
+{
+  "_id": {
+    "$oid": "663b960112363c3378ea4ece"
+  },
+  "fecha": "10-05-2024",
+  "hora": "10:00",
+  "username": "juanito78"
+},
+{
+  "_id": {
+    "$oid": "663b960e12363c3378ea4ed0"
+  },
+  "fecha": "10-05-2024",
+  "hora": "11:00",
+  "username": "juanito78"
+},
+{
+  "_id": {
+    "$oid": "663b9f6874b141649624d431"
+  },
+  "fecha": "17-05-2024",
+  "hora": "17:00",
+  "username": "currentUser",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663b9fa274b141649624d442"
+  },
+  "fecha": "10-05-2024",
+  "hora": "17:00",
+  "username": "currentUser",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba02574b141649624d448"
+  },
+  "fecha": "10-05-2024",
+  "hora": "17:30",
+  "username": "currentUser",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba04874b141649624d44e"
+  },
+  "fecha": "09-05-2024",
+  "hora": "13:00",
+  "username": "currentUser",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba28a74b141649624d4c7"
+  },
+  "fecha": "09-05-2024",
+  "hora": "18:30",
+  "username": "currentUser",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba683e13187ea9d989d00"
+  },
+  "fecha": "18-05-2024",
+  "hora": "13:30",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba6d2e13187ea9d989d08"
+  },
+  "fecha": "11-05-2024",
+  "hora": "11:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba71ae13187ea9d989d0d"
+  },
+  "fecha": "23-05-2024",
+  "hora": "18:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba71fe13187ea9d989d12"
+  },
+  "fecha": "21-05-2024",
+  "hora": "19:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba723e13187ea9d989d17"
+  },
+  "fecha": "29-05-2024",
+  "hora": "19:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba728e13187ea9d989d1c"
+  },
+  "fecha": "21-05-2024",
+  "hora": "17:30",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba72de13187ea9d989d21"
+  },
+  "fecha": "11-05-2024",
+  "hora": "17:30",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba732e13187ea9d989d26"
+  },
+  "fecha": "11-05-2024",
+  "hora": "20:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba737e13187ea9d989d2b"
+  },
+  "fecha": "20-05-2024",
+  "hora": "20:30",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba73ce13187ea9d989d30"
+  },
+  "fecha": "13-05-2024",
+  "hora": "20:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba740e13187ea9d989d35"
+  },
+  "fecha": "11-05-2024",
+  "hora": "20:30",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663ba745e13187ea9d989d3a"
+  },
+  "fecha": "12-05-2024",
+  "hora": "19:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663bd3c1efdad3d199e635ae"
+  },
+  "fecha": "08-05-2024",
+  "hora": "18:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663bd697efdad3d199e635c5"
+  },
+  "fecha": "08-05-2024",
+  "hora": "12:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663bd6b0efdad3d199e635cf"
+  },
+  "fecha": "15-05-2024",
+  "hora": "17:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663bd748efdad3d199e63604"
+  },
+  "fecha": "08-05-2024",
+  "hora": "12:30",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3a8b4aa10ffb554d15d8"
+  },
+  "fecha": "24-Mayo1-2024",
+  "hora": "13:30",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3ab34aa10ffb554d15df"
+  },
+  "fecha": "24-05-2024",
+  "hora": "17:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3ac54aa10ffb554d15e5"
+  },
+  "fecha": "24-05-2024",
+  "hora": "18:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3ad54aa10ffb554d15eb"
+  },
+  "fecha": "10-05-2024",
+  "hora": "17:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3cab4aa10ffb554d1603"
+  },
+  "fecha": "11-05-2024",
+  "hora": "10:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3d364aa10ffb554d1610"
+  },
+  "fecha": "17-05-2024",
+  "hora": "10:30",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3d434aa10ffb554d1615"
+  },
+  "fecha": "10-06-2024",
+  "hora": "11:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3d4c4aa10ffb554d161a"
+  },
+  "fecha": "10-07-2024",
+  "hora": "9:00",
+  "username": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663e3dba4aa10ffb554d1627"
+  },
+  "fecha": "26-07-2024",
+  "hora": "20:30",
+  "username": "admin",
+  "__v": 0
+}]

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+        <title>Dashboard - Clínica Veterinaria La Florida</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="./utilidades/dashboard.css" rel="stylesheet">
+        <link href="./utilidades/calendario.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div style="background-color: #30297f; color: white; display: flex; justify-content: space-between; padding: 10px; align-items: center;">
+            <div style="display: flex; align-items: center;">
+                <a href="inicio.html">
+                    <img src="./images/logo_2.png" alt="Logo de la clínica veterinaria" style="height: 50px;">
+                </a>
+                <p style="margin-left: 50px;">Panel de control de <strong><span id="username">nombre de usuario</span></strong></p>
+            </div>
+            <div id="button-container">
+                <button id="tienda-button">Tienda</button>
+                <button id="regresar-button">Regresar al sitio</button>
+                <button id="logout-button">Cerrar Sesión</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-custom navbar-mainbg">
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                    <li class="nav-item">
+                        <a id="perfil-link" class="nav-link" href="javascript:void(0);"><i class="fas fa-solid fa-user"></i>Perfil</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a id="mascotas-link" class="nav-link" href="javascript:void(0);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"viewBox="0 0 512 512"><path d="M226.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5s.3-86.2 32.6-96.8s70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3S-2.7 179.3 21.8 165.3s59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5v1.6c0 25.8-20.9 46.7-46.7 46.7c-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2C84.9 480 64 459.1 64 433.3v-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3s29.1 51.7 10.2 84.1s-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5s46.9 53.9 32.6 96.8s-52.1 69.1-84.4 58.5z"/></svg>
+                        Mascotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="pedidos-link" class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Historial de Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="carrito-link" class="nav-link" href="javascript:void(0);">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="17" height="17"  fill="currentColor" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="citas-link" class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Pedir Cita</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div id="mascotas"></div>
+        <div id="pedidos"></div>
+        <div id="perfil"></div>
+        <div id="carrito"></div>
+        <div id="citas"></div>
+        
+        
+        
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./utilidades/dashboard.js"></script>
+        <script>
+
+            $(document).ready(function() {
+                
+                // Obtén el parámetro 'from' de la URL
+                var urlParams = new URLSearchParams(window.location.search);
+                var from = urlParams.get('from');
+
+                // Elimina la clase 'active' del elemento de menú actualmente activo
+                $('.nav-item.active').removeClass('active');
+
+                // Si el usuario llegó desde el carrito, activa el elemento de menú del carrito
+                if (from === 'carrito') {
+                    $('#carrito-link').parent('.nav-item').addClass('active');
+                } else {
+                    // Si el usuario llegó desde cualquier otro lugar, activa el elemento de menú de mascotas
+                    $('#mascotas-link').parent('.nav-item').addClass('active');
+                }
+            });
+
+
+            // Función para obtener el valor de una cookie
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(';').shift();
+            }
+            // Función para borrar una cookie
+            function deleteCookie(name) {
+                document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+            }
+            // Obtener el valor de la cookie 'username'
+            const username = getCookie('username');
+        
+            // Actualizar el nombre de usuario en el título de la página
+            document.getElementById('username').innerText = username;
+
+
+            // Agregar un controlador de eventos al botón de cerrar sesión
+            document.getElementById('logout-button').addEventListener('click', function() {
+                deleteCookie('username');
+                window.location.href = 'login.html';
+            });
+
+            document.getElementById('tienda-button').addEventListener('click', function() {
+                window.location.href = 'tienda.html';
+            });
+
+            document.getElementById('regresar-button').addEventListener('click', function() {
+                window.location.href = 'inicio.html';
+            });
+
+            // Función para borrar el contenido de todas las secciones
+            function clearSections() {
+                $('#mascotas').html('');
+                $('#pedidos').html('');
+                $('#perfil').html('');
+                $('#carrito').html('');
+                $('#citas').html('');
+                // Eliminar el script calendario.js si existe
+                var calendarioScript = document.getElementById('calendario-script');
+                if (calendarioScript) {
+                    calendarioScript.remove();
+                }
+                var selectedDayBox = document.getElementById('selected-day-box');
+                if (selectedDayBox) {
+                    selectedDayBox.remove();
+                }
+                var leftbox = document.getElementById('left-box');
+                if (leftbox) {
+                    leftbox.remove();
+                }
+            }
+
+
+            document.getElementById('citas-link').addEventListener('click', function() {
+                clearSections();
+                var script = document.createElement('script');
+                script.src = './utilidades/calendario.js';
+                script.id = 'calendario-script'; // Asignar un id al script
+                script.onload = function() {
+                    initCalendar(); // Llamar a la función después de que el script se haya cargado completamente
+                };
+                document.body.appendChild(script);
+                var citasDiv = document.getElementById('citas');
+                citasDiv.innerHTML = `
+                    <div class="container">
+                        <div class="header">
+                            <div class="left-arrow">&nbsp;&nbsp;&nbsp;&nbsp;<</div>
+                            <div class="month-container">
+                            <div class="month-name"></div>
+                            </div>
+                            <div class="right-arrow">>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        </div><!--close .header -->
+                        <div class="mon-sun-container">
+                            <div class="day-name"><p class="day-name-text">&nbsp;&nbsp;DOM</p></div>
+                            <div class="day-name"><p class="day-name-text">&nbsp;&nbsp;LUN</p></div>
+                            <div class="day-name"><p class="day-name-text">&nbsp;&nbsp;MAR</p></div>
+                            <div class="day-name"><p class="day-name-text">&nbsp;&nbsp;MIE</p></div>
+                            <div class="day-name"><p class="day-name-text">&nbsp;&nbsp;JUE</p></div>
+                            <div class="day-name"><p class="day-name-text">&nbsp;&nbsp;VIE</p></div>
+                            <div class="day-name"><p class="day-name-text">&nbsp;&nbsp;SÁB</p></div>
+                        </div>
+                        <div class="calendar-container">
+                            <!--     <div class="calender-day"></div>
+                                <div class="calender-day"></div>
+                                <div class="calender-day"></div>
+                                <div class="calender-day">1</div>
+                                <div class="calender-day">2</div>
+                                <div class="calender-day">3</div>
+                                <div class="calender-day">4</div>
+                                <div class="calender-day">5</div>
+                                <div class="calender-day">6</div>
+                                <div class="calender-day">7</div>
+                                <div class="calender-day">8</div>
+                                <div class="calender-day">9</div>
+                                <div class="calender-day">10</div>
+                                <div class="calender-day">11</div>
+                                <div class="calender-day">12</div>
+                                <div class="calender-day">13</div>
+                                <div class="calender-day">14</div>
+                                <div class="calender-day">15</div>
+                                <div class="calender-day">16</div>
+                                <div class="calender-day">17</div>
+                                <div class="calender-day">18</div>
+                                <div class="calender-day">19</div>
+                                <div class="calender-day">20</div>
+                                <div class="calender-day">21</div>
+                                <div class="calender-day">22</div>
+                                <div class="calender-day">23</div>
+                                <div class="calender-day">24</div>
+                                <div class="calender-day">25</div>
+                                <div class="calender-day">26</div>
+                                <div class="calender-day">27</div>
+                                <div class="calender-day">28</div>
+                                <div class="calender-day">29</div>
+                                <div class="calender-day">30</div>
+                                <div class="calender-day">31</div> -->
+                        </div>
+                    </div>
+                    `;
+                });
+
+            document.getElementById('perfil-link').addEventListener('click', function() {
+                clearSections();
+                // Hacer una solicitud AJAX a la API de perfil de usuario
+                $.ajax({
+                    url: 'http://localhost:3000/usuarios/perfil',
+                    type: 'GET',
+                    data: {
+                        username: getCookie('username')
+                    },
+                    success: function(data) {
+                        var table = $('<table class="table table-striped"></table>');
+                        var thead = $('<thead></thead>');
+                        var headerRow = $('<tr></tr>');
+                        headerRow.append('<th>Nombre</th>');
+                        headerRow.append('<th>Dirección</th>');
+                        headerRow.append('<th>Teléfono</th>');
+                        headerRow.append('<th>Número de mascotas</th>');
+                        headerRow.append('<th>Número de pedidos</th>');
+                        thead.append(headerRow);
+                        table.append(thead);
+
+                        var tbody = $('<tbody></tbody>');
+                        var row = $('<tr></tr>');
+                        row.append('<td>' + data.nombre + '</td>');
+                        row.append('<td>' + data.direccion + '</td>');
+                        row.append('<td>' + data.numero_telefono + '</td>');
+                        row.append('<td>' + data.mascotas.length + '</td>');
+                        row.append('<td>' + data.pedidos.length + '</td>');
+                        tbody.append(row);
+                        table.append(tbody);
+
+                        $('#perfil').html(table);
+                    }
+                });
+            });
+            // Agregar un controlador de eventos al enlace "Mascotas"
+            document.getElementById('mascotas-link').addEventListener('click', function() {
+                clearSections();
+                // Hacer una solicitud AJAX a la API de mascotas
+                $.ajax({
+                    url: 'http://localhost:3000/usuarios/mascotas',
+                    type: 'GET',
+                    data: {
+                        username: getCookie('username')
+                    },
+                    success: function(data) {
+                        var table = $('<table class="table table-striped"></table>');
+                        var thead = $('<thead></thead>');
+                        var headerRow = $('<tr></tr>');
+                        headerRow.append('<th>Nombre</th>');
+                        headerRow.append('<th>Tipo</th>');
+                        headerRow.append('<th>Edad</th>');
+                        headerRow.append('<th>Peso</th>');
+                        headerRow.append('<th>Citas</th>');
+                        thead.append(headerRow);
+                        table.append(thead);
+
+                        var tbody = $('<tbody></tbody>');
+                        data.forEach(function(pet) {
+                            if (pet.cita) {
+                                pet.cita.forEach(function(cita, index) {
+                                    var row = $('<tr></tr>');
+                                    if (index === 0) {
+                                        row.append('<td rowspan="' + pet.cita.length + '">' + pet.nombre + '</td>');
+                                        row.append('<td rowspan="' + pet.cita.length + '">' + pet.tipo + '</td>');
+                                        row.append('<td rowspan="' + pet.cita.length + '">' + pet.edad + '</td>');
+                                        row.append('<td rowspan="' + pet.cita.length + '">' + pet.peso + '</td>');
+                                    }
+                                    var citaCell = $('<td></td>');
+                                    citaCell.append('ID: ' + cita.id_cita + '<br>Fecha: ' + cita.fecha + '<br>Descripción: ' + cita.descripcion);
+                                    row.append(citaCell);
+                                    tbody.append(row);
+                                });
+                            } else {
+                                var row = $('<tr></tr>');
+                                row.append('<td>' + pet.nombre + '</td>');
+                                row.append('<td>' + pet.tipo + '</td>');
+                                row.append('<td>' + pet.edad + '</td>');
+                                row.append('<td>' + pet.peso + '</td>');
+                                var citaCell = $('<td></td>');
+                                citaCell.append('<p>No hay citas disponibles</p>');
+                                row.append(citaCell);
+                                tbody.append(row);
+                            }
+                        });
+                        table.append(tbody);
+
+                        $('#mascotas').html(table);
+                    }
+                });
+            });
+            
+
+
+            document.getElementById('pedidos-link').addEventListener('click', function() {
+                clearSections();
+                // Hacer una solicitud AJAX a la API de pedidos
+                $.ajax({
+                    url: 'http://localhost:3000/usuarios/pedidos',
+                    type: 'GET',
+                    data: {
+                        username: getCookie('username')
+                    },
+                    success: function(data) {
+                        var table = $('<table class="table table-striped"></table>');
+                        var thead = $('<thead></thead>');
+                        var headerRow = $('<tr></tr>');
+                        headerRow.append('<th>ID Pedido</th>');
+                        headerRow.append('<th>Fecha</th>');
+                        headerRow.append('<th>Precio Total</th>');
+                        headerRow.append('<th>Productos</th>');
+                        thead.append(headerRow);
+                        table.append(thead);
+
+                        var tbody = $('<tbody></tbody>');
+                        data.forEach(function(pedido) {
+                            var row = $('<tr></tr>');
+                            row.append('<td>' + pedido.id_pedido + '</td>');
+                            row.append('<td>' + pedido.fecha + '</td>');
+                            row.append('<td>' + pedido.precio_total + '</td>');
+                            var productosCell = $('<td></td>');
+                            var productosTable = $('<table></table>');
+                            pedido.productos.forEach(function(producto) {
+                                // Hacer una solicitud AJAX a la API de productos para obtener la información del producto
+                                $.ajax({
+                                    url: 'http://localhost:3000/productos/' + producto.id_producto,
+                                    type: 'GET',
+                                    success: function(productoData) {
+                                        var productoRow = $('<tr></tr>');
+                                        var productoInfo = $('<td></td>');
+                                        productoInfo.append('ID Producto: ' + productoData.id_producto + '<br>' + productoData.nombre + '<br>Cantidad: ' + producto.cantidad + '<br>Precio: ' + productoData.precio + '<br>');
+                                        var img = $('<td><a href="/producto.html?id_producto=' + productoData.id_producto + '" target="_blank"><img src="' + productoData.imageroute + '" alt="Imagen del producto" class="producto-imagen"></a></td>');
+                                        productoRow.append(productoInfo);
+                                        productoRow.append(img);
+                                        productosTable.append(productoRow);
+                                    }
+                                });
+                            });
+                            productosCell.append(productosTable);
+                            row.append(productosCell);
+                            tbody.append(row);
+                        });
+                        table.append(tbody);
+
+                        $('#pedidos').html(table);
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        if (jqXHR.status === 404) {
+                            $('#pedidos').html('<p class="left-padding">Todavía no se realizaron pedidos en esta cuenta.</p>');
+                        } else {
+                            $('#pedidos').html('<p>Ha ocurrido un error al recuperar los pedidos.</p>');
+                        }
+                    }
+                });
+            });
+
+
+            document.getElementById('carrito-link').addEventListener('click', function() {
+                clearSections();
+                // Hacer una solicitud AJAX a la API del carrito
+                $.ajax({
+                    url: 'http://localhost:3000/usuarios/carrito',
+                    type: 'GET',
+                    data: {
+                        username: getCookie('username')
+                    },
+                    success: function(data) {
+                        if (data.length === 0) {
+                            // Si el carrito está vacío, muestra un mensaje en lugar de la tabla
+                            $('#carrito').html('<p class="left-padding">El carrito está vacío.</p>');
+                        }else{
+                            var table = $('<table class="table table-striped"></table>');
+                            var tbody = $('<tbody></tbody>');
+                            var total = 0;
+                            var requests = data.map(function(item) {
+                                return $.ajax({
+                                    url: 'http://localhost:3000/productos/' + item.id_producto,
+                                    type: 'GET',
+                                    success: function(producto) {
+                                        var row = $('<tr></tr>');
+                                        var img = $('<td style="text-align: center;"><a href="/producto.html?id_producto=' + producto.id_producto + '" target="_blank"><img src="' + producto.imageroute + '" alt="Imagen del producto" class="producto-imagen"></a></td>');
+                                        row.append(img);
+                                        row.append('<td>' + producto.nombre + '</td>');
+                                        row.append('<td>' + producto.precio + '€'+'</td>');
+                                        var cantidadInput = $('<td><input type="number" value="' + item.cantidad + '" min="1" style="width: 50px;"></td>');
+                                        var precioTotalCell = $('<td>' + (item.cantidad * producto.precio) + '€'+ '</td>');
+                                        total += item.cantidad * producto.precio;
+                                        cantidadInput.find('input').change(function() {
+                                            var oldQuantity = item.cantidad;
+                                            var newQuantity = $(this).val();
+                                            updateQuantity(item.id_producto, newQuantity);
+                                            precioTotalCell.text((newQuantity * producto.precio).toFixed(2) + '€');
+                                            total = total - (oldQuantity * producto.precio) + (newQuantity * producto.precio);
+                                            $('#totalValue').text(total.toFixed(2) + '€');
+                                            item.cantidad = newQuantity; // Actualizar la cantidad en el objeto item
+                                        });
+                                        row.append(cantidadInput);
+                                        row.append(precioTotalCell);
+                                        var deleteButton = $('<td style="text-align: center;"><button class="btn btn-danger" style="background-color: #dc3545; border-color: #dc3545; color: white;">Eliminar</button></td>');
+                                        deleteButton.click(function() {
+                                            $.ajax({
+                                                url: 'http://localhost:3000/usuarios/carrito',
+                                                type: 'DELETE',
+                                                data: {
+                                                    username: getCookie('username'),
+                                                    id_producto: item.id_producto
+                                                },
+                                                success: function() {
+                                                    row.remove(); // Elimina la fila de la tabla
+                                                    total -= item.cantidad * producto.precio;
+                                                    $('#totalValue').text(total + '€');
+                                                },
+                                                error: function() {
+                                                    alert('Error al eliminar el producto del carrito');
+                                                }
+                                            });
+                                        });
+                                        row.append(deleteButton);
+                                        tbody.append(row);
+                                    }
+                                });
+                            });
+                            $.when.apply($, requests).done(function() {
+                                $('#totalValue').text(total.toFixed(2) + '€');
+                            });
+                            table.append(tbody);
+                            var tfoot = $('<tfoot></tfoot>');
+                            var totalRow = $('<tr></tr>');
+                            var totalCell = $('<td colspan="4">Total: </td>');
+                            var totalValueCell = $('<td id="totalValue">' + total + '€' + '</td>');
+                            var buyButtonCell = $('<td style="text-align: center;"><button id="buyButton" style="background-color: #4CAF50; color: white; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Comprar</button></td>');
+                            totalRow.append(totalCell);
+                            totalRow.append(totalValueCell);
+                            totalRow.append(buyButtonCell);
+                            tfoot.append(totalRow);
+                            table.append(tfoot);
+                            $('#carrito').append(table);
+                    }},
+                    error: function() {
+                        $('#carrito').html('<p>Ha ocurrido un error al recuperar el carrito.</p>');
+                    }
+                });
+            });
+            
+            $(document).ready(function() {
+                if($('#carrito-link').parent('.nav-item').hasClass('active')){
+                    document.getElementById('carrito-link').click();
+                }else{
+                    document.getElementById('mascotas-link').click();
+                }
+            });
+
+
+            function updateQuantity(id_producto, newQuantity) {
+                $.ajax({
+                    url: 'http://localhost:3000/usuarios/carrito',
+                    type: 'PUT',
+                    data: {
+                        username: getCookie('username'),
+                        id_producto: id_producto,
+                        cantidad: newQuantity
+                    },
+                    success: function() {
+                        console.log('Cantidad actualizada');
+                    },
+                    error: function() {
+                        alert('Error al actualizar la cantidad del producto en el carrito');
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                $(document).on('click', '#buyButton', function() {
+                    var username = getCookie('username');
+                    var fecha = new Date().toISOString().slice(0, 10); // Obtiene la fecha actual en formato YYYY-MM-DD
+                    var productos = []; // Aquí se almacenarán los productos del carrito
+
+                    // Primero, obtenemos los productos del carrito
+                    $.ajax({
+                        url: 'http://localhost:3000/usuarios/carrito',
+                        type: 'GET',
+                        data: {
+                            username: username
+                        },
+                        success: function(carrito) {
+                            // Añadimos los productos del carrito al array productos
+                            var requests = carrito.map(function(item) {
+                                return $.ajax({
+                                    url: 'http://localhost:3000/productos/' + item.id_producto,
+                                    type: 'GET',
+                                    success: function(producto) {
+                                        productos.push({
+                                            id_producto: item.id_producto,
+                                            cantidad: parseFloat(item.cantidad),
+                                            precio: parseFloat(producto.precio)
+                                        });
+                                    }
+                                });
+                            });
+
+                            // Cuando todas las solicitudes se hayan completado
+                            $.when.apply($, requests).done(function() {
+                                var total = 0;
+                                $.each(productos, function(index, producto) {
+                                    total += parseFloat(producto.cantidad) * parseFloat(producto.precio);
+                                });
+
+                                // Luego, creamos el nuevo pedido
+                                $.ajax({
+                                    url: 'http://localhost:3000/usuarios/pedidos',
+                                    type: 'POST',
+                                    data: {
+                                        username: username,
+                                        pedido: {
+                                            id_pedido: Date.now(), // Usamos el timestamp como id_pedido
+                                            fecha: fecha,
+                                            precio_total: total,
+                                            productos: productos
+                                        }
+                                    },
+                                    success: function() {
+                                        alert('Pedido realizado con éxito');
+
+                                        // Borramos el carrito
+                                        $.ajax({
+                                            url: 'http://localhost:3000/usuarios/carritocompleto',
+                                            type: 'DELETE',
+                                            data: {
+                                                username: username
+                                            },
+                                            success: function() {
+                                                alert('Carrito borrado con éxito');
+                                                location.reload();
+                                            }
+                                        });
+                                    }
+                                });
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+
+</html>

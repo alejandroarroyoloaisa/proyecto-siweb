@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+        <title>Iniciar Sesión - Clínica Veterinaria La Florida</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="./utilidades/login.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <a href="inicio.html">
+            <img src="./images/logo_2.png" alt="Logo de la clínica veterinaria">
+        </a>
+        <div class="login">
+            <h1>Inicio de Sesión</h1>
+            <form id="login-form">
+                <label for="username">
+                    <i class="fas fa-user"></i>
+                </label>
+                <input type="text" name="username" placeholder="Usuario" id="username" required>
+                <label for="password">
+                    <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" name="password" placeholder="Contraseña" id="password" required>
+                <div id="error-message" style="color: red;"></div>
+                <div class="button-container">
+                    <button id="back-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="25" fill="white" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                            <path d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                    </button>
+                    <input type="submit" value="Entrar">
+                </div>
+            </form>
+        </div>
+
+        <script>
+            document.getElementById('login-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                fetch('http://localhost:3000/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username: username,
+                        password: password
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        // Inicio de sesión exitoso
+                        document.cookie = `username=${username}; path=/`;
+                        window.location.href = 'dashboard.html';
+                    } else {
+                        // Inicio de sesión fallido
+                        // Muestra un mensaje de error
+                        document.getElementById('error-message').textContent = data.message;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+
+
+            document.getElementById('back-button').addEventListener('click', function() {
+                window.location.href = 'inicio.html';
+            });
+        </script>
+    </body>
+</html>

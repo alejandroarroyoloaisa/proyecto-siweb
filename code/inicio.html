@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./utilidades/menu.css" />
+  <link rel="stylesheet" href="./utilidades/breadcrumb.css" />
+  <link rel="stylesheet" href="./utilidades/footer.css" />
+  <link rel="stylesheet" href="./utilidades/styles.css" />
+  <title>Inicio - Clínica Veterinaria La Florida</title>
+  <link rel="icon" href="images/browser_icon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- SECCIÓN SUPERIOR DEL SITIO WEB -->
+  <div class="top-section">
+    <div class="background-image"></div>
+    <a class="address-icon" href="https://goo.gl/maps/DAZcFoxQeN3QdBUD8">
+      <img src="images/location_icon.png" alt="Icono de ubicación" class="address-icon">
+    </a>
+    <a href="https://goo.gl/maps/DAZcFoxQeN3QdBUD8" target="_blank" class="address-link">
+      <div class="address">Calle Pintor 'El Greco', 9 - Linares </div>
+    </a>
+    <a class="phone-icon" href="tel:+953692416">
+      <img src="images/phone_icon.png" alt="Icono de llamada" class="phone-icon">
+    </a>
+    <a href="tel:+953692416" class="phone-link">
+      <div class="telephone">953692416</div>
+    </a>
+    <a href="contacto.html">
+      <button class="contact-button">Contacto</button>
+    </a>
+    <a href="tienda.html">
+      <button class="shop-button">Tienda</button>
+    </a>
+    <a id="loginbutton2" href="login.html">
+      <button id="loginbutton1" class="login-button">Iniciar Sesión</button>
+    </a>
+  </div>
+  <!-- MENÚ LATERAL DEL SITIO WEB -->
+  <div class="off-screen-menu">
+    <ul>
+      <li>
+        <div class="dropdown">
+          <a href="mascotas.html">Mascotas</a>
+          <div class="dropdown-content">
+            <a href="perros.html">Perros</a>
+            <a href="gatos.html">Gatos</a>
+            <a href="exoticos.html">Exóticos</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <a href="serviciosmedicos.html">Servicios Médicos</a>
+          <div class="dropdown-content">
+            <a href="ecografia.html">Ecografía y Ecocardiografía</a>
+            <a href="hospital.html">Hospital</a>
+            <a href="cirugia.html">Cirugía</a>
+            <a href="radiologia.html">Radiología Digital</a>
+            <a href="laboratorio.html">Laboratorio</a>
+            <a href="consulta.html">Consulta Veterinaria</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <a href="prevencion.html">Prevención</a>
+          <div class="dropdown-content">
+            <a href="prevencion.html#planvacunacion">Planes de Vacunación</a>
+            <a href="prevencion.html#plandesparasitacion">Planes de Desparasitación</a>
+            <a href="prevencion.html#microchip">Microchip</a>
+            <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+            <a href="prevencion.html#urgencias">Urgencias</a>
+            <a href="prevencion.html#castracion">Castración</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <a href="cuidadobienestar.html">Cuidado y Bienestar</a>
+          <div class="dropdown-content">
+            <a href="cuidadobienestar.html#peluqueria">Peluquería Canina</a>
+            <a href="cuidadobienestar.html#cortezarpas">Corte de Uñas</a>
+            <a href="cuidadobienestar.html#eutanasia">Eutanasia e Incineración</a>
+            <a href="cuidadobienestar.html#odontologia">Odontología</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+  <!-- MENÚ SUPERIOR DEL SITIO WEB Y MENÚ DE HAMBURGUESA -->
+  <nav>
+    <table class="navbar">
+      <tr>
+        <td class="logo-cell"><img src="images/logo.png" alt="Logo de la empresa" class="logo"></td>
+        <td>
+          <div class="dropdown">
+            <a href="mascotas.html">Mascotas</a>
+            <div class="dropdown-content">
+              <a href="perros.html">Perros</a>
+              <a href="gatos.html">Gatos</a>
+              <a href="exoticos.html">Exóticos</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="serviciosmedicos.html">Servicios Médicos</a>
+            <div class="dropdown-content">
+              <a href="ecografia.html">Ecografía y Ecocardiografía</a>
+              <a href="hospital.html">Hospital</a>
+              <a href="cirugia.html">Cirugía</a>
+              <a href="radiologia.html">Radiología Digital</a>
+              <a href="laboratorio.html">Laboratorio</a>
+              <a href="consulta.html">Consulta Veterinaria</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="prevencion.html">Prevención</a>
+            <div class="dropdown-content">
+              <a href="prevencion.html#planvacunacion">Planes de Vacunación</a>
+              <a href="prevencion.html#plandesparasitacion">Planes de Desparasitación</a>
+              <a href="prevencion.html#microchip">Microchip</a>
+              <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+              <a href="prevencion.html#urgencias">Urgencias</a>
+              <a href="prevencion.html#castracion">Castración</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="cuidadobienestar.html">Cuidado y Bienestar</a>
+            <div class="dropdown-content">
+              <a href="cuidadobienestar.html#peluqueria">Peluquería Canina</a>
+              <a href="cuidadobienestar.html#cortezarpas">Corte de Uñas</a>
+              <a href="cuidadobienestar.html#eutanasia">Eutanasia e Incineración</a>
+              <a href="cuidadobienestar.html#odontologia">Odontología</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <script src="./utilidades/menu.js"></script>
+  <!-- MIGAS DE PAN DEL SITIO WEB -->
+ 
+
+
+  <div id="videoContainer">
+    <video id="videoinicio" src="images/video-inicio.mp4" autoplay loop muted></video>
+  </div>
+
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div class="info-block">
+    <div class="text-section">
+      <h1>CLÍNICA VETERINARIA LA FLORIDA</h1>
+      <h2>Tu veterinario en Linares Desde 1993</h2>
+      <p>&nbsp;</p>
+      <p>En <strong>clínica veterinaria La Florida</strong> brindamos servicios con atención amable y eficiente a nuestros clientes y
+        pacientes.</p>
+      <p>En nuestra clínica veterinaria en Linares ofrecemos <strong>máxima seguridad, conocimiento y experiencia</strong> en nuestros
+        servicios.</p>
+        <p>&nbsp;</p>
+      <p>Con una <strong>atención médica médica integral</strong> a las <a id="enlaces" href="mascotas.html">mascotas</a> atendemos cualquier necesidad en todas las etapas de su
+        vida. Desempeñamos labores de <strong>medicina interna, <a id="enlaces" href="prevencion.html#medicinapreventiva">medicina preventiva</a>, así como otras especializaciones.</strong></p>
+      <p>&nbsp;</p>
+      <a id="serviciosboton" class="footer-call-to-action-button button" href="serviciosmedicos.html" target="_self"> Nuestros Servicios </a>
+    </div>
+    
+    <div class="image-section">
+      <img src="images/recurso-perro-gato-inicio.jpg" alt="Perro y gato jugando Inicio">
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <hr>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div class="grid-container">
+    <a href="ecografia.html">
+      <div class="grid-item">
+        <img src="images/servicios/servicios-ecografia.jpg" alt="servicios-ecografia">
+        <h3>Ecografía y ecocardiografía</h3>
+      </div>
+    </a>
+    <a href="hospital.html">
+      <div class="grid-item">
+        <img src="images/servicios/servicios-hospital.jpg" alt="servicios-hospital">
+        <h3>Hospital</h3>
+      </div>
+    </a>
+    <a href="cirugia.html">
+      <div class="grid-item">
+        <img src="images/servicios/servicios-cirugia.webp" alt="servicios-cirugia">
+        <h3>Cirugía</h3>
+      </div>
+    </a>
+    <a href="radiologia.html">
+      <div class="grid-item">
+        <img src="images/servicios/servicios-radiologia.jpg" alt="servicios-radiologia">
+        <h3>Radiología digital</h3>
+      </div>
+    </a>
+    <a href="laboratorio.html">
+      <div class="grid-item">
+        <img src="images/servicios/servicios-laboratorio.jpg" alt="servicios-laboratorio">
+        <h3>Laboratorio</h3>
+      </div>
+    </a>
+    <a href="consulta.html">
+      <div class="grid-item">
+        <img src="images/servicios/servicios-consulta.webp" alt="servicios-consulta">
+        <h3>Consulta veterinaria</h3>
+      </div>
+    </a>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div class="grid-container2">
+    <div class="grid-item2">
+        <a href="perros.html">
+            <img id="img1" src="images/banner-perros-inicio.jpg" alt="banner-perros-inicio">
+        </a>
+    </div>
+    <div class="grid-item2">
+        <a href="gatos.html">
+            <img id="img2" src="images/banner-gatos-inicio.jpg" alt="banner-gatos-inicio">
+        </a>
+    </div>
+    <div class="grid-item2">
+        <a href="exoticos.html">
+            <img id="img3" src="images/banner-exoticos-inicio.jpg" alt="banner-exoticos-inicio">
+        </a>
+    </div>
+  </div>
+  <script src="./utilidades/inicio.js"></script>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div class="emergency-service">
+    <p class="emergency-text">Disponemos de <strong>Servicio 24h</strong> para Emergencias</p>
+    <a id="emergenciasboton" class="footer-call-to-action-button button" href="tel:+655586583" target="_self">
+      <img src="images/phone_icon.png" alt="Icono de teléfono" style="width: 20px; height: 20px;"> 655 586 583 
+    </a>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  <a href="cuidadobienestar.html#peluqueria">
+    <img id="imgpeluqueria" width=100% height=auto src="images/banner-peluqueria-canina.jpg" alt="Peluqueria Canina">
+  </a>
+  
+
+  <div class="image-grid">
+    <img src="images/carrusel/imagen1.webp" alt="Imagen Clínica 1">
+    <img src="images/carrusel/imagen2.webp" alt="Imagen Clínica 2">
+    <img src="images/carrusel/imagen3.webp" alt="Imagen Clínica 3">
+    <img src="images/carrusel/imagen4.webp" alt="Imagen Clínica 4">
+    <img src="images/carrusel/imagen5.webp" alt="Imagen Clínica 5">
+    <img src="images/carrusel/imagen6.webp" alt="Imagen Clínica 6">
+    <img src="images/carrusel/imagen7.webp" alt="Imagen Clínica 7">
+    <img src="images/carrusel/imagen8.webp" alt="Imagen Clínica 8">
+  </div>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER DEL SITIO WEB -->
+  <div class="pg-footer">
+    <footer class="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path"
+          d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
+        </path>
+      </svg>
+      <div class="footer-content">
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="inicio.html">
+              <img src="images/logo.png" alt="Logo" width="212" height="65">
+            </a>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Mascotas</h2>
+            <ul id="menu-get-started" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="perros.html">Perros</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="gatos.html">Gatos</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="exoticos.html">Animales Exóticos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Prevención</h2>
+            <ul id="menu-company" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="prevencion.html#planvacunacion">Plan de Vacunación</a>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                <a href="prevencion.html#plandesparasitacion">Plan de Desparasitación</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="prevencion.html#microchip">Microchip</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="prevencion.html#urgencias">Urgencias</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="prevencion.html#castracion">Castración</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name">Cuidado y Bienestar</h2>
+            <ul id="menu-legal" class="footer-menu-list">
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434"
+              >
+                <a href="cuidadobienestar.html#peluqueria">Peluquería canina</a>
+              </li>
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page"
+              >
+                <a href="cuidadobienestar.html#cortezarpas">Corte de uñas</a>
+              </li>
+              <li
+              class="menu-item menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="cuidadobienestar.html#eutanasia">Eutanasia e incineración</a>
+            </li>
+            <li
+            class="menu-item menu-item-type-post_type menu-item-object-page"
+          >
+            <a href="cuidadobienestar.html#odontologia">Odontología</a>
+          </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Servicios Médicos</h2>
+            <ul id="menu-quick-links" class="footer-menu-list">
+              <li
+                class="menu-item menu-item-type-custom menu-item-object-custom"
+              >
+                <a rel="noopener noreferrer" href="ecografia.html"
+                  >Ecografía y Ecocardiografía</a
+                >
+              </li>
+              <li
+                class="menu-item menu-item-type-custom menu-item-object-custom"
+              >
+                <a rel="noopener noreferrer" href="hospital.html"
+                  >Hospital</a
+                >
+              </li>
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page"
+              >
+                <a href="cirugia.html">Cirugía</a>
+              </li>
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page"
+              >
+                <a href="radiologia.html">Radiología Digital</a>
+              </li>
+              <li
+                class="menu-item menu-item-type-post_type_archive menu-item-object-customer"
+              >
+                <a href="laboratorio.html">Laboratorio</a>
+              </li>
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page"
+              >
+                <a href="consulta.html">Consulta Veterinaria</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-call-to-action">
+            <h2 class="footer-call-to-action-title"> Contacta con nosotros</h2>
+            <p class="footer-call-to-action-description"> ¿Tienes alguna pregunta?</p>
+            <a class="footer-call-to-action-button button" href="contacto.html" target="_self"> Contacto </a>
+          </div>
+          <div class="footer-call-to-action">
+            <h2 class="footer-call-to-action-title"> Aviso Legal</h2>
+            <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="privacidad.html"
+              target="_blank"> Privacidad y Términos de Uso </a></p>
+          </div>
+        </div>
+        <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 236 54">
+            <path class="footer-social-amoeba-path"
+              d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z">
+            </path>
+          </svg>
+          <a class="footer-social-link facebook" href="https://www.facebook.com/clinicaveterinarialaflorida"
+            target="_blank">
+            <span class="hidden-link-text">Facebook</span>
+            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="footer-social-icon-path"
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+              </path>
+            </svg>
+          </a>
+          <a class="footer-social-link whatsapp"
+            href="https://api.whatsapp.com/send?phone=34655%2058%2065%2083&text=Hola%20,%20quiero%20hacer%20una%20consulta%20veterinaria%20"
+            target="_blank">
+            <span class="hidden-link-text">WhatsApp</span>
+            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+              <path class="footer-social-icon-path"
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+              </path>
+            </svg>
+          </a>
+          <a class="footer-social-link instagram" href="https://www.instagram.com/clinicaveterinarialaflorida/?hl=es"
+            target="_blank">
+            <span class="hidden-link-text">Instagram</span>
+            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="footer-social-icon-path"
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+              </path>
+            </svg>
+          </a>
+          <a class="footer-social-link twitter" href="https://twitter.com/clinicaveterinarialaflorida" target="_blank">
+            <span class="hidden-link-text">Twitter</span>
+            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path class="footer-social-icon-path"
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright-text">
+            <a class="footer-copyright-link" href="#" target="_self"> ©2024. | Diseñado por: Alejandro Arroyo Loaisa. |
+              Todos los derechos reservados. </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+
+    // Función para obtener el valor de una cookie
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+
+    $(document).ready(function() {
+        // Hacer una solicitud AJAX a la API de perfil de usuario
+        $.ajax({
+            url: 'http://localhost:3000/usuarios/perfil',
+            type: 'GET',
+            data: {
+                username: getCookie('username')
+            },
+            success: function(data) {
+                // Cambiar el mensaje de bienvenida para incluir el nombre del usuario
+                $('#loginbutton1').text('Regresar al perfil');
+                $('#loginbutton2').attr('href', 'dashboard.html');
+            }
+        });
+    });
+  </script>
+</body>
+
+</html>

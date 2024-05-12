@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./utilidades/menu.css" />
+    <link rel="stylesheet" href="./utilidades/breadcrumb.css" />
+    <link rel="stylesheet" href="./utilidades/footer.css" />
+    <link rel="stylesheet" href="./utilidades/styles.css" />
+    <title>Gatos - Clínica Veterinaria La Florida</title>
+    <link rel="icon" href="images/browser_icon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- SECCIÓN SUPERIOR DEL SITIO WEB -->
+    <div class="top-section">
+      <div class="background-image"></div>
+      <a class="address-icon" href="https://goo.gl/maps/DAZcFoxQeN3QdBUD8">
+        <img
+          src="images/location_icon.png"
+          alt="Icono de ubicación"
+          class="address-icon"
+        />
+      </a>
+      <a
+        href="https://goo.gl/maps/DAZcFoxQeN3QdBUD8"
+        target="_blank"
+        class="address-link"
+      >
+        <div class="address">Calle Pintor 'El Greco', 9 - Linares</div>
+      </a>
+      <a class="phone-icon" href="tel:+953692416">
+        <img
+          src="images/phone_icon.png"
+          alt="Icono de llamada"
+          class="phone-icon"
+        />
+      </a>
+      <a href="tel:+953692416" class="phone-link">
+        <div class="telephone">953692416</div>
+      </a>
+      <a href="contacto.html">
+        <button class="contact-button">Contacto</button>
+      </a>
+      <a href="tienda.html">
+        <button class="shop-button">Tienda</button>
+      </a>
+      <a id="loginbutton2" href="login.html">
+        <button id="loginbutton1" class="login-button">Iniciar Sesión</button>
+      </a>
+    </div>
+    <!-- MENÚ LATERAL DEL SITIO WEB -->
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li>
+          <div class="dropdown">
+            <a href="mascotas.html">Mascotas</a>
+            <div class="dropdown-content">
+              <a href="perros.html">Perros</a>
+              <a href="gatos.html">Gatos</a>
+              <a href="exoticos.html">Exóticos</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="serviciosmedicos.html">Servicios Médicos</a>
+            <div class="dropdown-content">
+              <a href="ecografia.html">Ecografía y Ecocardiografía</a>
+              <a href="hospital.html">Hospital</a>
+              <a href="cirugia.html">Cirugía</a>
+              <a href="radiologia.html">Radiología Digital</a>
+              <a href="laboratorio.html">Laboratorio</a>
+              <a href="consulta.html">Consulta Veterinaria</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="prevencion.html">Prevención</a>
+            <div class="dropdown-content">
+              <a href="prevencion.html#planvacunacion">Planes de Vacunación</a>
+              <a href="prevencion.html#plandesparasitacion">Planes de Desparasitación</a>
+              <a href="prevencion.html#microchip">Microchip</a>
+              <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+              <a href="prevencion.html#urgencias">Urgencias</a>
+              <a href="prevencion.html#castracion">Castración</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="cuidadobienestar.html">Cuidado y Bienestar</a>
+            <div class="dropdown-content">
+              <a href="cuidadobienestar.html#peluqueria">Peluquería Canina</a>
+              <a href="cuidadobienestar.html#cortezarpas">Corte de Uñas</a>
+              <a href="cuidadobienestar.html#eutanasia">Eutanasia e Incineración</a>
+              <a href="cuidadobienestar.html#odontologia">Odontología</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <!-- MENÚ SUPERIOR DEL SITIO WEB Y MENÚ DE HAMBURGUESA -->
+    <nav>
+      <table class="navbar">
+        <tr>
+          <td class="logo-cell">
+            <img src="images/logo.png" alt="Logo de la empresa" class="logo" />
+          </td>
+          <td>
+            <div class="dropdown">
+              <a href="mascotas.html">Mascotas</a>
+              <div class="dropdown-content">
+                <a href="perros.html">Perros</a>
+                <a href="gatos.html">Gatos</a>
+                <a href="exoticos.html">Exóticos</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="serviciosmedicos.html">Servicios Médicos</a>
+              <div class="dropdown-content">
+                <a href="ecografia.html">Ecografía y Ecocardiografía</a>
+                <a href="hospital.html">Hospital</a>
+                <a href="cirugia.html">Cirugía</a>
+                <a href="radiologia.html">Radiología Digital</a>
+                <a href="laboratorio.html">Laboratorio</a>
+                <a href="consulta.html">Consulta Veterinaria</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="prevencion.html">Prevención</a>
+              <div class="dropdown-content">
+                <a href="prevencion.html#planvacunacion">Planes de Vacunación</a>
+                <a href="prevencion.html#plandesparasitacion">Planes de Desparasitación</a>
+                <a href="prevencion.html#microchip">Microchip</a>
+                <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+                <a href="prevencion.html#urgencias">Urgencias</a>
+                <a href="prevencion.html#castracion">Castración</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="cuidadobienestar.html">Cuidado y Bienestar</a>
+              <div class="dropdown-content">
+                <a href="cuidadobienestar.html#peluqueria">Peluquería Canina</a>
+                <a href="cuidadobienestar.html#cortezarpas">Corte de Uñas</a>
+                <a href="cuidadobienestar.html#eutanasia">Eutanasia e Incineración</a>
+                <a href="cuidadobienestar.html#odontologia">Odontología</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <script src="./utilidades/menu.js"></script>
+    <script src="./utilidades/extras.js"></script>
+
+
+    <header class="header">
+      <h1>Veterinario para gatos en Linares</h1>
+        <!-- MIGAS DE PAN DEL SITIO WEB -->
+      <ul class="breadcrumb">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="mascotas.html">Mascotas</a></li>
+          <li>Gatos</li>
+      </ul>
+    </header>
+    <div class="parallax2"></div>
+
+
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div class="text-block">
+      <p>
+        Para que tu <strong>gato</strong> conserve una buena salud recomendamos aplicar <a id="enlaces" href="prevencion.html">medidas preventivas</a> y <strong>revisiones periódicas</strong>.
+      </p>
+      <p>&nbsp;</p>
+      <p>
+        Suele haber un mal concepto con los gatos frente a otros animales, normalmente perros, en los que creemos que no necesitan tanta atención veterinaria. Y nunca más lejos de la realidad.
+      </p>
+      <p>&nbsp;</p>
+      <p>
+        Si tienes un gatito, que hayas adquirido en un centro especializado así como si lo has adoptado, es primordial que te vengas con él a nuestra clínica para una primera revisión en <a id="enlaces" href="consulta.html">consulta</a>. Nos aseguraremos que esté en un estado de salud pleno y te aconsejaremos las pautas veterinarias a seguir para que crezca bien. Y es que, a veces, un gatito puede aparentar estar completamente sano pero puede tener algún parásito, ya sea externo o interno, que haga que enferme.
+      </p>
+      <p>&nbsp;</p>
+      <p>
+        Aunque tengas un gato ya adulto lo ideal es que le echemos un vistazo y que le apliquemos las <a id="enlaces" href="prevencion.html">medidas preventivas</a> más urgentes, en el caso de que no las haya tenido nunca.
+      </p>
+      <p>&nbsp;</p>
+      <p>
+        Como otros tipos de animales existe un
+        <strong>plan veterinario para el gato</strong> en el que se encuentran:
+      </p>
+    </div>
+    <p>&nbsp;</p>
+    <div class="button-group">
+      <button id="botonvacunacion" class="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 122.22 122.88"
+        >
+          <g>
+            <path
+              d="M50.19,45.72l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L46.19,49.72l-5.46,5.46l13.25,13.25 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L36.73,59.19l-5.46,5.46L44.52,77.9c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0 L27.27,68.65l-5.46,5.46l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L17.81,78.11l-0.93,0.93h0 c-2.49,2.49-3.73,5.77-3.73,9.05c0,3.28,1.24,6.57,3.73,9.05l0,0l3.71,3.71c0.31,0.14,0.6,0.33,0.86,0.59 c0.25,0.26,0.45,0.55,0.59,0.86l4.4,4.4l0,0c2.17,2.17,5.03,3.25,7.9,3.25s5.73-1.09,7.9-3.25l0,0l42.24-42.24l-26.5-26.5 L50.19,45.72L50.19,45.72z M60.31,32.11l2.72,2.72l15.19-15.19c-1.93-2.22-2.9-5-2.9-7.78c0-3.04,1.16-6.08,3.47-8.39l0,0l0,0 C81.1,1.16,84.15,0,87.19,0c3.04,0,6.08,1.16,8.39,3.47l23.18,23.18c2.3,2.3,3.45,5.35,3.45,8.39h0.01c0,3.04-1.16,6.08-3.47,8.39 l0,0c-2.31,2.31-5.35,3.47-8.39,3.47c-2.61,0-5.21-0.85-7.36-2.55L87.78,59.58l2.53,2.53c0.2,0.2,0.36,0.43,0.48,0.67l5.66,5.66 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0l-4.48-4.48l-42.24,42.24l0,0c-3.14,3.14-7.27,4.71-11.4,4.71 c-4.13,0-8.26-1.57-11.4-4.71l0,0l-3.12-3.12L4.83,122.05c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4l14.98-14.98l-2.43-2.43v0 c-3.45-3.45-5.18-8-5.18-12.55c0-4.55,1.73-9.1,5.18-12.55v0l41.08-41.08l-4.02-4.02c-1.1-1.1-1.1-2.9,0-4c1.1-1.1,2.9-1.1,4,0 l5.2,5.2C59.88,31.75,60.11,31.91,60.31,32.11L60.31,32.11z M114.26,31.15L91.08,7.97c-1.07-1.07-2.48-1.6-3.89-1.6 c-1.41,0-2.82,0.53-3.89,1.6l0,0l0,0c-1.07,1.07-1.6,2.48-1.6,3.89c0,1.41,0.53,2.82,1.6,3.89h0l23.18,23.18 c1.07,1.07,2.48,1.6,3.89,1.6c1.41,0,2.82-0.53,3.89-1.6l0,0c1.07-1.07,1.6-2.48,1.6-3.89h0.01 C115.87,33.63,115.33,32.22,114.26,31.15L114.26,31.15z M98.29,40.06L82.55,24.32L68.12,38.75l15.74,15.74L98.29,40.06L98.29,40.06 z"
+            />
+          </g>
+        </svg>
+        Plan de vacunación
+      </button>
+      <button id="botondesparasitacion" class="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-capsule-pill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.02 5.364a3 3 0 0 0-4.242-4.243L1.121 6.778a3 3 0 1 0 4.243 4.243l5.657-5.657Zm-6.413-.657 2.878-2.879a2 2 0 1 1 2.829 2.829L7.435 7.536zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8m-.5 1.042a3 3 0 0 0 0 5.917zm1 5.917a3 3 0 0 0 0-5.917z"
+          />
+        </svg>
+        Plan de desparasitación
+      </button>
+      <button id="botonmicrochip" class="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          idth="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-cpu"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"
+          />
+        </svg>
+        Microchip
+      </button>
+    </div>
+
+
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+
+
+    <div class="text-block">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        fill="#30297f"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 122.22 122.88"
+      >
+        <g>
+          <path
+            d="M50.19,45.72l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L46.19,49.72l-5.46,5.46l13.25,13.25 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L36.73,59.19l-5.46,5.46L44.52,77.9c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0 L27.27,68.65l-5.46,5.46l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L17.81,78.11l-0.93,0.93h0 c-2.49,2.49-3.73,5.77-3.73,9.05c0,3.28,1.24,6.57,3.73,9.05l0,0l3.71,3.71c0.31,0.14,0.6,0.33,0.86,0.59 c0.25,0.26,0.45,0.55,0.59,0.86l4.4,4.4l0,0c2.17,2.17,5.03,3.25,7.9,3.25s5.73-1.09,7.9-3.25l0,0l42.24-42.24l-26.5-26.5 L50.19,45.72L50.19,45.72z M60.31,32.11l2.72,2.72l15.19-15.19c-1.93-2.22-2.9-5-2.9-7.78c0-3.04,1.16-6.08,3.47-8.39l0,0l0,0 C81.1,1.16,84.15,0,87.19,0c3.04,0,6.08,1.16,8.39,3.47l23.18,23.18c2.3,2.3,3.45,5.35,3.45,8.39h0.01c0,3.04-1.16,6.08-3.47,8.39 l0,0c-2.31,2.31-5.35,3.47-8.39,3.47c-2.61,0-5.21-0.85-7.36-2.55L87.78,59.58l2.53,2.53c0.2,0.2,0.36,0.43,0.48,0.67l5.66,5.66 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0l-4.48-4.48l-42.24,42.24l0,0c-3.14,3.14-7.27,4.71-11.4,4.71 c-4.13,0-8.26-1.57-11.4-4.71l0,0l-3.12-3.12L4.83,122.05c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4l14.98-14.98l-2.43-2.43v0 c-3.45-3.45-5.18-8-5.18-12.55c0-4.55,1.73-9.1,5.18-12.55v0l41.08-41.08l-4.02-4.02c-1.1-1.1-1.1-2.9,0-4c1.1-1.1,2.9-1.1,4,0 l5.2,5.2C59.88,31.75,60.11,31.91,60.31,32.11L60.31,32.11z M114.26,31.15L91.08,7.97c-1.07-1.07-2.48-1.6-3.89-1.6 c-1.41,0-2.82,0.53-3.89,1.6l0,0l0,0c-1.07,1.07-1.6,2.48-1.6,3.89c0,1.41,0.53,2.82,1.6,3.89h0l23.18,23.18 c1.07,1.07,2.48,1.6,3.89,1.6c1.41,0,2.82-0.53,3.89-1.6l0,0c1.07-1.07,1.6-2.48,1.6-3.89h0.01 C115.87,33.63,115.33,32.22,114.26,31.15L114.26,31.15z M98.29,40.06L82.55,24.32L68.12,38.75l15.74,15.74L98.29,40.06L98.29,40.06 z"
+          />
+        </g>
+      </svg>
+      <h1 id="planvacunacion">Planes de vacunación para gatos</h1>
+      <p>&nbsp;</p>
+      <div class="cajaimagen">
+        <img src="images/gatos_planes_de_vacunacion.webp" alt="Gato planes de vacunación">
+      </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>
+        Como ocurre con otros animales de compañía el gato también necesita de un <strong>plan de vacunación</strong> para que su estado de salud sea pleno y se prevengan de enfermedades que, en algunas ocasiones, son graves e irreversibles.
+      </p>
+      <p>&nbsp;</p>
+      <p>
+        Las vacunas que se le aplican a nuestros felinos se pueden diferenciar en las esenciales y, por otro lado, las recomendadas.
+      </p>
+      <p>&nbsp;</p>
+      <p>Estas vacunas son:</p>
+      <p>&nbsp;</p>
+      <h3 style="text-align: center">
+        Vacunas para gatos esenciales / necesarias
+      </h3>
+      <ul style="text-align: center">
+        <li>Vacuna trivalente.</li>
+        <li>Vacuna leucemia (muy recomendada para gatos que salen a la calle).</li>
+        <li>Vacuna de la Rabia (obligatoria en Andalucía).</li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3 style="text-align: center">Vacunas recomendadas para gatos</h3>
+      <ul style="text-align: center">
+        <li>Clamisiosis felina.</li>
+        <li>Peritonitis infecciosa felina (PIF).</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <h2>Calendario de vacunas para el gato</h2>
+      <p>&nbsp;</p>
+      <p>
+        Dependiendo del veterinario puede aplicar un protocolo de vacunación diferente. En nuestro caso aconsejamos:
+      </p>
+      <p>&nbsp;</p>
+      <h4 style="text-align: center">
+        1ª DOSIS: Trivalente felina
+      </h4>
+      <p style="text-align: center">Aplicación: 8 semanas de edad.</p>
+      <p>&nbsp;</p>
+      <h4 style="text-align: center">2ª DOSIS: repetición de la Trivalente felina</h4>
+      <p style="text-align: center">Aplicación: 3-4 semanas después de haber aplicado la primera.</p>
+      <p>&nbsp;</p>
+      <h4 style="text-align: center">
+        Leucemia felina
+      </h4>
+      <p style="text-align: center">Aplicación: 4 meses de edad.</p>
+      <p style="text-align: center"><i>A partir de los 4 meses debemos hacer un test para detectar que no da positivo. Si, por desgracia, el resultado de este test es positivo no podremos suministrarle la vacuna. Y si es negativo hay que suministrar 2 dosis separadas 21 días una de la otra.</i></p>
+      <p>&nbsp;</p>
+      <h4 style="text-align: center">Vacuna antirrábica</h4>
+      <p style="text-align: center">Aplicación: 6 meses de edad.</p>
+      <p>&nbsp;</p>
+
+
+      <table id="tablavacunas2">
+        <tr>
+          <td></td>
+          <td>1ª Dosis<br>Trivalente<br>felina</td>
+          <td>2ª Dosis<br>Trivalente<br>felina</td>
+          <td>1ª Dosis<br>Leucemia<br>felina</td>
+          <td>2ª Dosis<br>Leucemia<br>felina</td>
+          <td>Rabia</td>
+        </tr>
+        <tr>
+          <td>8<br>semanas</td>
+          <td><svg
+            id="vacuna_negro"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="#30297f"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 122.22 122.88"
+          >
+            <g>
+              <path
+                d="M50.19,45.72l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L46.19,49.72l-5.46,5.46l13.25,13.25 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L36.73,59.19l-5.46,5.46L44.52,77.9c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0 L27.27,68.65l-5.46,5.46l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L17.81,78.11l-0.93,0.93h0 c-2.49,2.49-3.73,5.77-3.73,9.05c0,3.28,1.24,6.57,3.73,9.05l0,0l3.71,3.71c0.31,0.14,0.6,0.33,0.86,0.59 c0.25,0.26,0.45,0.55,0.59,0.86l4.4,4.4l0,0c2.17,2.17,5.03,3.25,7.9,3.25s5.73-1.09,7.9-3.25l0,0l42.24-42.24l-26.5-26.5 L50.19,45.72L50.19,45.72z M60.31,32.11l2.72,2.72l15.19-15.19c-1.93-2.22-2.9-5-2.9-7.78c0-3.04,1.16-6.08,3.47-8.39l0,0l0,0 C81.1,1.16,84.15,0,87.19,0c3.04,0,6.08,1.16,8.39,3.47l23.18,23.18c2.3,2.3,3.45,5.35,3.45,8.39h0.01c0,3.04-1.16,6.08-3.47,8.39 l0,0c-2.31,2.31-5.35,3.47-8.39,3.47c-2.61,0-5.21-0.85-7.36-2.55L87.78,59.58l2.53,2.53c0.2,0.2,0.36,0.43,0.48,0.67l5.66,5.66 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0l-4.48-4.48l-42.24,42.24l0,0c-3.14,3.14-7.27,4.71-11.4,4.71 c-4.13,0-8.26-1.57-11.4-4.71l0,0l-3.12-3.12L4.83,122.05c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4l14.98-14.98l-2.43-2.43v0 c-3.45-3.45-5.18-8-5.18-12.55c0-4.55,1.73-9.1,5.18-12.55v0l41.08-41.08l-4.02-4.02c-1.1-1.1-1.1-2.9,0-4c1.1-1.1,2.9-1.1,4,0 l5.2,5.2C59.88,31.75,60.11,31.91,60.31,32.11L60.31,32.11z M114.26,31.15L91.08,7.97c-1.07-1.07-2.48-1.6-3.89-1.6 c-1.41,0-2.82,0.53-3.89,1.6l0,0l0,0c-1.07,1.07-1.6,2.48-1.6,3.89c0,1.41,0.53,2.82,1.6,3.89h0l23.18,23.18 c1.07,1.07,2.48,1.6,3.89,1.6c1.41,0,2.82-0.53,3.89-1.6l0,0c1.07-1.07,1.6-2.48,1.6-3.89h0.01 C115.87,33.63,115.33,32.22,114.26,31.15L114.26,31.15z M98.29,40.06L82.55,24.32L68.12,38.75l15.74,15.74L98.29,40.06L98.29,40.06 z"
+              />
+            </g>
+          </svg></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11-12<br>semanas</td>
+          <td></td>
+          <td><svg
+            id="vacuna_negro"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="#30297f"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 122.22 122.88"
+          >
+            <g>
+              <path
+                d="M50.19,45.72l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L46.19,49.72l-5.46,5.46l13.25,13.25 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L36.73,59.19l-5.46,5.46L44.52,77.9c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0 L27.27,68.65l-5.46,5.46l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L17.81,78.11l-0.93,0.93h0 c-2.49,2.49-3.73,5.77-3.73,9.05c0,3.28,1.24,6.57,3.73,9.05l0,0l3.71,3.71c0.31,0.14,0.6,0.33,0.86,0.59 c0.25,0.26,0.45,0.55,0.59,0.86l4.4,4.4l0,0c2.17,2.17,5.03,3.25,7.9,3.25s5.73-1.09,7.9-3.25l0,0l42.24-42.24l-26.5-26.5 L50.19,45.72L50.19,45.72z M60.31,32.11l2.72,2.72l15.19-15.19c-1.93-2.22-2.9-5-2.9-7.78c0-3.04,1.16-6.08,3.47-8.39l0,0l0,0 C81.1,1.16,84.15,0,87.19,0c3.04,0,6.08,1.16,8.39,3.47l23.18,23.18c2.3,2.3,3.45,5.35,3.45,8.39h0.01c0,3.04-1.16,6.08-3.47,8.39 l0,0c-2.31,2.31-5.35,3.47-8.39,3.47c-2.61,0-5.21-0.85-7.36-2.55L87.78,59.58l2.53,2.53c0.2,0.2,0.36,0.43,0.48,0.67l5.66,5.66 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0l-4.48-4.48l-42.24,42.24l0,0c-3.14,3.14-7.27,4.71-11.4,4.71 c-4.13,0-8.26-1.57-11.4-4.71l0,0l-3.12-3.12L4.83,122.05c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4l14.98-14.98l-2.43-2.43v0 c-3.45-3.45-5.18-8-5.18-12.55c0-4.55,1.73-9.1,5.18-12.55v0l41.08-41.08l-4.02-4.02c-1.1-1.1-1.1-2.9,0-4c1.1-1.1,2.9-1.1,4,0 l5.2,5.2C59.88,31.75,60.11,31.91,60.31,32.11L60.31,32.11z M114.26,31.15L91.08,7.97c-1.07-1.07-2.48-1.6-3.89-1.6 c-1.41,0-2.82,0.53-3.89,1.6l0,0l0,0c-1.07,1.07-1.6,2.48-1.6,3.89c0,1.41,0.53,2.82,1.6,3.89h0l23.18,23.18 c1.07,1.07,2.48,1.6,3.89,1.6c1.41,0,2.82-0.53,3.89-1.6l0,0c1.07-1.07,1.6-2.48,1.6-3.89h0.01 C115.87,33.63,115.33,32.22,114.26,31.15L114.26,31.15z M98.29,40.06L82.55,24.32L68.12,38.75l15.74,15.74L98.29,40.06L98.29,40.06 z"
+              />
+            </g>
+          </svg></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16<br>semanas</td>
+          <td></td>
+          <td></td>
+          <td><svg
+            id="vacuna_verde"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="#30297f"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 122.22 122.88"
+          >
+            <g>
+              <path
+                d="M50.19,45.72l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L46.19,49.72l-5.46,5.46l13.25,13.25 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L36.73,59.19l-5.46,5.46L44.52,77.9c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0 L27.27,68.65l-5.46,5.46l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L17.81,78.11l-0.93,0.93h0 c-2.49,2.49-3.73,5.77-3.73,9.05c0,3.28,1.24,6.57,3.73,9.05l0,0l3.71,3.71c0.31,0.14,0.6,0.33,0.86,0.59 c0.25,0.26,0.45,0.55,0.59,0.86l4.4,4.4l0,0c2.17,2.17,5.03,3.25,7.9,3.25s5.73-1.09,7.9-3.25l0,0l42.24-42.24l-26.5-26.5 L50.19,45.72L50.19,45.72z M60.31,32.11l2.72,2.72l15.19-15.19c-1.93-2.22-2.9-5-2.9-7.78c0-3.04,1.16-6.08,3.47-8.39l0,0l0,0 C81.1,1.16,84.15,0,87.19,0c3.04,0,6.08,1.16,8.39,3.47l23.18,23.18c2.3,2.3,3.45,5.35,3.45,8.39h0.01c0,3.04-1.16,6.08-3.47,8.39 l0,0c-2.31,2.31-5.35,3.47-8.39,3.47c-2.61,0-5.21-0.85-7.36-2.55L87.78,59.58l2.53,2.53c0.2,0.2,0.36,0.43,0.48,0.67l5.66,5.66 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0l-4.48-4.48l-42.24,42.24l0,0c-3.14,3.14-7.27,4.71-11.4,4.71 c-4.13,0-8.26-1.57-11.4-4.71l0,0l-3.12-3.12L4.83,122.05c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4l14.98-14.98l-2.43-2.43v0 c-3.45-3.45-5.18-8-5.18-12.55c0-4.55,1.73-9.1,5.18-12.55v0l41.08-41.08l-4.02-4.02c-1.1-1.1-1.1-2.9,0-4c1.1-1.1,2.9-1.1,4,0 l5.2,5.2C59.88,31.75,60.11,31.91,60.31,32.11L60.31,32.11z M114.26,31.15L91.08,7.97c-1.07-1.07-2.48-1.6-3.89-1.6 c-1.41,0-2.82,0.53-3.89,1.6l0,0l0,0c-1.07,1.07-1.6,2.48-1.6,3.89c0,1.41,0.53,2.82,1.6,3.89h0l23.18,23.18 c1.07,1.07,2.48,1.6,3.89,1.6c1.41,0,2.82-0.53,3.89-1.6l0,0c1.07-1.07,1.6-2.48,1.6-3.89h0.01 C115.87,33.63,115.33,32.22,114.26,31.15L114.26,31.15z M98.29,40.06L82.55,24.32L68.12,38.75l15.74,15.74L98.29,40.06L98.29,40.06 z"
+              />
+            </g>
+          </svg></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>19<br>semanas</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><svg
+            id="vacuna_negro"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="#30297f"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 122.22 122.88"
+          >
+            <g>
+              <path
+                d="M50.19,45.72l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L46.19,49.72l-5.46,5.46l13.25,13.25 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L36.73,59.19l-5.46,5.46L44.52,77.9c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0 L27.27,68.65l-5.46,5.46l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L17.81,78.11l-0.93,0.93h0 c-2.49,2.49-3.73,5.77-3.73,9.05c0,3.28,1.24,6.57,3.73,9.05l0,0l3.71,3.71c0.31,0.14,0.6,0.33,0.86,0.59 c0.25,0.26,0.45,0.55,0.59,0.86l4.4,4.4l0,0c2.17,2.17,5.03,3.25,7.9,3.25s5.73-1.09,7.9-3.25l0,0l42.24-42.24l-26.5-26.5 L50.19,45.72L50.19,45.72z M60.31,32.11l2.72,2.72l15.19-15.19c-1.93-2.22-2.9-5-2.9-7.78c0-3.04,1.16-6.08,3.47-8.39l0,0l0,0 C81.1,1.16,84.15,0,87.19,0c3.04,0,6.08,1.16,8.39,3.47l23.18,23.18c2.3,2.3,3.45,5.35,3.45,8.39h0.01c0,3.04-1.16,6.08-3.47,8.39 l0,0c-2.31,2.31-5.35,3.47-8.39,3.47c-2.61,0-5.21-0.85-7.36-2.55L87.78,59.58l2.53,2.53c0.2,0.2,0.36,0.43,0.48,0.67l5.66,5.66 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0l-4.48-4.48l-42.24,42.24l0,0c-3.14,3.14-7.27,4.71-11.4,4.71 c-4.13,0-8.26-1.57-11.4-4.71l0,0l-3.12-3.12L4.83,122.05c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4l14.98-14.98l-2.43-2.43v0 c-3.45-3.45-5.18-8-5.18-12.55c0-4.55,1.73-9.1,5.18-12.55v0l41.08-41.08l-4.02-4.02c-1.1-1.1-1.1-2.9,0-4c1.1-1.1,2.9-1.1,4,0 l5.2,5.2C59.88,31.75,60.11,31.91,60.31,32.11L60.31,32.11z M114.26,31.15L91.08,7.97c-1.07-1.07-2.48-1.6-3.89-1.6 c-1.41,0-2.82,0.53-3.89,1.6l0,0l0,0c-1.07,1.07-1.6,2.48-1.6,3.89c0,1.41,0.53,2.82,1.6,3.89h0l23.18,23.18 c1.07,1.07,2.48,1.6,3.89,1.6c1.41,0,2.82-0.53,3.89-1.6l0,0c1.07-1.07,1.6-2.48,1.6-3.89h0.01 C115.87,33.63,115.33,32.22,114.26,31.15L114.26,31.15z M98.29,40.06L82.55,24.32L68.12,38.75l15.74,15.74L98.29,40.06L98.29,40.06 z"
+              />
+            </g>
+          </svg></td>
+        </tr>
+        <tr>
+          <td>6<br>meses</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><svg
+            id="vacuna_rojo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="#30297f"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 122.22 122.88"
+          >
+            <g>
+              <path
+                d="M50.19,45.72l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L46.19,49.72l-5.46,5.46l13.25,13.25 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L36.73,59.19l-5.46,5.46L44.52,77.9c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0 L27.27,68.65l-5.46,5.46l13.25,13.25c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0L17.81,78.11l-0.93,0.93h0 c-2.49,2.49-3.73,5.77-3.73,9.05c0,3.28,1.24,6.57,3.73,9.05l0,0l3.71,3.71c0.31,0.14,0.6,0.33,0.86,0.59 c0.25,0.26,0.45,0.55,0.59,0.86l4.4,4.4l0,0c2.17,2.17,5.03,3.25,7.9,3.25s5.73-1.09,7.9-3.25l0,0l42.24-42.24l-26.5-26.5 L50.19,45.72L50.19,45.72z M60.31,32.11l2.72,2.72l15.19-15.19c-1.93-2.22-2.9-5-2.9-7.78c0-3.04,1.16-6.08,3.47-8.39l0,0l0,0 C81.1,1.16,84.15,0,87.19,0c3.04,0,6.08,1.16,8.39,3.47l23.18,23.18c2.3,2.3,3.45,5.35,3.45,8.39h0.01c0,3.04-1.16,6.08-3.47,8.39 l0,0c-2.31,2.31-5.35,3.47-8.39,3.47c-2.61,0-5.21-0.85-7.36-2.55L87.78,59.58l2.53,2.53c0.2,0.2,0.36,0.43,0.48,0.67l5.66,5.66 c1.1,1.1,1.1,2.9,0,4c-1.1,1.1-2.9,1.1-4,0l-4.48-4.48l-42.24,42.24l0,0c-3.14,3.14-7.27,4.71-11.4,4.71 c-4.13,0-8.26-1.57-11.4-4.71l0,0l-3.12-3.12L4.83,122.05c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4l14.98-14.98l-2.43-2.43v0 c-3.45-3.45-5.18-8-5.18-12.55c0-4.55,1.73-9.1,5.18-12.55v0l41.08-41.08l-4.02-4.02c-1.1-1.1-1.1-2.9,0-4c1.1-1.1,2.9-1.1,4,0 l5.2,5.2C59.88,31.75,60.11,31.91,60.31,32.11L60.31,32.11z M114.26,31.15L91.08,7.97c-1.07-1.07-2.48-1.6-3.89-1.6 c-1.41,0-2.82,0.53-3.89,1.6l0,0l0,0c-1.07,1.07-1.6,2.48-1.6,3.89c0,1.41,0.53,2.82,1.6,3.89h0l23.18,23.18 c1.07,1.07,2.48,1.6,3.89,1.6c1.41,0,2.82-0.53,3.89-1.6l0,0c1.07-1.07,1.6-2.48,1.6-3.89h0.01 C115.87,33.63,115.33,32.22,114.26,31.15L114.26,31.15z M98.29,40.06L82.55,24.32L68.12,38.75l15.74,15.74L98.29,40.06L98.29,40.06 z"
+              />
+            </g>
+          </svg></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+      <p style="text-align: center" class="custom-paragraph">Protocolo mencionado de nuestra Clínica Veterinaria.</p>
+      <p style="text-align: center" class="custom-paragraph2">Sólo en el caso en el que el test de Leucemia felina haya salido negativo.</p>
+      <p style="text-align: center" class="custom-paragraph3">Vacuna obligatoria en Andalucía.</p>
+
+      <p>&nbsp;</p>
+      <p style="text-align: center"><i>Se volverían a vacunar anualmente a todos los gatos (adultos/senior) de la trivalente, leucemia y rabia.</i></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div class="rounded-box">
+        <img src="images/fondo_caja_mas_info.png" alt="Imagen de fondo">
+        <p>PÍDENOS CITA O MÁS INFORMACIÓN</p>
+        <p>&nbsp;</p>
+        <div class="button-container">
+          <a id="botonazul" class="footer-call-to-action-button button" href="tel:+953692416" target="_self"> 
+            <img src="images/phone_icon.png" alt="Icono de teléfono" style="width: 20px; height: 20px;"> 953 69 24 16
+          </a>
+          <a id="botonrojo" class="footer-call-to-action-button button" href="tel:+655586583" target="_self"> 
+            <img src="images/phone_icon.png" alt="Icono de teléfono" style="width: 20px; height: 20px;"> 655 586 583 
+          </a>
+        </div>
+      </div>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        fill="#30297f"
+        class="bi bi-capsule-pill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M11.02 5.364a3 3 0 0 0-4.242-4.243L1.121 6.778a3 3 0 1 0 4.243 4.243l5.657-5.657Zm-6.413-.657 2.878-2.879a2 2 0 1 1 2.829 2.829L7.435 7.536zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8m-.5 1.042a3 3 0 0 0 0 5.917zm1 5.917a3 3 0 0 0 0-5.917z"
+        />
+      </svg>
+      <h1 id="plandesparasitacion">Planes de desparasitación</h1>
+      <p>&nbsp;</p>
+      <div class="cajaimagen">
+        <img src="images/gatos_planes_de_desparasitacion.webp" alt="Gato planes de vacunación">
+      </div>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      <p>Nuestro gato debe estar desparasitado de forma externa e interna. Es así como podemos prevenir que tenga ausencia de cualquier parásito que pueda afectarle a nuestro felino, incluso a los miembros de la casa.</p>
+      <p>&nbsp;</p>
+      <p>En Clínica veterinaria La Florida aplicamos un <strong>plan de desparasitación</strong> para que tu mascota viva y crezca sana evitando cualquier parásito. Desde los más agresivos y peligrosos hasta los más débiles que causen molestia alguna.</p>
+
+      <p>&nbsp;</p>
+      <h2>Desparasitación externa</h2>
+      <p>&nbsp;</p>
+
+      <p>Mediante <strong>pipetas, collares y sprays</strong> podemos evitar infecciones de ectoparásitos como <strong>pulgas, piojos, ácaros o garrapatas.</strong></p>
+      <p>&nbsp;</p>
+      <p>Siempre será aconsejable que apliquemos el protocolo completo de desparasitación externa, pero desde nuestra clínica os indicaremos que es muy necesario en el caso de que tu gato salga a la calle. Es ahí donde más riesgo corre de que se afecte de este tipo de parásitos.</p>
+
+      <p>&nbsp;</p>
+      <h2>Desparasitación interna</h2>
+      <p>&nbsp;</p>
+
+      <p>Para prevenir que nuestro gato tenga parásitos internos como <strong>gusanos y tenias</strong>, debemos llevar un calendario de desparasitación que se suministra mediante <strong>pastillas, pastas</strong> e incluso con <strong>pipetas especiales</strong>. A veces tenemos que usar inyectables.</p>
+      <p>&nbsp;</p>
+      <p>Es así como podemos prevenir y/o eliminar cualquier infección interna del gato que pueda provocarle graves problemas de salud.</p>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <h3 style="text-align: center">Calendario de desparasitación</h3>
+
+
+
+
+      <div class="tabladespara" id="tabladesparasitacion">
+        <div class="filadespara">
+          <div class="columnadespara">
+            <h3 id="t1">Desparasitación Externa</h3>
+            <td><br><strong>¿Cada cuánto?</strong><br>Cada mes, todo el año.<br><br><strong>¿Cómo?</strong><br>Pipetas, sprays o collares.<br><br><strong>¿Qué es mejor?</strong><br>Proteger frente a pulgas, garrapatas y ácaros.<br><br><strong>¿Qué tengo que vigilar?</strong><br>La aparición de pulgas o garrapatas, sobre todo si el gato sale a la calle.</td>
+          </div>
+          <div class="columnadespara">
+            <h3 id="t2">Desparasitación Interna</h3>
+            <td><br><strong>¿Cada cuánto?</strong><br>Cada 2 ó 6 meses.<br><br><strong>¿Cómo?</strong><br>Pastilla, pasta oral o inyectable.<br><br><strong>¿Qué tengo que vigilar?</strong><br>La aparición de diarreas, vómitos o pérdida de peso. Además de comportamientos de nerviosismo o descordinación.</td>
+          </div>
+        </div>
+      </div>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div class="rounded-box">
+        <img src="images/fondo_caja_mas_info.png" alt="Imagen de fondo">
+        <p>PÍDENOS CITA O MÁS INFORMACIÓN</p>
+        <p>&nbsp;</p>
+        <div class="button-container">
+          <a id="botonazul" class="footer-call-to-action-button button" href="tel:+953692416" target="_self"> 
+            <img src="images/phone_icon.png" alt="Icono de teléfono" style="width: 20px; height: 20px;"> 953 69 24 16
+          </a>
+          <a id="botonrojo" class="footer-call-to-action-button button" href="tel:+655586583" target="_self"> 
+            <img src="images/phone_icon.png" alt="Icono de teléfono" style="width: 20px; height: 20px;"> 655 586 583 
+          </a>
+        </div>
+      </div>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        idth="40"
+        height="40"
+        fill="#30297f"
+        class="bi bi-cpu"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"
+        />
+      </svg>
+      <h1 id="microchip">Micro chip para gatos</h1>
+      <p>&nbsp;</p>
+      <div class="cajaimagen">
+        <img src="images/gatos_microchip.webp" alt="Perro planes de vacunación">
+      </div>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      <h2>¿Qué es el microchip y cómo se inserta?</h2>
+      <p>&nbsp;</p>
+
+      <p>El <strong>microchip</strong> para gatos es un chip que tiene programados 15 dígitos únicos que se asociarán a tu gato. <strong>Es como el DNI de nuestra mascota</strong>.</p>
+      <p>&nbsp;</p>
+      <p>Su tamaño es como el de un grano de arroz y su inserción en el gato es bajo la piel y prácticamente indolora. Es muy sencillo.</p>
+      <p>&nbsp;</p>
+      <p><strong>Insertamos el microchip a tu gato en nuestra clínica de Linares</strong>.</p>
+
+      <p>&nbsp;</p>
+      <h2>¿Para qué sirve y cómo funciona?</h2>
+      <p>&nbsp;</p>
+
+      <p>Si tu gato se aleja y lo pierdes de vista, éste podría ser encontrado por alguna persona, que si da el aviso a alguna protectora o veterinario, podrán <strong>escanearlo con un aparato capaz de extraer la información</strong> almacenada asociada a los dígitos únicos que contienen el chip de tu felino.</p>
+      <p>&nbsp;</p>
+      <p>Esa información debería de ser correcta y actualizada y corresponderían al nombre y datos de contacto de la persona al cuidado de la mascota. <strong>Se pondrían en contacto contigo</strong> para informarte de cómo recogerlo y podértelo llevar de vuelta a su hogar.</p>
+      <p>&nbsp;</p>
+      <p>Pídenos precio y cita para poder insertar el microchip a tu gato en Linares.</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div class="rounded-box">
+        <img src="images/fondo_caja_mas_info.png" alt="Imagen de fondo">
+        <p>PÍDENOS CITA O MÁS INFORMACIÓN</p>
+        <p>&nbsp;</p>
+        <div class="button-container">
+          <a id="botonazul" class="footer-call-to-action-button button" href="tel:+953692416" target="_self"> 
+            <img src="images/phone_icon.png" alt="Icono de teléfono" style="width: 20px; height: 20px;"> 953 69 24 16
+          </a>
+          <a id="botonrojo" class="footer-call-to-action-button button" href="tel:+655586583" target="_self"> 
+            <img src="images/phone_icon.png" alt="Icono de teléfono" style="width: 20px; height: 20px;"> 655 586 583 
+          </a>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+  
+  
+      // Función para obtener el valor de una cookie
+      function getCookie(name) {
+          const value = `; ${document.cookie}`;
+          const parts = value.split(`; ${name}=`);
+          if (parts.length === 2) return parts.pop().split(';').shift();
+      }
+  
+  
+      $(document).ready(function() {
+          // Hacer una solicitud AJAX a la API de perfil de usuario
+          $.ajax({
+              url: 'http://localhost:3000/usuarios/perfil',
+              type: 'GET',
+              data: {
+                  username: getCookie('username')
+              },
+              success: function(data) {
+                  // Cambiar el mensaje de bienvenida para incluir el nombre del usuario
+                  $('#loginbutton1').text('Regresar al perfil');
+                  $('#loginbutton2').attr('href', 'dashboard.html');
+              }
+          });
+      });
+    </script>
+
+
+
+
+
+
+
+    <!-- FOOTER DEL SITIO WEB -->
+    <div class="pg-footer">
+      <footer class="footer">
+        <svg
+          class="footer-wave-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            class="footer-wave-path"
+            d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"
+          ></path>
+        </svg>
+        <div class="footer-content">
+          <div class="footer-content-column">
+            <div class="footer-logo">
+              <a class="footer-logo-link" href="inicio.html">
+                <img src="images/logo.png" alt="Logo" width="212" height="65" />
+              </a>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name">Mascotas</h2>
+              <ul id="menu-get-started" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="perros.html">Perros</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="gatos.html">Gatos</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="exoticos.html">Animales Exóticos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name">Prevención</h2>
+              <ul id="menu-company" class="footer-menu-list">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#planvacunacion">Plan de Vacunación</a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                  <a href="prevencion.html#plandesparasitacion">Plan de Desparasitación</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#microchip">Microchip</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#medicinapreventiva">Medicina Preventiva</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#urgencias">Urgencias</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="prevencion.html#castracion">Castración</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name">Cuidado y Bienestar</h2>
+              <ul id="menu-legal" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434"
+                >
+                  <a href="cuidadobienestar.html#peluqueria">Peluquería canina</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="cuidadobienestar.html#cortezarpas">Corte de uñas</a>
+                </li>
+                <li
+                class="menu-item menu-item-type-post_type menu-item-object-page"
+              >
+                <a href="cuidadobienestar.html#eutanasia">Eutanasia e incineración</a>
+              </li>
+              <li
+              class="menu-item menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="cuidadobienestar.html#odontologia">Odontología</a>
+            </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name">Servicios Médicos</h2>
+              <ul id="menu-quick-links" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom"
+                >
+                  <a rel="noopener noreferrer" href="ecografia.html"
+                    >Ecografía y Ecocardiografía</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom"
+                >
+                  <a rel="noopener noreferrer" href="hospital.html"
+                    >Hospital</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="cirugia.html">Cirugía</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="radiologia.html">Radiología Digital</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type_archive menu-item-object-customer"
+                >
+                  <a href="laboratorio.html">Laboratorio</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="consulta.html">Consulta Veterinaria</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-call-to-action">
+              <h2 class="footer-call-to-action-title">Contacta con nosotros</h2>
+              <p class="footer-call-to-action-description">
+                ¿Tienes alguna pregunta?
+              </p>
+              <a
+                class="footer-call-to-action-button button"
+                href="contacto.html"
+                target="_self"
+              >
+                Contacto
+              </a>
+            </div>
+            <div class="footer-call-to-action">
+              <h2 class="footer-call-to-action-title">Aviso Legal</h2>
+              <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="privacidad.html"
+                target="_blank"> Privacidad y Términos de Uso </a></p>
+            </div>
+          </div>
+          <div class="footer-social-links">
+            <svg
+              class="footer-social-amoeba-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 236 54"
+            >
+              <path
+                class="footer-social-amoeba-path"
+                d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"
+              ></path>
+            </svg>
+            <a
+              class="footer-social-link facebook"
+              href="https://www.facebook.com/clinicaveterinarialaflorida"
+              target="_blank"
+            >
+              <span class="hidden-link-text">Facebook</span>
+              <svg
+                class="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="footer-social-icon-path"
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="footer-social-link whatsapp"
+              href="https://api.whatsapp.com/send?phone=34655%2058%2065%2083&text=Hola%20,%20quiero%20hacer%20una%20consulta%20veterinaria%20"
+              target="_blank"
+            >
+              <span class="hidden-link-text">WhatsApp</span>
+              <svg
+                class="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+              >
+                <path
+                  class="footer-social-icon-path"
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="footer-social-link instagram"
+              href="https://www.instagram.com/clinicaveterinarialaflorida/?hl=es"
+              target="_blank"
+            >
+              <span class="hidden-link-text">Instagram</span>
+              <svg
+                class="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="footer-social-icon-path"
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="footer-social-link twitter"
+              href="https://twitter.com/clinicaveterinarialaflorida"
+              target="_blank"
+            >
+              <span class="hidden-link-text">Twitter</span>
+              <svg
+                class="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  class="footer-social-icon-path"
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-wrapper">
+            <p class="footer-copyright-text">
+              <a class="footer-copyright-link" href="#" target="_self">
+                ©2024. | Diseñado por: Alejandro Arroyo Loaisa. | Todos los
+                derechos reservados.
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
