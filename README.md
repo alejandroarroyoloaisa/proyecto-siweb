@@ -1668,6 +1668,8 @@ La elección de una base de datos distribuida con replicación para el sitio web
 
 Por lo tanto, al optar por una base de datos distribuida con replicación, la Clínica Veterinaria "La Florida" puede mejorar significativamente la disponibilidad, la resiliencia ante fallos, el rendimiento y la escalabilidad de su sitio web, proporcionando así una mejor experiencia a sus clientes y asegurando la continuidad del servicio incluso en situaciones adversas como cortes de energía.
 
+
+
 #### Conexión con la Base de Datos Replicada
 
 Para conectarse a la Base de Datos replicada, la aplicación del sitio web tendrá en una lista los dos nodos que se han mencionado anteriormente. Aleatoriamente, escogerá uno u otro para realizar su conexión:
@@ -1676,3 +1678,24 @@ Para conectarse a la Base de Datos replicada, la aplicación del sitio web tendr
 - Si el intento de conexión no tiene éxito, la aplicación tratará de conectarse al otro nodo restante, debido a que esto significa que el seleccionado aleatoriamente quedó inoperativo.
 
 La réplica que se encuentra en la Clínica Veterinaria, corre sobre un ordenador más potente que puede soportar más carga, por lo que será el nodo primario. Sin embargo, el ordenador colocado en el almacén no es tan potente, este será el nodo secundario. Para conseguir balancear la carga en función de la potencia de los ordenadores, la selección aleatoria de los nodos trabajará con un 65% de posibilidades de elegir el nodo primario y un 35% de posibilidades de elegir el nodo secundario.
+
+
+## Instrucciones de Replicación del Proyecto
+
+Para poder replicar la ejecución de este proyecto en cualquier máquina, siga los siguientes pasos:
+
+**Prerrequisitos:**
+
+- Descargar e instalar ![NodeJS](https://nodejs.org/en/download/current). Marcar la opción de que instale todo lo necesario.
+- Descargar e instalar ![MongoDB Community Server](https://www.mongodb.com/try/download/community). En el mismo directorio donde se instalo MongoDB crear dos carpetas: "data" y dentro de esta "db". Por ejemplo, si MongoDB se instalo en "D:\MongoDB", crear "D:\data" y "D:\data\db". Estas carpetas son necesarias para la ejecución del demonio de MongoDB. En la instalación desmarcar que se instale como servicio y marcar que se instale MongoDB Compass.
+
+**Guía de ejecución:**
+
+1. Descargue este repositorio. Descomprímalo donde más le guste.
+2. En "/code/images" siga las instrucciones de LEER.txt.
+3. En "/code/utilidades/server" siga las instrucciones de LEER.txt.
+4. Ejecutar el demonio de MongoDB. Si se instaló en "D:\MongoDB", el demonio está en "D:\MongoDB\bin" y es "mongod.exe". Si se le cierra la ventana nada más abrirla, es porque no cumplió con el prerrequisito de MongoDB de crear las carpetas.
+5. A no ser que modifique algún parámetro, por defecto MongoDB creará un servidor en "mongodb://localhost:27017". Abra una conexión en MongoDB Compass con esta URI. El sitio web ha sido programado teniendo en cuenta que el demonio se ejecuta sobre esta URI.
+6. Dentro de MongoDB Compass, cree una Base de Datos llamada "LaFlorida". Dentro de esta cree tres colecciones: "Citas", "Productos", "Usuarios". Dentro de cada Colección, importe los .json correspondientes que se encuentran en "\code\bbdd" de este repositorio (cada .json con su Colección del mismo nombre). Compruebe que se han poblado correctamente la colecciones.
+7. Abra el CMD y navegue hasta la carpeta donde descomprimió el proyecto. Entre en "code\utilidades\server" y ejecute "node server.js". Esto levantará la API que conecta la página web con la base de datos. Estará escuchando en el puerto 3000.
+8. Ahora ya podemos abrir el sitio web y que funcione correctamente. La página principal es "inicio.html" y se encuentra en "\code". La abrimos con nuestro navegador (FireFox, preferiblemente, donde se desarrolló).
