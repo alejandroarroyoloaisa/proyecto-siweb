@@ -1525,47 +1525,47 @@ Las colecciones, por tanto, tendrán la siguiente estructura:
 USUARIOS: {
   username
   password
-  nombre"
+  nombre
   direccion
   numero_telefono
   mascotas: [
 	{
-  	id_mascota
-  	nombre
-  	tipo
-  	edad
-  	peso
-  	cita: [
-    	{
-      	id_cita
-      	fecha
-      	descripcion
-    	},
-    	{ … }
-  		]
-		},
-		{ … }
+  	  id_mascota
+  	  nombre
+  	  tipo
+  	  edad
+  	  peso
+  	  cita: [
+    	  {
+      	    id_cita
+      	    fecha
+      	    descripcion
+    	  },
+    	  { … }
+          ]
+         },
+         { … }
   ],
   pedidos: [
-{
-  	id_pedido
-  	fecha
-  	precio_total
-  	productos: [
-    	{
-      	id_producto
-      	cantidad
-            precio
-    	},
-    	{ … }
-  	]
-		},
-		{ … }
+        {
+  	  id_pedido
+  	  fecha
+  	  precio_total
+  	  productos: [
+    	    {
+      	      id_producto
+      	      cantidad
+              precio
+    	    },
+    	    { … }
+  	  ]
+        },
+        { … }
   ]
   carrito: [
-{
-  	"id_producto": "3",
-  	"cantidad": 1
+        {
+  	  id_producto
+  	  cantidad
 	},
 	{ … }
   ]
