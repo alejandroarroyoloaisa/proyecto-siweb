@@ -1685,8 +1685,8 @@ Para poder replicar la ejecución de este proyecto en cualquier máquina, siga l
 
 **Prerrequisitos:**
 
-- Descargar e instalar ![NodeJS](https://nodejs.org/en/download/current). Marcar la opción de que instale todo lo necesario.
-- Descargar e instalar ![MongoDB Community Server](https://www.mongodb.com/try/download/community). En el mismo directorio donde se instalo MongoDB crear dos carpetas: "data" y dentro de esta "db". Por ejemplo, si MongoDB se instalo en "D:\MongoDB", crear "D:\data" y "D:\data\db". Estas carpetas son necesarias para la ejecución del demonio de MongoDB. En la instalación desmarcar que se instale como servicio y marcar que se instale MongoDB Compass.
+- Descargar e instalar [NodeJS](https://nodejs.org/en/download/current). Marcar la opción de que instale todo lo necesario.
+- Descargar e instalar [MongoDB Community Server](https://www.mongodb.com/try/download/community). En el mismo directorio donde se instalo MongoDB crear dos carpetas: "data" y dentro de esta "db". Por ejemplo, si MongoDB se instalo en "D:\MongoDB", crear "D:\data" y "D:\data\db". Estas carpetas son necesarias para la ejecución del demonio de MongoDB. En la instalación desmarcar que se instale como servicio y marcar que se instale MongoDB Compass.
 
 **Guía de ejecución:**
 
