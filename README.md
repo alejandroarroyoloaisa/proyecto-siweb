@@ -1679,7 +1679,7 @@ Para conectarse a la Base de Datos replicada, la aplicación del sitio web tendr
 La réplica que se encuentra en la Clínica Veterinaria, corre sobre un ordenador más potente que puede soportar más carga, por lo que será el nodo primario. Sin embargo, el ordenador colocado en el almacén no es tan potente, este será el nodo secundario. Para conseguir balancear la carga en función de la potencia de los ordenadores, la selección aleatoria de los nodos trabajará con un 65% de posibilidades de elegir el nodo primario y un 35% de posibilidades de elegir el nodo secundario.
 
 
-## Visitar y probar el Sitio Web
+# VISITAR Y PROBAR EL SITIO WEB
 
 Si se quiere visitar el sitio web para probar la Arquitectura de la Información, este ha sido levantado con GitHub Pages en el siguiente enlace:
 
@@ -1690,17 +1690,17 @@ Puede navegar a lo largo de toda la página, pero la base de datos no ha sido po
 [DASHBOARD DEL SITIO WEB](https://alejandroarroyoloaisa.github.io/clinicaveterinalaflorida/dashboard.html)
 
 
-## Instrucciones de Replicación del Proyecto
+# INSTRUCCIONES DE REPLICACIÓN DEL PROYECTO
 
 Para poder replicar la ejecución de este proyecto en cualquier máquina, incluida la base de datos, siga los siguientes pasos:
 
 
-**Prerrequisitos:**
+## **Prerrequisitos:**
 
 - Descargar e instalar [NodeJS](https://nodejs.org/en/download/current). Marcar la opción de que instale todo lo necesario.
 - Descargar e instalar [MongoDB Community Server](https://www.mongodb.com/try/download/community). En el mismo directorio donde se instalo MongoDB crear dos carpetas: "data" y dentro de esta "db". Por ejemplo, si MongoDB se instalo en "D:\MongoDB", crear "D:\data" y "D:\data\db". Estas carpetas son necesarias para la ejecución del demonio de MongoDB. En la instalación desmarcar que se instale como servicio y marcar que se instale MongoDB Compass.
 
-**Guía de ejecución:**
+## **Guía de ejecución:**
 
 1. Descargue este repositorio. Descomprímalo donde más le guste.
 2. En "/code/images" siga las instrucciones de LEER.txt.
