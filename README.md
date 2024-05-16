@@ -1679,9 +1679,21 @@ Para conectarse a la Base de Datos replicada, la aplicación del sitio web tendr
 La réplica que se encuentra en la Clínica Veterinaria, corre sobre un ordenador más potente que puede soportar más carga, por lo que será el nodo primario. Sin embargo, el ordenador colocado en el almacén no es tan potente, este será el nodo secundario. Para conseguir balancear la carga en función de la potencia de los ordenadores, la selección aleatoria de los nodos trabajará con un 65% de posibilidades de elegir el nodo primario y un 35% de posibilidades de elegir el nodo secundario.
 
 
+## Visitar y probar el Sitio Web
+
+Si se quiere visitar el sitio web para probar la Arquitectura de la Información, este ha sido levantado con GitHub Pages en el siguiente enlace:
+
+[PÁGINA DE INICIO DEL SITIO WEB](https://alejandroarroyoloaisa.github.io/clinicaveterinalaflorida)
+
+Puede navegar a lo largo de toda la página, pero la base de datos no ha sido posible ponerla en marcha con esta herramienta. Si quiere acceder más allá del Inicio de Sesión y ver el Panel de Control de Usuario (aunque esté vacío, no recoge información de ninguna base de datos), visite el siguiente enlace:
+
+[DASHBOARD DEL SITIO WEB](https://alejandroarroyoloaisa.github.io/clinicaveterinalaflorida/dashboard.html)
+
+
 ## Instrucciones de Replicación del Proyecto
 
-Para poder replicar la ejecución de este proyecto en cualquier máquina, siga los siguientes pasos:
+Para poder replicar la ejecución de este proyecto en cualquier máquina, incluida la base de datos, siga los siguientes pasos:
+
 
 **Prerrequisitos:**
 
